@@ -1,0 +1,11 @@
+.home {
+  padding: 0;
+  margin: 0;
+  max-width: 1289px;
+  height: 100vh;
+  border: 1px solid black;
+  .container {
+    max-width: 1140px;
+    border: 1px solid red;
+  }
+}
