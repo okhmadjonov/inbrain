@@ -6,17 +6,21 @@ import "./App.scss";
 
 function App() {
   return (
-    <div className="app">
-      <BrowserRouter>
-        <Sidebar />
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="*" element={<Navigate to="/" replace={true} />} />
-          </Routes>
+    <BrowserRouter>
+      <div className="app">
+        <div className="app__container">
+          <div className="sidebar__container">
+            <Sidebar />
+          </div>
+          <div className="home__container">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="*" element={<Navigate to="/" replace={true} />} />
+            </Routes>
+          </div>
         </div>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

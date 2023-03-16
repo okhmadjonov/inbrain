@@ -1,9 +1,25 @@
 .app {
   width: 100%;
   height: 100%;
-  display: flex;
-  .container {
-    width: 1140px;
-    margin: 0 auto;
+
+  .app__container {
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    .sidebar__container {
+      width: 100%;
+      height: 100vh;
+      border: 1px solid purple;
+    }
+    .home__container {
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+      border: 1px solid yellow;
+    }
   }
 }
