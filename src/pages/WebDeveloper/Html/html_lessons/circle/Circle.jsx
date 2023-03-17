@@ -9,9 +9,8 @@ const CircleContainer = styled.div`
 
 const MainContainer = styled.div`
   width: 100%;
-  max-width: 1336px;
   height: 100px;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
