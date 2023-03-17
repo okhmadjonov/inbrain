@@ -15,9 +15,12 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import petrov from '../../assets/images/petrov.png';
 import Slider from 'react-slick';
+import CarouselCompound from './slider/carousel-compound';
 import LeftArrow from "../../assets/images/left-arrow.svg";
 import RightArrow from "../../assets/images/right-arrow.svg";
 import { Link } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
 
 const Home = () => {
@@ -135,16 +138,19 @@ const Home = () => {
     },
 ]
 
+const headerTitle = "Каждый может научится новому ! Даже если страшно.";
 
 
- /*  return (
+  return (
      <div className="home">
-      <div className="container">
-      <div className="app__main-container">
+        <div className="container">
+          <div className="header">
+            <Header title={headerTitle} />
+          </div>
+          <div className="app__main-container">
                         <CarouselCompound infinite >
                             <CarouselCompound.Page>
                             <img src={course} className="item item-1"/> 
-                             <img src={videoplay} className="video" />                       
                             </CarouselCompound.Page>
                             <CarouselCompound.Page>
                             <img src={Skoro} className="item item-2"/>
@@ -153,8 +159,8 @@ const Home = () => {
                             <img src={Skoro} className="item item-3"/>
                             </CarouselCompound.Page>
                         </CarouselCompound> 
-                    </div>
-                    <div className="ourgoal">
+          </div> 
+          <div className="ourgoal">
                         <div className="whatweteach">
                             <div className="teachhead">Чему мы учим ?</div>
                             <p className="teachtxt">
@@ -172,8 +178,8 @@ const Home = () => {
                                     
                             </div>                        
                         </div>
-                    </div>
-                    <div className="webdev">
+          </div>
+          <div className="webdev">
                         <div className="foundation">
                             <div className="webdevcourse">
                                 <img src={foundation}/>
@@ -190,8 +196,8 @@ const Home = () => {
                                 <p className="durationcourse">10 месяцев</p>
                             </div>
                         </div>
-                    </div>
-                    <div className="courses_part">
+          </div>
+          <div className="courses_part">
                         <div className="techhead">
                             <div className="learningtechnology">
                                 <p className="technology">Технологии</p>
@@ -224,8 +230,8 @@ const Home = () => {
                                 
                             ))}
                         </div>
-                    </div>
-                    <div className="jobdeveloper">
+          </div>
+          <div className="jobdeveloper">
                         <div className="jobhead">Что именно вы будете делать, когда станете веб-разработчиком</div>
                         
                         <div className="tasksdeveloper">
@@ -240,8 +246,8 @@ const Home = () => {
                             </div>
                         </div>
 
-                    </div>
-                    <div className="contactus">
+          </div>
+          <div className="contactus">
                         <div className="helpchoosing">
                             <div className="choosing">Поможем в выборе!</div>
                             <div className="ask_us"> 
@@ -266,8 +272,8 @@ const Home = () => {
                             </div>
 
                         </div>
-                    </div>
-                    <div className="reviews_part">
+          </div>
+          <div className="reviews_part">
                         <div className="reviewhead">Что говорят о нас студенты ?</div>
                         <p className="reviewtxt">
                             Если вы хотите получить знания и поменять специализацию, 
@@ -293,10 +299,13 @@ const Home = () => {
 
                                 </Slider>
                             </div> 
-                    </div> 
-      </div>
+          </div> 
+          <div>
+               <Footer/>
+          </div>
+        </div>
     </div> 
-  ); */
+  ); 
 };
 
 export default Home;

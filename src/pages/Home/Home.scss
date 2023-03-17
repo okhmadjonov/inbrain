@@ -6,12 +6,11 @@
     height: 100%;
     max-width: 1140px;
     margin: 0 auto;
-    border: 1px solid purple;
     .app__main-container {
       display: flex;
       flex-direction: column;
       width: 1140px;
-      margin-top: 40px;
+      margin-top: 50px;
 
     }
     .video{
@@ -38,6 +37,7 @@
       display: flex;
       margin-top: 7%;
       width: 100%;
+      border: none;
       justify-content: space-between;
     .teachhead{
       font-family: 'Inter';
