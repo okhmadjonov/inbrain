@@ -1,10 +1,10 @@
 import React from "react";
 import "./Sidebar.scss";
-
+import Menu from "./menu/menu";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h1>Sidebar</h1>
+      <Menu />
     </div>
   );
 };
