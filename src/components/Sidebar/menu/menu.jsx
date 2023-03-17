@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { SidebarData } from "./SidebarData";
+import petrov from "../../../assets/images/petrov.png";
 import SubMenu from "./SubMenu";
 import { IconContext } from "react-icons/lib";
 
@@ -24,7 +25,7 @@ const Nav = styled.div`
   margin-left: 0;
   background-color: #18191b;
   height: 5400px;
-  width: 81px;
+  width: 51px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -54,12 +55,11 @@ const NavIcon = styled(Link)`
 
 const SidebarNav = styled.nav`
   background: #15171c;
-  width: 270px;
+  width: 200px;
   height: 5400px;
   display: flex;
   justify-content: center;
   position: absolute;
-  padding-left: 20px;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
@@ -90,7 +90,20 @@ const Sidebar = () => {
             <Navopen to="#">
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </Navopen>
-
+            <Link to={"/User"} className="userselect">
+              <div>
+                <img className="selectimg" src={petrov} />
+              </div>
+              <div className="userdiv">
+                <div className="selectusername">
+                  User Name
+                  <br />{" "}
+                  <span className="selectbalance">
+                    balance : 99 000 сум{" "}
+                  </span>{" "}
+                </div>
+              </div>
+            </Link>
             {SidebarData.map((item, index) => {
               return (
                 <>
@@ -106,5 +119,4 @@ const Sidebar = () => {
     </>
   );
 };
-
 export default Sidebar;
