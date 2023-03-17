@@ -9,7 +9,8 @@ const SidebarLink = styled(Link)`
   height: 60px;
   text-decoration: none;
   font-size: 18px;
-  margin-top: 60px;
+  margin-top: 40px;
+  /* padding-top: 40px; */
 `;
 
 const SidebarLabel = styled.span`
@@ -35,7 +36,7 @@ const SubMenu = ({ item }) => {
   return (
     <>
       <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
-        <Link to={"/User"} className="userselect">
+        {/* <Link to={"/User"} className="userselect">
           <img className="selectimg" src={petrov} />
           <div className="userdiv">
             <div className="selectusername">
@@ -43,7 +44,7 @@ const SubMenu = ({ item }) => {
               <br /> <span className="selectbalance">{item.balance}</span>{" "}
             </div>
           </div>
-        </Link>
+        </Link> */}
         <div>
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
