@@ -54,7 +54,7 @@ const NavIcon = styled(Link)`
 
 const SidebarNav = styled.nav`
   background: #15171c;
-  width: 270px;
+  width: 265px;
   height: 5400px;
   display: flex;
   justify-content: center;

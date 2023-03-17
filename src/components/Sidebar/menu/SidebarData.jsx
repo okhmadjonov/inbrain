@@ -5,12 +5,15 @@ import * as IoIcons from "react-icons/io";
 import * as RiIcons from "react-icons/ri";
 import petrov from "../../../assets/images/petrov.png";
 
-export const SidebarData = [
+export const user = [
   {
     img: petrov,
     name: "username",
     balance: "balance 99 000 сум",
-  },
+  },  
+]
+
+export const SidebarData = [
 
   {
     title: "Веб разработчик",
