@@ -22,6 +22,7 @@ import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
+import { color } from "@mui/system";
 
 const Home = () => {
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
@@ -105,36 +106,45 @@ const Home = () => {
       },
     ],
   };
-  const coursedata = [
+  const activedata = [
     {
         id: 1, 
         img: htmldemo,
         title: 'HTML',
+        btn: 'Начать обучение',
     },
     {
         id: 2, 
         img: cssdemo,
         title: 'CSS',
+        btn: 'Начать обучение',
     },
     {
         id: 3, 
         img: jsdemo,
         title: 'JavaScript',
+        btn: 'Начать обучение',
     },
+]
+
+const soon = [
     {
-        id: 4, 
+        id: 1, 
         img: phpdemo,
-        title: 'PHP Совсем скоро',
+        title: 'PHP',
+        p: 'Совсем скоро',
     },
     {
-        id: 5, 
+        id: 2, 
         img: javademo,
-        title: 'Java Совсем скоро',
+        title: 'Java',
+        p: 'Совсем скоро',
     },
     {
-        id: 6, 
+        id: 3, 
         img: mobiledemo,
-        title: 'Mobile Dev. Совсем скоро',
+        title: 'Mobile Dev.',
+        p: 'Совсем скоро',
     },
 ]
 
@@ -213,7 +223,7 @@ const headerTitle = "Каждый может научится новому ! Д�
 
                         </div>
                         <div className="democourses">
-                            {coursedata.map((item) => (
+                            {activedata.map((item) => (
                                 <>
                                     <div className="item">
                                         <div>
@@ -221,13 +231,22 @@ const headerTitle = "Каждый может научится новому ! Д�
                                             <div className="itemhead">{item.title}</div>                                    
                                         </div>
                                     
-                                            <button className="startlearnitem">Начать обучение</button>
+                                            <button className="startlearnitem">{item.btn}</button>
 
                                         
                                     </div>
                                 </>
                                 
                                 
+                            ))}
+                            {soon.map((item) => (
+                                <div className="item">
+                                    <div>
+                                        <img className="itemdemo" src={item.img} />
+                                        <div className="itemhead">{item.title}</div>
+                                    </div>
+                                    <p className="itemhead" >{item.p}</p>
+                                </div>
                             ))}
                         </div>
           </div>
