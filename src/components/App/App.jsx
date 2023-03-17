@@ -16,7 +16,6 @@ function App() {
           <div className="home__container">
             <Routes>
               <Route path="/" index element={<Home />} />
-
               <Route path="*" element={<Navigate to="/" replace={true} />} />
             </Routes>
             <div className="footer__container">
