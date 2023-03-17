@@ -154,7 +154,7 @@ export const SidebarData = [
     subNav: [
       {
         title: "Базовые элементы HTML",
-        path: "/Webdev/Tasks",
+        path: "/Webdev/lesson_1",
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
       },
