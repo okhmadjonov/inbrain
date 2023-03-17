@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Home from "../../pages/Home/Home";
+import Footer from "../../components/Footer/Footer";
 import "./App.scss";
 
 function App() {
@@ -14,9 +15,13 @@ function App() {
           </div>
           <div className="home__container">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" index element={<Home />} />
+
               <Route path="*" element={<Navigate to="/" replace={true} />} />
             </Routes>
+            <div className="footer__container">
+              <Footer />
+            </div>
           </div>
         </div>
       </div>
