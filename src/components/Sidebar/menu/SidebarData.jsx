@@ -5,12 +5,23 @@ import * as IoIcons from "react-icons/io";
 import * as RiIcons from "react-icons/ri";
 import petrov from "../../../assets/images/petrov.png";
 
-export const SidebarData = [
+export const user = [
   {
     img: petrov,
-    name: "username",
+    name: "UserName",
     balance: "balance 99 000 сум",
-  },
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    
+    subNav: [
+      {
+        title: 'lorem',
+      },
+    ]
+  },  
+]
+
+export const SidebarData = [
 
   {
     title: "Веб разработчик",
@@ -23,63 +34,6 @@ export const SidebarData = [
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
 
-        subNav: [
-          {
-            title: "Приветствие",
-            /*         path: '/documentation/HTML', */
-            cName: "sub-nav",
-          },
-          {
-            title: "Приветствие",
-            /*         path: '/documentation/HTML', */
-            cName: "sub-nav",
-          },
-          {
-            title: "Приветствие",
-            /*         path: '/documentation/HTML', */
-            cName: "sub-nav",
-          },
-          {
-            title: "Приветствие",
-            /*         path: '/documentation/HTML', */
-            cName: "sub-nav",
-          },
-          {
-            title: "Приветствие",
-            /*         path: '/documentation/HTML', */
-            cName: "sub-nav",
-          },
-          {
-            title: "Приветствие",
-            /*         path: '/documentation/HTML', */
-            cName: "sub-nav",
-          },
-          {
-            title: "Приветствие",
-            /*         path: '/documentation/HTML', */
-            cName: "sub-nav",
-          },
-          {
-            title: "Приветствие",
-            /*         path: '/documentation/HTML', */
-            cName: "sub-nav",
-          },
-          {
-            title: "Приветствие",
-            /*         path: '/documentation/HTML', */
-            cName: "sub-nav",
-          },
-          {
-            title: "Приветствие",
-            /*         path: '/documentation/HTML', */
-            cName: "sub-nav",
-          },
-          {
-            title: "Приветствие",
-            /*         path: '/documentation/HTML', */
-            cName: "sub-nav",
-          },
-        ],
       },
     ],
   },
