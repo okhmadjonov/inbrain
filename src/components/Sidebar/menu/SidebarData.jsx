@@ -114,7 +114,9 @@ export const SidebarData = [
       },
       {
         title: "CheckTasks",
-        path: "/Webdev/TaskCheck_1",
+        path: "/Webdev/Task_1",
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
       },
       {
         title: "Теги HTML",

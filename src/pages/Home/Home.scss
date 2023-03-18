@@ -6,6 +6,7 @@
     height: 100%;
     max-width: 1140px;
     margin: 0 auto;
+
     .app__main-container {
       display: flex;
       flex-direction: column;
@@ -668,5 +669,8 @@
       }
     }
     }
+
+    border: 1px dotted purple;
+
   }
 }
