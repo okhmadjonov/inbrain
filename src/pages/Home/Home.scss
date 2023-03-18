@@ -12,15 +12,14 @@
       flex-direction: column;
       width: 1140px;
       margin-top: 50px;
-
     }
-    .video{
+    .video {
       width: 12%;
       height: 24%;
       top: 40%;
       left: 42%;
     }
-  
+
     .item {
       display: flex;
       align-items: center;
@@ -29,106 +28,105 @@
       height: 100%;
       width: 100%;
       background-size: cover;
-      img{
+      img {
         background-size: cover;
       }
-    } 
-  
-    .ourgoal{
+    }
+
+    .ourgoal {
       display: flex;
       margin-top: 7%;
       width: 100%;
       border: none;
       justify-content: space-between;
-    .teachhead{
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 35px;
-      line-height: 48px;
-      color: #000000;
-    }
-    .teachtxt{
-      width: 646px;
-      height: 90%;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      margin-top: 20px;
-      font-size: 28px;
-      line-height: 34px;
-      letter-spacing: 0.02em;
-      
-      color: #000000;
-    }
-  
-    .linktoinfo{
-        display: grid;
-        gap: 15%;
-        
-      .meet{
-        font-family: 'Inter';
+      .teachhead {
+        font-family: "Inter";
         font-style: normal;
         font-weight: 700;
         font-size: 35px;
         line-height: 48px;
-        text-align: center;
-        
         color: #000000;
       }
-  
-      .button{
-        border-radius: 40px;
+      .teachtxt {
+        width: 646px;
+        height: 90%;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 20px;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 0.02em;
 
-        &:hover{
-          box-shadow: 22px 22px 0 0  #B3DCFF;
-          .clickme{
-            background: #1C84FF;
-            box-shadow: 11px 11px 0 0 #79C1FF;
-          }
+        color: #000000;
+      }
+
+      .linktoinfo {
+        display: grid;
+        gap: 15%;
+
+        .meet {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 35px;
+          line-height: 48px;
+          text-align: center;
+
+          color: #000000;
         }
-        &:active{
-          box-shadow: 22px 22px 0 0  #FFF7D5; 
-          .clickme{
-            background: #FFCC00;
-            box-shadow: 11px 11px 0 0 #FFE97C;;
-          }
-        }  
-          .clickme{
-          width: 409px;
-          height: 157px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 10%;
-          background: #000000 ; /* #1C84FF; */
-          border: none;
+
+        .button {
           border-radius: 40px;
-/*           box-shadow: 12px 12px 0 0 #79C1FF; */
-          text-decoration: none;
-  
-          .linkbtn{
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 39px;
-            text-align: center;
-            
-            color: #FFFFFF;
+
+          &:hover {
+            box-shadow: 22px 22px 0 0 #b3dcff;
+            .clickme {
+              background: #1c84ff;
+              box-shadow: 11px 11px 0 0 #79c1ff;
+            }
           }
-          
-          .bow{
-            width: 105px;
-            height: 112px;
+          &:active {
+            box-shadow: 22px 22px 0 0 #fff7d5;
+            .clickme {
+              background: #ffcc00;
+              box-shadow: 11px 11px 0 0 #ffe97c;
+            }
+          }
+          .clickme {
+            width: 409px;
+            height: 157px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+            background: #000000; /* #1C84FF; */
+            border: none;
+            border-radius: 40px;
+            /*           box-shadow: 12px 12px 0 0 #79C1FF; */
+            text-decoration: none;
+
+            .linkbtn {
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 39px;
+              text-align: center;
+
+              color: #ffffff;
+            }
+
+            .bow {
+              width: 105px;
+              height: 112px;
+            }
           }
         }
       }
     }
-    }
-  
-    .webdev{
 
+    .webdev {
       width: 1140px;
       height: 505px;
       margin-top: 80px;
@@ -139,538 +137,510 @@
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
       border-radius: 60px;
       cursor: pointer;
-      &:hover{
-        .foundation{
-          box-shadow: 24px 24px 0 0  #ABD2FF;
+      &:hover {
+        .foundation {
+          box-shadow: 24px 24px 0 0 #abd2ff;
         }
-        .webdevcourse{
-          box-shadow: 12px 12px 0 0 #79C1FF;
+        .webdevcourse {
+          box-shadow: 12px 12px 0 0 #79c1ff;
         }
-        .aboutcourse .topro{
-          color: #1C84FF;
+        .aboutcourse .topro {
+          color: #1c84ff;
         }
-        
-        .aboutcourse  .startcourse .start_btn{
-          background: #FFCC00;
+
+        .aboutcourse .startcourse .start_btn {
+          background: #ffcc00;
           color: #000000;
         }
-        .aboutcourse .startcourse .durationcourse{
-          color: #FFCC00;
+        .aboutcourse .startcourse .durationcourse {
+          color: #ffcc00;
         }
       }
-      .foundation{
-    
+      .foundation {
         margin-left: 5%;
         width: 33%;
         height: 78%;
         border-radius: 60px;
-  
-      .webdevcourse{
-      
-        width: 100%;
-        height: 100%;
-        background: #1C84FF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 60px;
-      }
-    }
-    .aboutcourse{
-    
-      width: 50%;
-      margin-left: 5%;
-      margin-top: 2%;
-      height: 80%;
-      color: #FFFFFF;
-      display: grid;
-      
-      .kurs{
-      
-        width: 37px;
-        height: 21px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        color: #FFCC00;
-      }
-      .topro{
-      
-        top: 10%;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 30px;    
-        color: #FFFFFF;
-      }
-      .learnjs{
-      
-        width: 100%;
-        height: 126px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 42px;
-        color: #FFFFFF;
-      }
-      .startcourse{
-      
-        width: 80%;
-        display: flex;
-        top: 80%;
-        gap: 10%;
-        .start_btn{
-          width: 65%;
-          height: 58px;
-          color: #1C84FF;
-          font-size: 18px;
-          font-weight: 500;
-          background: #FFFFFF;
-          align-items: center;
-          text-align: center;
-          justify-content: center;
-          text-decoration: none;
+
+        .webdevcourse {
+          width: 100%;
+          height: 100%;
+          background: #1c84ff;
           display: flex;
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-          border-radius: 20px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 60px;
         }
-        .durationcourse{
-          width: 120px;
-          margin-top: 15px;
-          color: #1C84FF;
-          font-size: 20px;
+      }
+      .aboutcourse {
+        width: 50%;
+        margin-left: 5%;
+        margin-top: 2%;
+        height: 80%;
+        color: #ffffff;
+        display: grid;
+
+        .kurs {
+          width: 37px;
+          height: 21px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          color: #ffcc00;
+        }
+        .topro {
+          top: 10%;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 30px;
+          color: #ffffff;
+        }
+        .learnjs {
+          width: 100%;
+          height: 126px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 42px;
+          color: #ffffff;
+        }
+        .startcourse {
+          width: 80%;
+          display: flex;
+          top: 80%;
+          gap: 10%;
+          .start_btn {
+            width: 65%;
+            height: 58px;
+            color: #1c84ff;
+            font-size: 18px;
+            font-weight: 500;
+            background: #ffffff;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            display: flex;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+          }
+          .durationcourse {
+            width: 120px;
+            margin-top: 15px;
+            color: #1c84ff;
+            font-size: 20px;
+          }
         }
       }
     }
-    }
-  
-    .courses_part{
-  
+
+    .courses_part {
       width: 1140px;
 
       height: 1400px;
-      background: #F8F8FF;
+      background: #f8f8ff;
       margin-top: 82px;
       border-radius: 30px;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-    .techhead{
-    
-      justify-content: space-between;
-      align-items: center;
-      display: flex;
-      width: 95%;
-      height: 10%;
-      margin-left: 2.5%;
-        .technology{
-        
+      .techhead {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        width: 95%;
+        height: 10%;
+        margin-left: 2.5%;
+        .technology {
           width: 40%;
-          font-family: 'Inter';
+          font-family: "Inter";
           font-style: normal;
           font-weight: 700;
           font-size: 34px;
-  
+
           color: #000000;
         }
-        .startfromnull{
-          
+        .startfromnull {
           width: 272px;
           height: 36px;
-          top: 40%;        
-          font-family: 'Inter';
+          top: 40%;
+          font-family: "Inter";
           font-style: normal;
           font-weight: 500;
           font-size: 30px;
           line-height: 36px;
-          color: #1C84FF;
+          color: #1c84ff;
         }
-        .startlearnbtn{
-          
+        .startlearnbtn {
           width: 25%;
           height: 60px;
-          color: #FFFFFF;        
+          color: #ffffff;
           background: #000000;
           border-radius: 15px;
           border: none;
           font-size: 22px;
           align-items: center;
-          &:hover{
-            background: #1C84FF;
+          &:hover {
+            background: #1c84ff;
           }
-          &:active{
-            background: #FFCC00;
+          &:active {
+            background: #ffcc00;
             color: #000000;
           }
         }
-    }
-    .aboutourtechnology{
-    
-      width: 1177.22px;
-      height: 104.19px;
-      margin-left: 2.5%;
-      font-family: 'Inter';
-      font-style: normal;
-      font-size: 22px;
-      line-height: 34px;
-      letter-spacing: 0.02em;
-      font-weight: 700;
-      color: #1C84FF;
-        .abouttechhead{
+      }
+      .aboutourtechnology {
+        width: 1177.22px;
+        height: 104.19px;
+        margin-left: 2.5%;
+        font-family: "Inter";
+        font-style: normal;
+        font-size: 22px;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        font-weight: 700;
+        color: #1c84ff;
+        .abouttechhead {
           font-weight: 500;
           color: #000000;
         }
-    }
-    .democourses{
-    
-      margin-top: 90px;
-      width: 100%;
-      margin-left: 2%;
-      gap: 2%;
-      flex-wrap: wrap;
-      display: flex;
-  
-      .item {
-        width: 348px;
-        height: 497.94px;
-        display: grid;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        background: #000000;
-        border-radius: 30px;
-        margin-bottom: 2%;
-        &:hover{
-          background: #1C84FF;
-          
-            .startlearnitem{
+      }
+      .democourses {
+        margin-top: 90px;
+        width: 100%;
+        margin-left: 2%;
+        gap: 2%;
+        flex-wrap: wrap;
+        display: flex;
+
+        .item {
+          width: 348px;
+          height: 497.94px;
+          display: grid;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          background: #000000;
+          border-radius: 30px;
+          margin-bottom: 2%;
+          &:hover {
+            background: #1c84ff;
+
+            .startlearnitem {
               display: block;
               text-decoration: none;
               display: flex;
               justify-content: center;
               align-items: center;
             }
-            .itemhead{
+            .itemhead {
               color: #000000;
             }
-        }
+          }
 
-        .itemdemo{
-          width: 180px;
-          height: 180px;
-        }
-        
-        .itemhead { 
-        
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 40px;
-          color: #000000;        
-          text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
-          color: #FFFFFF;
-  
-        }
-        .startlearnitem{
-        
-          margin-left: 4%;
-          font-size: 22px;
-          width: 250.67px;
-          height: 71.13px;
-          border: none;
-          background: #FFCC00;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          border-radius: 20px;
-          display: none;
-          &:active{
-            background: #000000;
-            color: #FFCC00;
+          .itemdemo {
+            width: 180px;
+            height: 180px;
+          }
+
+          .itemhead {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            color: #000000;
+            text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+            color: #ffffff;
+          }
+          .startlearnitem {
+            margin-left: 4%;
+            font-size: 22px;
+            width: 250.67px;
+            height: 71.13px;
+            border: none;
+            background: #ffcc00;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            display: none;
+            &:active {
+              background: #000000;
+              color: #ffcc00;
+            }
           }
         }
       }
+    }
 
-    }
-    }
-  
-    .jobdeveloper{
-  
+    .jobdeveloper {
       width: 1140px;
       height: 500px;
       margin-top: 80px;
-    .jobhead{
-      width: 100%;
-      height: 46px;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 33px;
-      line-height: 46px;
-      color: #000000;
-    }
+      .jobhead {
+        width: 100%;
+        height: 46px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 33px;
+        line-height: 46px;
+        color: #000000;
+      }
 
-    .tasksdeveloper{
-      width: 1140px;
-      justify-content: space-between;
-      display: flex;
-      align-items: center;
-      margin-top: 70px;
-      .tasks{
-        display: grid;
-        gap: 50px;
-        .writecode{
-        
-          width: 454.43px;
-          height: 36.07px;
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 600;
-          font-size: 22px;
-          line-height: 36px;
-          color: #000000;
-          cursor: pointer;
-          &:hover{
-            color: #1C84FF;
+      .tasksdeveloper {
+        width: 1140px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        margin-top: 70px;
+        .tasks {
+          display: grid;
+          gap: 50px;
+          .writecode {
+            width: 454.43px;
+            height: 36.07px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 36px;
+            color: #000000;
+            cursor: pointer;
+            &:hover {
+              color: #1c84ff;
+            }
           }
-        }
-        .createwebsite{
-        
-          width: 460.99px;
-          height: 36.07px;
-          top: 70px;  
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 600;
-          font-size: 22px;
-          line-height: 36px;
-          color: #000000;
-          cursor: pointer;
-          &:hover{
-            color: #1C84FF;
+          .createwebsite {
+            width: 460.99px;
+            height: 36.07px;
+            top: 70px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 36px;
+            color: #000000;
+            cursor: pointer;
+            &:hover {
+              color: #1c84ff;
+            }
           }
-        }
-        .jobwithcollective{
-        
-          width: 533.88px;
-          height: 36.07px;
-          top: 153px;
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 600;
-          font-size: 22px;
-          line-height: 36px;
-          color: #000000;
-          cursor: pointer;
-          &:hover{
-            color: #1C84FF;
+          .jobwithcollective {
+            width: 533.88px;
+            height: 36.07px;
+            top: 153px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 36px;
+            color: #000000;
+            cursor: pointer;
+            &:hover {
+              color: #1c84ff;
+            }
           }
-        }
-        .helpbusinesses{
-        
-          width: 545px;
-          height: 73px;
-          top: 248px;
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 600;
-          font-size: 22px;
-          line-height: 36px;
-          color: #000000;
-          cursor: pointer;
-          &:hover{
-            color: #1C84FF;
+          .helpbusinesses {
+            width: 545px;
+            height: 73px;
+            top: 248px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 36px;
+            color: #000000;
+            cursor: pointer;
+            &:hover {
+              color: #1c84ff;
+            }
           }
         }
       }
     }
 
-  
-    }
-  
-    .contactus{
+    .contactus {
       display: flex;
       width: 1140px;
       height: 450px;
       gap: 30px;
       margin-top: 150px;
-      background: #F8F8FF;
+      background: #f8f8ff;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
       border-radius: 30px;
-    .choosing{
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 46px;
-      margin-left: 20%;
-      margin-top: 60px;
-      color: #000000;
-    }
-    .ask_us{
-    
-      display: flex;
-      margin-top: 60px;
-      margin-left: 3%;
-      gap: 5%;
-      .asktxt{
-        width: 371px;
-        height: 215px;
-        
-        font-family: 'Inter';
+      .choosing {
+        font-family: "Inter";
         font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 31px;
-        
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 46px;
+        margin-left: 20%;
+        margin-top: 60px;
         color: #000000;
       }
-    }
-    .registr{
-      margin-top: 60px;
-      display: grid;
-      gap: 15px;
-      .name{
-        width: 500px;
-        height: 50px;
-        font-size: 24px;
-        background: #FFFFFF;
-        border-radius: 20px;
-        border: 1px solid #DDE7FF;
-        &:hover{
-          border: 1px solid #1C84FF;
-        }
-      }
-      .phone{
-        width: 500px;
-        height: 60px;
-        font-size: 24px;
-        background: #FFFFFF;
-        border-radius: 20px;
-        border: 1px solid #DDE7FF;
-        &:hover{
-          border: 1px solid #1C84FF;
-        }
-      }
-      .email{
-        width: 500px;
-        height: 60px;
-        font-size: 24px;
-        background: #FFFFFF;
-        border-radius: 20px;
-        border: 1px solid #DDE7FF;
-        &:hover{
-          border: 1px solid #1C84FF;
-        }
-      }
-      .sendinfo{
+      .ask_us {
         display: flex;
-        .soglasie{
-          width: 244px;
-          height: 55px;
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 300;
-          font-size: 12px;
-          line-height: 17px;        
-          color: #000000;
-        }
-        .registr_btn{
-          width: 255px;
-          height: 60px;
-          font-family: 'Inter';
+        margin-top: 60px;
+        margin-left: 3%;
+        gap: 5%;
+        .asktxt {
+          width: 371px;
+          height: 215px;
+
+          font-family: "Inter";
           font-style: normal;
           font-weight: 400;
           font-size: 22px;
-          
-          line-height: 27px;
-          background: #000000;
-          border-radius: 15px;
-          border: none;
-          color: #FFFFFF;
-          cursor: pointer;
-          &:hover{
-            background: #1C84FF;
+          line-height: 31px;
+
+          color: #000000;
+        }
+      }
+      .registr {
+        margin-top: 60px;
+        display: grid;
+        gap: 15px;
+        .name {
+          width: 500px;
+          height: 50px;
+          font-size: 24px;
+          background: #ffffff;
+          border-radius: 20px;
+          border: 1px solid #dde7ff;
+          &:hover {
+            border: 1px solid #1c84ff;
           }
-          &:active{
-            background: #FFCC00;
+        }
+        .phone {
+          width: 500px;
+          height: 60px;
+          font-size: 24px;
+          background: #ffffff;
+          border-radius: 20px;
+          border: 1px solid #dde7ff;
+          &:hover {
+            border: 1px solid #1c84ff;
+          }
+        }
+        .email {
+          width: 500px;
+          height: 60px;
+          font-size: 24px;
+          background: #ffffff;
+          border-radius: 20px;
+          border: 1px solid #dde7ff;
+          &:hover {
+            border: 1px solid #1c84ff;
+          }
+        }
+        .sendinfo {
+          display: flex;
+          .soglasie {
+            width: 244px;
+            height: 55px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 17px;
             color: #000000;
+          }
+          .registr_btn {
+            width: 255px;
+            height: 60px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+
+            line-height: 27px;
+            background: #000000;
+            border-radius: 15px;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            &:hover {
+              background: #1c84ff;
+            }
+            &:active {
+              background: #ffcc00;
+              color: #000000;
+            }
           }
         }
       }
     }
-    }
-  
-    .reviews_part{
-  
+
+    .reviews_part {
       margin-top: 90px;
       width: 1140px;
-    .reviewhead{
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 35px;
-      line-height: 48px;
-      color: #000000;
-    }
-    .reviewtxt{
-      margin-top: 30px;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 34px;
-      letter-spacing: 0.02em;
-  
-      color: #000000;
-    }
-  
-    .head_card{
-      display: flex;
-      gap: 7%;
-      align-items: center;
-      margin-top: 50px;
-      .petrov{
-        width: 68px;
-        height: 69px;
-        border-radius: 40px;
-      }
-      .username{
-        font-family: 'Inter';
+      .reviewhead {
+        font-family: "Inter";
         font-style: normal;
-        font-weight: 500;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 48px;
+        color: #000000;
+      }
+      .reviewtxt {
+        margin-top: 30px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
         font-size: 24px;
         line-height: 34px;
         letter-spacing: 0.02em;
-        
+
         color: #000000;
       }
-    }
-    .comment{
-      margin-top: 40px;
-      width: 366.66px;
-      height: 399.72px;
-      background: #000000;
-      border-radius: 30px;
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      &:hover{
-        background: #1C84FF;
+
+      .head_card {
+        display: flex;
+        gap: 7%;
+        align-items: center;
+        margin-top: 50px;
+        .petrov {
+          width: 68px;
+          height: 69px;
+          border-radius: 40px;
+        }
+        .username {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 34px;
+          letter-spacing: 0.02em;
+
+          color: #000000;
+        }
       }
-      .commenttxt{
-        font-family: 'Inter';
-        font-style: normal;
-        width: 260.4px;
-        height: 310.56px;
-        color: #FFFFFF;
-        font-size: 14px;
-        letter-spacing: 0.02em;
-        font-weight: 400;
-        line-height: 22px;
+      .comment {
+        margin-top: 40px;
+        width: 366.66px;
+        height: 399.72px;
+        background: #000000;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        &:hover {
+          background: #1c84ff;
+        }
+        .commenttxt {
+          font-family: "Inter";
+          font-style: normal;
+          width: 260.4px;
+          height: 310.56px;
+          color: #ffffff;
+          font-size: 14px;
+          letter-spacing: 0.02em;
+          font-weight: 400;
+          line-height: 22px;
+        }
       }
-    }
     }
 
     border: 1px dotted purple;
-
   }
 }
