@@ -22,7 +22,6 @@ import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
-import { color } from "@mui/system";
 
 const Home = () => {
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
