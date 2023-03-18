@@ -101,12 +101,12 @@ const Lesson_1 = (props) => {
                   </div>
 
                   <div className="lesson__slider">
-                    <Link className="prev">
+                    <Link className="prev" to="/Webdev/lesson_1">
                       <FaArrowLeft />
                       <p>Вернуться к списку уроков</p>
                     </Link>
 
-                    <Link className="next">
+                    <Link className="next" to="/Webdev/Task_1">
                       <p> Перейти к заданию</p>
                       <FaArrowRight />
                     </Link>
