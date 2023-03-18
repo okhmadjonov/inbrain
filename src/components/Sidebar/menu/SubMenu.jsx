@@ -59,9 +59,9 @@ const SubMenu = ({ item }) => {
       {subnav &&
         item.subNav.map((item, index) => {
           return (
-            <>
+            <div key={index}>
               <DropdownLink to={item.path}>{item.title}</DropdownLink>
-            </>
+            </div>
           );
         })}
     </>

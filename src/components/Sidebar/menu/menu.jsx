@@ -95,7 +95,10 @@ const Sidebar = () => {
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
             <Navopen to="#">
-              <AiIcons.AiOutlineClose onClick={showSidebar} />
+              <AiIcons.AiOutlineClose
+                onClick={showSidebar}
+                style={{ color: "yellow", fontWeight: "700" }}
+              />
             </Navopen>
 
             <Accordion
@@ -124,7 +127,7 @@ const Sidebar = () => {
                     </div>
 
                     <div className="ml-3">
-                      <p className="m-0 p-0">UserName</p>
+                      <p className="m-0 p-0">User name</p>
                       <span style={{ fontSize: "14px", color: "#ffcc00" }}>
                         balance: 99 000 сум
                       </span>
