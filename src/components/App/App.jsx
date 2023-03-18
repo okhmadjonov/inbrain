@@ -4,6 +4,10 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import Home from "../../pages/Home/Home";
 import HtmlMainPanel from "../../pages/WebDeveloper/Html/html_lessons/MainPanel";
 import MainTasksPanel from "../../pages/WebDeveloper/Html/html_tasks/MainTasksPanel";
+import Familiarization from '../../pages/WebDeveloper/Greeting/Familiarization/Familiarization';
+import Salutation from '../../pages/WebDeveloper/Greeting/salutation/salutation';
+import Listlessons from '../../pages/WebDeveloper/Greeting/Listlessons/Listlesson';
+import User from '../../pages/Home/user/user';
 import "./App.scss";
 
 function App() {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import course from '../../assets/images/verstka.png';
 import Skoro from '../../assets/images/skoro.jpg';
 import bow from '../../assets/images/bow.png';
@@ -105,7 +105,9 @@ const Home = () => {
       },
     ],
   };
-  const activedata = [
+
+
+const activedata = [
     {
         id: 1, 
         img: htmldemo,
@@ -148,8 +150,6 @@ const soon = [
 ]
 
 const headerTitle = "Каждый может научится новому ! Даже если страшно.";
-
-
   return (
      <div className="home">
         <div className="container">

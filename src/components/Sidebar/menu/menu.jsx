@@ -88,13 +88,13 @@ const Sidebar = () => {
             <FaIcons.FaChevronRight onClick={showSidebar} />
           </Navopen>
           <NavIcon to="#">
-            <FaIcons.FaBars onClick={showSidebar} />
+            <FaIcons.FaBars className="menu-bars" onClick={showSidebar} />
           </NavIcon>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
             <Navopen to="#">
-              <AiIcons.AiOutlineClose onClick={showSidebar} />
+              <AiIcons.AiOutlineClose style={{color: '#ffcc00'}} onClick={showSidebar} />
             </Navopen>
 
             <Accordion style={{marginTop: '80px', background: 'none', color: '#FFFFFF'  }} >
