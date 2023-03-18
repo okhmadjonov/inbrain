@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import { SidebarData, user } from "./SidebarData";
+import { SidebarData } from "./SidebarData";
 import petrov from "../../../assets/images/petrov.png";
 import { Accordion } from "@mui/material";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -14,17 +14,18 @@ import SubMenu from "./SubMenu";
 import { IconContext } from "react-icons/lib";
 
 import "./menu.scss";
+import Burger from "./Burger";
 
-const DropdownLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #f5f5f5;
-  font-size: 18px;
-`;
-const SidebarLabel = styled.span`
-  margin-left: 16px;
-`;
+// const DropdownLink = styled(Link)`
+//   display: flex;
+//   align-items: center;
+//   text-decoration: none;
+//   color: #f5f5f5;
+//   font-size: 18px;
+// `;
+// const SidebarLabel = styled.span`
+//   margin-left: 16px;
+// `;
 const Nav = styled.div`
   position: absolute;
   margin-left: 0;
@@ -88,8 +89,9 @@ const Sidebar = () => {
           <Navopen>
             <FaIcons.FaChevronRight onClick={showSidebar} />
           </Navopen>
-          <NavIcon to="#">
-            <FaIcons.FaBars onClick={showSidebar} />
+          <NavIcon to="#" onClick={showSidebar}>
+            <Burger />
+            {/* <FaIcons.FaBars onClick={showSidebar} /> */}
           </NavIcon>
         </Nav>
         <SidebarNav sidebar={sidebar}>
@@ -147,7 +149,7 @@ const Sidebar = () => {
             {SidebarData.map((item, index) => {
               return (
                 <>
-                  <div>
+                  <div key={index}>
                     <SubMenu item={item} key={index} />
                   </div>
                 </>
