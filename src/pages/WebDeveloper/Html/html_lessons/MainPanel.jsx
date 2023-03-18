@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import Header from "../../../../components/Header/Header";
 import Circle from "./circle/Circle";
 import Lesson_1 from "./lesson_1/Lesson_1";
+import Lesson_2 from "./lesson_2/Lesson_2";
+import Lesson_3 from "./lesson_3/Lesson_3";
 const MainPanel = () => {
   const [count, setCount] = useState(1);
 
@@ -56,14 +59,19 @@ const MainPanel = () => {
       step1 = true;
   }
 
+  const headerTitle = "Каждый может научится новому ! Даже если страшно.";
+
   return (
     <div className="main">
       <div className="main__container">
+        <div className="header1">
+          <Header title={headerTitle} />
+        </div>
         <div className="main__html">
           <Circle setCount={setCount} />
           {step1 && <Lesson_1 />}
-          {/* {step2 && <LessonCss />} */}
-          {/* {step3 && <LessonJS />} */}
+          {step2 && <Lesson_2 />}
+          {step3 && <Lesson_3 />}
         </div>
       </div>
     </div>

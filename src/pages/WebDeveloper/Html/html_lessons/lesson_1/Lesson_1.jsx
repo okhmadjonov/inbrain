@@ -8,14 +8,9 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import "./Lesson_1.scss";
 const Lesson_1 = (props) => {
-  const headerTitle = "Каждый может научится новому ! Даже если страшно.";
-
   return (
     <div className="lesson_1">
       <div className="lesson_1__container">
-        <div className="header">
-          <Header title={headerTitle} />
-        </div>
         <div className="lesson_1__content">
           <div className="lesson__html">
             <div className="lesson__html-container">
@@ -106,12 +101,12 @@ const Lesson_1 = (props) => {
                   </div>
 
                   <div className="lesson__slider">
-                    <Link className="prev">
+                    <Link className="prev" to="/Webdev/lesson_1">
                       <FaArrowLeft />
                       <p>Вернуться к списку уроков</p>
                     </Link>
 
-                    <Link className="next">
+                    <Link className="next" to="/Webdev/Task_1">
                       <p> Перейти к заданию</p>
                       <FaArrowRight />
                     </Link>

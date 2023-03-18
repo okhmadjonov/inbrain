@@ -2,14 +2,10 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Home from "../../pages/Home/Home";
-import Footer from "../../components/Footer/Footer";
+import HtmlMainPanel from "../../pages/WebDeveloper/Html/html_lessons/MainPanel";
+import MainTasksPanel from "../../pages/WebDeveloper/Html/html_tasks/MainTasksPanel";
 import "./App.scss";
-import Lesson_1 from "../../pages/WebDeveloper/Html/html_lessons/lesson_1/Lesson_1";
-import Header from "../Header/Header";
-import Familiarization from "../../pages/WebDeveloper/Greeting/Familiarization/Familiarization";
-import Salutation from "../../pages/WebDeveloper/Greeting/salutation/salutation";
-import Listlessons from "../../pages/WebDeveloper/Greeting/Listlessons/Listlesson";
-import User from "../../pages/Home/user/user";
+
 function App() {
   return (
     <BrowserRouter>
@@ -19,10 +15,10 @@ function App() {
             <Sidebar />
           </div>
           <div className="home__container">
-            {/* <Header /> */}
             <Routes>
               <Route path="/" index element={<Home />} />
-              <Route path="/Webdev/lesson_1" element={<Lesson_1 />} />
+              <Route path="/Webdev/lesson_1" element={<HtmlMainPanel />} />
+              <Route path="/Webdev/Task_1" element={<MainTasksPanel />} />
               <Route path="*" element={<Navigate to="/" replace={true} />} />
               <Route path="/Familiarization" element={<Familiarization/>} />
               <Route path="/Salutation" element={<Salutation/>} />
