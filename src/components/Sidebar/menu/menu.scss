@@ -24,15 +24,11 @@
 }
 
 .menu-close {
-  font-size: 2rem;
-  position: absolute;
-  top: 1%;
-  left: 1%;
+  color: #ffcc00;
 }
 
 .menu-bars {
   font-size: 2rem;
-  position: absolute;
   top: 5%;
   display: flex;
   transform: rotate(90deg) scaleX(-1);

@@ -12,12 +12,6 @@ export const user = [
     balance: "balance 99 000 сум",
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
-    
-    subNav: [
-      {
-        title: 'lorem',
-      },
-    ]
   },  
 ]
 

@@ -89,18 +89,27 @@ const Sidebar = () => {
           <Navopen>
             <FaIcons.FaChevronRight onClick={showSidebar} />
           </Navopen>
+
+          <NavIcon to="#">
+            <FaIcons.FaBars className="menu-bars" onClick={showSidebar} />
+
           <NavIcon to="#" onClick={showSidebar}>
             <Burger />
             {/* <FaIcons.FaBars onClick={showSidebar} /> */}
+
           </NavIcon>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
             <Navopen to="#">
+
+              <AiIcons.AiOutlineClose style={{color: '#ffcc00'}} onClick={showSidebar} />
+
               <AiIcons.AiOutlineClose
                 onClick={showSidebar}
                 style={{ color: "yellow", fontWeight: "700" }}
               />
+
             </Navopen>
 
             <Accordion
