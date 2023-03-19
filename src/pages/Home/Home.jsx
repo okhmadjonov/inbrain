@@ -24,16 +24,18 @@ import LeftArrow from "../../assets/images/left-arrow.svg";
 import RightArrow from "../../assets/images/right-arrow.svg";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
+import leftgroup from '../../assets/images/leftgroup.png';
+import rightgroup from '../../assets/images/rightgroup.png';
 import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
 
 const Home = () => {
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <img src={LeftArrow} alt="prevArrow" {...props} />
+    <img src={leftgroup} alt="prevArrow" {...props} />
   );
 
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-    <img src={RightArrow} alt="nextArrow" {...props} />
+    <img src={rightgroup} alt="nextArrow" {...props} />
   );
   const data = [
     {
@@ -186,7 +188,6 @@ const Home = () => {
 
             <div className="button">
               <Link to="/Familiarization" className="clickme">
-                {" "}
                 <span className="linkbtn">Жми сюда :)</span>{" "}
                 <img className="bow" src={bow} alt="Skore 31" />{" "}
               </Link>

@@ -12,24 +12,22 @@ import Typography from "@mui/material/Typography";
 import { IconContext } from "react-icons/lib";
 import "./menu.scss";
 import Burger from "./Burger";
-
 const Nav = styled.div`
-  position: absolute;
-  margin-left: auto;
+  margin-left: 0;
   background-color: #18191b;
   height: 5400px;
   width: 80px;
   text-align: center;
   display: flex;
   justify-content: center;
+
 `;
 
 const Navopen = styled.div`
-  position: absolute;
   justify-content: center;
   align-items: center;
   display: flex;
-  left: 100%;
+  margin-left: 100%;
   width: 40px;
   height: 40px;
   border-radius: 0 0 10px 0;
@@ -56,12 +54,13 @@ const SidebarNav = styled.nav`
   justify-content: center;
   position: absolute;
   top: 0;
-  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  left: ${({ sidebar }) => (sidebar ? "0" : '-200%')};
   transition: 350ms;
 `;
 
 const SidebarWrap = styled.div`
   width: 100%;
+  
 `;
 
 const Sidebar = () => {
@@ -73,8 +72,8 @@ const Sidebar = () => {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
-          <Navopen>
-            <FaIcons.FaChevronRight onClick={showSidebar} />
+          <Navopen style={{marginLeft: '100px'}}>
+            <FaIcons.FaChevronRight style={{width: '40px', justifyContent: 'center'}} onClick={showSidebar} />
           </Navopen>
 
           <NavIcon to="#" onClick={showSidebar}>
@@ -100,6 +99,7 @@ const Sidebar = () => {
                 background: "none",
                 color: "#FFFFFF",
                 marginLeft: "7%",
+                border: 'none',
               }}>
               <AccordionSummary
                 expandIcon={<MdExpandMore style={{ fontSize: "2.5rem" }} />}
@@ -163,7 +163,7 @@ const Sidebar = () => {
                       textAlign: "center",
                       alignItems: "center",
                       color: "#1C84FF",
-                      fontSize: "20px",
+                      fontSize: "18px",
                       fontFamily: "Inter",
                     }}>
                     Веб разработчик
