@@ -3,28 +3,29 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import { SidebarData, user } from "./SidebarData";
+import { SidebarData } from "./SidebarData";
 import petrov from "../../../assets/images/petrov.png";
-import { Accordion } from '@mui/material';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
+import { Accordion } from "@mui/material";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
 import { MdExpandMore } from "react-icons/md";
-import Typography from '@mui/material/Typography';
+import Typography from "@mui/material/Typography";
 import SubMenu from "./SubMenu";
 import { IconContext } from "react-icons/lib";
 
 import "./menu.scss";
+import Burger from "./Burger";
 
-const DropdownLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #f5f5f5;
-  font-size: 18px;
-`;
-const SidebarLabel = styled.span`
-  margin-left: 16px;
-`;
+// const DropdownLink = styled(Link)`
+//   display: flex;
+//   align-items: center;
+//   text-decoration: none;
+//   color: #f5f5f5;
+//   font-size: 18px;
+// `;
+// const SidebarLabel = styled.span`
+//   margin-left: 16px;
+// `;
 const Nav = styled.div`
   position: absolute;
   margin-left: 0;
@@ -62,6 +63,7 @@ const NavIcon = styled(Link)`
 const SidebarNav = styled.nav`
   background: #15171c;
   width: 270px;
+  max-width: 365px;
   height: 5400px;
   display: flex;
   justify-content: center;
@@ -87,48 +89,76 @@ const Sidebar = () => {
           <Navopen>
             <FaIcons.FaChevronRight onClick={showSidebar} />
           </Navopen>
+
           <NavIcon to="#">
             <FaIcons.FaBars className="menu-bars" onClick={showSidebar} />
+
+          <NavIcon to="#" onClick={showSidebar}>
+            <Burger />
+            {/* <FaIcons.FaBars onClick={showSidebar} /> */}
+
           </NavIcon>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
             <Navopen to="#">
+
               <AiIcons.AiOutlineClose style={{color: '#ffcc00'}} onClick={showSidebar} />
+
+              <AiIcons.AiOutlineClose
+                onClick={showSidebar}
+                style={{ color: "yellow", fontWeight: "700" }}
+              />
+
             </Navopen>
 
-            <Accordion style={{marginTop: '80px', background: 'none', color: '#FFFFFF'  }} >
-                <AccordionSummary
-                  expandIcon={<MdExpandMore/>}
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
-                >
-                  <Typography>
-                      <div style={{display: 'flex', textAlign: 'center', alignItems: 'center'}} >
-                        <div className="avatar">
-                          <img style={{borderRadius: '30px'}} src={petrov} />
-                            </div>
+            <Accordion
+              style={{
+                marginTop: "80px",
+                background: "none",
+                color: "#FFFFFF",
+              }}>
+              <AccordionSummary
+                expandIcon={<MdExpandMore />}
+                aria-controls="panel1a-content"
+                id="panel1a-header">
+                <Typography>
+                  <div
+                    style={{
+                      display: "flex",
+                      textAlign: "center",
+                      alignItems: "center",
+                    }}>
+                    <div className="avatar">
+                      <img
+                        style={{ borderRadius: "30px" }}
+                        src={petrov}
+                        alt="Petrov"
+                      />
+                    </div>
 
-                              <div className="ml-3">
-                                <p className="m-0 p-0">UserName</p>
-                                  <span style={{fontSize: '14px', color: '#ffcc00'}} >balance: 99 000 сум</span>
-                              </div>
-                      </div>
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography>
-                    <Link to={'/Userpage'} style={{color: '#FFFFFF'}} >
-                      Userpage
-                    </Link>
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-            
+                    <div className="ml-3">
+                      <p className="m-0 p-0">User name</p>
+                      <span style={{ fontSize: "14px", color: "#ffcc00" }}>
+                        balance: 99 000 сум
+                      </span>
+                    </div>
+                  </div>
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
+                    Userpage
+                  </Link>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
             {SidebarData.map((item, index) => {
               return (
                 <>
-                  <div>
+                  <div key={index}>
                     <SubMenu item={item} key={index} />
                   </div>
                 </>

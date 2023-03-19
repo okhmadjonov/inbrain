@@ -180,20 +180,20 @@ const headerTitle = "Каждый может научится новому ! Д�
 
   return (
     <div className="home">
-      <div className="container">
+      <div className="container" style={{ border: "1px solid white" }}>
         <div className="header">
           <Header title={headerTitle} />
         </div>
         <div className="app__main-container">
           <CarouselCompound infinite>
             <CarouselCompound.Page>
-              <img src={course} className="item item-1" />
+              <img src={course} className="item item-1" alt="Color" />
             </CarouselCompound.Page>
             <CarouselCompound.Page>
-              <img src={Skoro} className="item item-2" />
+              <img src={Skoro} className="item item-2" alt="Skore" />
             </CarouselCompound.Page>
             <CarouselCompound.Page>
-              <img src={Skoro} className="item item-3" />
+              <img src={course} className="item item-3" alt="Skore 3" />
             </CarouselCompound.Page>
           </CarouselCompound>
         </div>
@@ -214,7 +214,7 @@ const headerTitle = "Каждый может научится новому ! Д�
               <Link to="/Familiarization" className="clickme">
                 {" "}
                 <span className="linkbtn">Жми сюда :)</span>{" "}
-                <img className="bow" src={bow} />{" "}
+                <img className="bow" src={bow} alt="Skore 31" />{" "}
               </Link>
             </div>
           </div>
@@ -222,7 +222,7 @@ const headerTitle = "Каждый может научится новому ! Д�
         <div className="webdev">
           <div className="foundation">
             <div className="webdevcourse">
-              <img src={foundation} />
+              <img src={foundation} alt="Foundation" />
             </div>
           </div>
           <div className="aboutcourse">
@@ -264,7 +264,7 @@ const headerTitle = "Каждый может научится новому ! Д�
               <>
                 <div className="item">
                   <div>
-                    <img className="itemdemo" src={item.img} />
+                    <img className="itemdemo" src={item.img} alt="Item demo" />
                     <div className="itemhead">{item.title}</div>
                   </div>
 
@@ -275,7 +275,7 @@ const headerTitle = "Каждый может научится новому ! Д�
             {soon.map((item) => (
               <div className="item">
                 <div>
-                  <img className="itemdemo" src={item.img} />
+                  <img className="itemdemo" src={item.img} alt="Item demo 2" />
                   <div className="itemhead">{item.title}</div>
                 </div>
                 <p className="itemhead">{item.p}</p>
@@ -303,7 +303,11 @@ const headerTitle = "Каждый может научится новому ! Д�
               </p>
             </div>
             <div>
-              <img className="collectivework" src={collectivework} />
+              <img
+                className="collectivework"
+                src={collectivework}
+                alt="Collective work"
+              />
             </div>
           </div>
         </div>
@@ -311,7 +315,7 @@ const headerTitle = "Каждый может научится новому ! Д�
           <div className="helpchoosing">
             <div className="choosing">Поможем в выборе!</div>
             <div className="ask_us">
-              <img className="student" src={student} />
+              <img className="student" src={student} alt="Student" />
               <p className="asktxt">
                 Если у вас есть вопросы о <br />
                 формате или вы не знаете, <br />
@@ -329,8 +333,8 @@ const headerTitle = "Каждый может научится новому ! Д�
             <div className="sendinfo">
               <div className="soglasie">
                 Нажимая на кнопку, я соглашаюсь на <br /> обработку{" "}
-                <a href="#">персональных данных</a> и с <br />{" "}
-                <a href="#">правилами пользования платформой</a>
+                <a href="/">персональных данных</a> и с <br />{" "}
+                <a href="/">правилами пользования платформой</a>
               </div>
               <button className="registr_btn">
                 <big>отправить</big>
@@ -350,7 +354,7 @@ const headerTitle = "Каждый может научится новому ! Д�
               {data.map((item) => (
                 <div className="review_card">
                   <div className="head_card">
-                    <img className="petrov" src={item.img} />
+                    <img className="petrov" src={item.img} alt="Petrov" />
                     <p className="username">{item.name}</p>
                   </div>
                   <div className="comment">
