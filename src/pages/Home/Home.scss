@@ -1,16 +1,11 @@
 .home {
   width: 100%;
-  height: 100vh;
-  .container {
-    width: 100%;
-    height: 100%;
-    // max-width: 1140px;
-    margin: 0 auto;
 
+  .home__container {
+    border: 1px solid black;
     .app__main-container {
       display: flex;
       flex-direction: column;
-      // width: 1140px;
       margin-top: 50px;
     }
     .video {
@@ -258,7 +253,6 @@
           font-style: normal;
           font-weight: 700;
           font-size: 34px;
-
           color: #000000;
         }
         .startfromnull {
@@ -640,7 +634,5 @@
         }
       }
     }
-
-    border: 1px dotted purple;
   }
 }

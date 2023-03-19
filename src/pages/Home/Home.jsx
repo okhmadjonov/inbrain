@@ -156,7 +156,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="container" style={{ border: "1px solid white" }}>
+      <div className="home__container">
         <div className="header">
           <Header title={headerTitle} />
         </div>
@@ -340,9 +340,6 @@ const Home = () => {
               ))}
             </Slider>
           </div>
-        </div>
-        <div>
-          <Footer />
         </div>
       </div>
     </div>

@@ -16,21 +16,18 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <div className="app__container">
-          <div className="sidebar__container">
-            <Sidebar />
-          </div>
+          <Sidebar />
           <div className="home__container">
             <Routes>
-              <Route path="/" index element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/Webdev/lesson_1" element={<HtmlMainPanel />} />
               <Route path="/Webdev/Task_1" element={<MainTasksPanel />} />
-              <Route path="*" element={<Navigate to="/" replace={true} />} />
               <Route path="/Familiarization" element={<Familiarization />} />
               <Route path="/Salutation" element={<Salutation />} />
               <Route path="/Listlessons" element={<Listlessons />} />
               <Route path="/Userpage" element={<User />} />
+              <Route path="*" element={<Navigate to="/" replace={true} />} />
             </Routes>
-            <div className="footer__container">{/* <Footer /> */}</div>
           </div>
         </div>
       </div>

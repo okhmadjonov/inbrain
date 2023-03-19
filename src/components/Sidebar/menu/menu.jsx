@@ -3,25 +3,23 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import { SidebarData } from "./SidebarData";
+
 import petrov from "../../../assets/images/petrov.png";
 import { Accordion } from "@mui/material";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { MdExpandMore } from "react-icons/md";
 import Typography from "@mui/material/Typography";
-import SubMenu from "./SubMenu";
+
 import { IconContext } from "react-icons/lib";
 
 import "./menu.scss";
-
-import { fontSize } from "@mui/system";
 
 import Burger from "./Burger";
 
 const Nav = styled.div`
   position: absolute;
-  margin-left: 0;
+  margin-left: auto;
   background-color: #18191b;
   height: 5400px;
   width: 51px;
@@ -55,8 +53,8 @@ const NavIcon = styled(Link)`
 
 const SidebarNav = styled.nav`
   background: #15171c;
-  width: 270px;
-  max-width: 365px;
+  width: 15%;
+  max-width: 15%;
   height: 5400px;
   display: flex;
   justify-content: center;
@@ -85,7 +83,6 @@ const Sidebar = () => {
 
           <NavIcon to="#" onClick={showSidebar}>
             <Burger />
-            {/* <FaIcons.FaBars onClick={showSidebar} /> */}
           </NavIcon>
         </Nav>
         <SidebarNav sidebar={sidebar}>
@@ -123,6 +120,7 @@ const Sidebar = () => {
                           height: "40px",
                         }}
                         src={petrov}
+                        alt="Petrov"
                       />
                     </div>
 
