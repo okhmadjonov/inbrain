@@ -1,17 +1,12 @@
 .home {
   width: 100%;
-  height: 100vh;
-  .container {
-    width: 100%;
-    height: 100%;
-    // max-width: 1140px;
-    margin: 0 auto;
 
+  .home__container {
     .app__main-container {
+      width: 100%;
       display: flex;
       flex-direction: column;
-      // width: 1140px;
-      margin-top: 50px;
+      margin-top: 80px;
     }
     .video {
       width: 12%;
@@ -39,6 +34,7 @@
       width: 100%;
       border: none;
       justify-content: space-between;
+
       .teachhead {
         font-family: "Inter";
         font-style: normal;
@@ -48,7 +44,7 @@
         color: #000000;
       }
       .teachtxt {
-        width: 646px;
+        width: 100%;
         height: 90%;
         font-family: "Inter";
         font-style: normal;
@@ -57,7 +53,6 @@
         font-size: 28px;
         line-height: 34px;
         letter-spacing: 0.02em;
-
         color: #000000;
       }
 
@@ -72,7 +67,6 @@
           font-size: 35px;
           line-height: 48px;
           text-align: center;
-
           color: #000000;
         }
 
@@ -127,7 +121,7 @@
     }
 
     .webdev {
-      width: 1140px;
+      width: 100%;
       height: 505px;
       margin-top: 80px;
 
@@ -238,8 +232,7 @@
     }
 
     .courses_part {
-      width: 1140px;
-
+      width: 100%;
       height: 1400px;
       background: #f8f8ff;
       margin-top: 82px;
@@ -258,7 +251,6 @@
           font-style: normal;
           font-weight: 700;
           font-size: 34px;
-
           color: #000000;
         }
         .startfromnull {
@@ -291,7 +283,7 @@
         }
       }
       .aboutourtechnology {
-        width: 1177.22px;
+        width: 100%;
         height: 104.19px;
         margin-left: 2.5%;
         font-family: "Inter";
@@ -315,7 +307,7 @@
         display: flex;
 
         .item {
-          width: 348px;
+          width: 30%;
           height: 497.94px;
           display: grid;
           align-items: center;
@@ -373,7 +365,7 @@
     }
 
     .jobdeveloper {
-      width: 1140px;
+      width: 100%;
       height: 500px;
       margin-top: 80px;
       .jobhead {
@@ -388,7 +380,7 @@
       }
 
       .tasksdeveloper {
-        width: 1140px;
+        width: 100%;
         justify-content: space-between;
         display: flex;
         align-items: center;
@@ -461,47 +453,54 @@
 
     .contactus {
       display: flex;
-      width: 1140px;
+      width: 100%;
       height: 450px;
       gap: 30px;
       margin-top: 150px;
       background: #f8f8ff;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
       border-radius: 30px;
-      .choosing {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 46px;
-        margin-left: 20%;
-        margin-top: 60px;
-        color: #000000;
-      }
-      .ask_us {
-        display: flex;
-        margin-top: 60px;
-        margin-left: 3%;
-        gap: 5%;
-        .asktxt {
-          width: 371px;
-          height: 215px;
-
+      .helpchoosing {
+        width: 50%;
+        .choosing {
           font-family: "Inter";
           font-style: normal;
-          font-weight: 400;
-          font-size: 22px;
-          line-height: 31px;
-
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 46px;
+          margin-left: 20%;
+          margin-top: 60px;
           color: #000000;
+        }
+        .ask_us {
+          display: flex;
+          margin-top: 60px;
+          margin-left: 3%;
+          gap: 5%;
+          .asktxt {
+            width: 371px;
+            height: 215px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 31px;
+            color: #000000;
+          }
         }
       }
       .registr {
+        width: 50%;
         margin-top: 60px;
         display: grid;
+        padding: 0px 30px 10px 0px;
         gap: 15px;
+        input {
+          padding-left: 25px;
+          outline: none !important;
+        }
         .name {
-          width: 500px;
+          width: 100%;
           height: 50px;
           font-size: 24px;
           background: #ffffff;
@@ -512,7 +511,7 @@
           }
         }
         .phone {
-          width: 500px;
+          width: 100%;
           height: 60px;
           font-size: 24px;
           background: #ffffff;
@@ -523,7 +522,7 @@
           }
         }
         .email {
-          width: 500px;
+          width: 100%;
           height: 60px;
           font-size: 24px;
           background: #ffffff;
@@ -535,8 +534,11 @@
         }
         .sendinfo {
           display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
           .soglasie {
-            width: 244px;
+            width: 50%;
             height: 55px;
             font-family: "Inter";
             font-style: normal;
@@ -546,7 +548,7 @@
             color: #000000;
           }
           .registr_btn {
-            width: 255px;
+            width: 50%;
             height: 60px;
             font-family: "Inter";
             font-style: normal;
@@ -573,7 +575,7 @@
 
     .reviews_part {
       margin-top: 90px;
-      width: 1140px;
+      width: 100%;
       .reviewhead {
         font-family: "Inter";
         font-style: normal;
@@ -611,13 +613,12 @@
           font-size: 24px;
           line-height: 34px;
           letter-spacing: 0.02em;
-
           color: #000000;
         }
       }
       .comment {
         margin-top: 40px;
-        width: 366.66px;
+        width: 90%;
         height: 399.72px;
         background: #000000;
         border-radius: 30px;
@@ -640,7 +641,5 @@
         }
       }
     }
-
-    border: 1px dotted purple;
   }
 }

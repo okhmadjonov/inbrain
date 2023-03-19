@@ -1,7 +1,5 @@
 import React from "react";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
+
 import * as RiIcons from "react-icons/ri";
 import petrov from "../../../assets/images/petrov.png";
 
@@ -12,11 +10,10 @@ export const user = [
     balance: "balance 99 000 сум",
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
-  },  
-]
+  },
+];
 
 export const SidebarData = [
-
   {
     title: "Веб разработчик",
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -27,7 +24,6 @@ export const SidebarData = [
         title: "Приветствие",
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
-
       },
     ],
   },

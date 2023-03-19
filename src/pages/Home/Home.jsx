@@ -156,10 +156,8 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="container" style={{ border: "1px solid white" }}>
-        <div className="header">
-          <Header title={headerTitle} />
-        </div>
+      <div className="home__container">
+        <Header title={headerTitle} />
         <div className="app__main-container">
           <CarouselCompound infinite>
             <CarouselCompound.Page>
@@ -340,9 +338,6 @@ const Home = () => {
               ))}
             </Slider>
           </div>
-        </div>
-        <div>
-          <Footer />
         </div>
       </div>
     </div>
