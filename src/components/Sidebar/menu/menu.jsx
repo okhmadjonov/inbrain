@@ -3,29 +3,33 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import { SidebarData, user } from "./SidebarData";
+import { SidebarData } from "./SidebarData";
 import petrov from "../../../assets/images/petrov.png";
-import { Accordion } from '@mui/material';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
+import { Accordion } from "@mui/material";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
 import { MdExpandMore } from "react-icons/md";
-import Typography from '@mui/material/Typography';
+import Typography from "@mui/material/Typography";
 import SubMenu from "./SubMenu";
 import { IconContext } from "react-icons/lib";
 
 import "./menu.scss";
+
 import { fontSize } from "@mui/system";
 
-const DropdownLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #f5f5f5;
-  font-size: 18px;
-`;
-const SidebarLabel = styled.span`
-  margin-left: 16px;
-`;
+import Burger from "./Burger";
+
+
+// const DropdownLink = styled(Link)`
+//   display: flex;
+//   align-items: center;
+//   text-decoration: none;
+//   color: #f5f5f5;
+//   font-size: 18px;
+// `;
+// const SidebarLabel = styled.span`
+//   margin-left: 16px;
+// `;
 const Nav = styled.div`
   position: absolute;
   margin-left: 0;
@@ -63,6 +67,7 @@ const NavIcon = styled(Link)`
 const SidebarNav = styled.nav`
   background: #15171c;
   width: 270px;
+  max-width: 365px;
   height: 5400px;
   display: flex;
   justify-content: center;
@@ -88,14 +93,21 @@ const Sidebar = () => {
           <Navopen>
             <FaIcons.FaChevronRight onClick={showSidebar} />
           </Navopen>
-          <NavIcon to="#">
-            <FaIcons.FaBars className="menu-bars" onClick={showSidebar} />
+
+          <NavIcon to="#" onClick={showSidebar}>
+            <Burger />
+            {/* <FaIcons.FaBars onClick={showSidebar} /> */}
           </NavIcon>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
             <Navopen to="#">
-              <AiIcons.AiOutlineClose style={{color: '#ffcc00'}} onClick={showSidebar} />
+              <AiIcons.AiOutlineClose
+                style={{ color: "#ffcc00" }}
+                onClick={showSidebar}
+              />
+
+
             </Navopen>
 
             <Accordion style={{marginTop: '40px', background: 'none', color: '#FFFFFF', marginLeft: '7%'   }} >
@@ -470,8 +482,6 @@ const Sidebar = () => {
                   </Typography>
                 </AccordionDetails>
             </Accordion>
-            
-            
           </SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>
