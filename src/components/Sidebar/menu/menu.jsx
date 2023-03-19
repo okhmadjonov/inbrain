@@ -3,18 +3,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-
 import petrov from "../../../assets/images/petrov.png";
 import { Accordion } from "@mui/material";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { MdExpandMore } from "react-icons/md";
 import Typography from "@mui/material/Typography";
-
 import { IconContext } from "react-icons/lib";
-
 import "./menu.scss";
-
 import Burger from "./Burger";
 
 const Nav = styled.div`
@@ -22,7 +18,7 @@ const Nav = styled.div`
   margin-left: auto;
   background-color: #18191b;
   height: 5400px;
-  width: 51px;
+  width: 80px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -53,8 +49,8 @@ const NavIcon = styled(Link)`
 
 const SidebarNav = styled.nav`
   background: #15171c;
-  width: 15%;
-  max-width: 15%;
+  width: 17%;
+  max-width: 17%;
   height: 5400px;
   display: flex;
   justify-content: center;
@@ -89,7 +85,11 @@ const Sidebar = () => {
           <SidebarWrap>
             <Navopen to="#">
               <AiIcons.AiOutlineClose
-                style={{ color: "#ffcc00" }}
+                style={{
+                  color: "#ffcc00",
+                  fontSize: "20px",
+                  fontWeight: "700",
+                }}
                 onClick={showSidebar}
               />
             </Navopen>

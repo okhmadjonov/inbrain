@@ -9,10 +9,13 @@
     position: relative;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 20% 80%;
+    // display: flex;
+    // grid-template-columns: 1fr 1fr;
+    grid-template-columns: 18% 75%;
 
-    .home__container {
+    .app__home__container {
       width: 100%;
+      max-width: 1289px;
       height: 100vh;
       margin: 0 auto;
     }

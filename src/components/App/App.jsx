@@ -17,7 +17,7 @@ function App() {
       <div className="app">
         <div className="app__container">
           <Sidebar />
-          <div className="home__container">
+          <div className="app__home__container">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/Webdev/lesson_1" element={<HtmlMainPanel />} />

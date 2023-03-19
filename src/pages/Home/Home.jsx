@@ -157,9 +157,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home__container">
-        <div className="header">
-          <Header title={headerTitle} />
-        </div>
+        <Header title={headerTitle} />
         <div className="app__main-container">
           <CarouselCompound infinite>
             <CarouselCompound.Page>
