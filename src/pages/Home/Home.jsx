@@ -1,23 +1,3 @@
-
-import React, {useState} from "react";
-import course from '../../assets/images/verstka.png';
-import Skoro from '../../assets/images/skoro.jpg';
-import bow from '../../assets/images/bow.png';
-import foundation from '../../assets/images/foundation.png';
-import htmldemo from '../../assets/images/htmldemo.png';
-import cssdemo from '../../assets/images/cssdemo.png';
-import jsdemo from '../../assets/images/jsdemo.png';
-import phpdemo from '../../assets/images/phpdemo.png';
-import javademo from '../../assets/images/javademo.png';
-import mobiledemo from '../../assets/images/mobiledemo.png';
-import collectivework from '../../assets/images/collectivework.png';
-import student from '../../assets/images/student.png';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import petrov from '../../assets/images/petrov.png';
-import Slider from 'react-slick';
-import CarouselCompound from './slider/carousel-compound';
-
 import React from "react";
 import course from "../../assets/images/verstka.png";
 import Skoro from "../../assets/images/skoro.jpg";
@@ -36,6 +16,9 @@ import "slick-carousel/slick/slick-theme.css";
 import petrov from "../../assets/images/petrov.png";
 import Slider from "react-slick";
 import CarouselCompound from "./slider/carousel-compound";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import LeftArrow from "../../assets/images/left-arrow.svg";
 import RightArrow from "../../assets/images/right-arrow.svg";
@@ -127,8 +110,7 @@ const Home = () => {
     ],
   };
 
-
-const activedata = [
+  const activedata = [
     {
       id: 1,
       img: htmldemo,
@@ -168,15 +150,9 @@ const activedata = [
       title: "Mobile Dev.",
       p: "Совсем скоро",
     },
-
-]
-
-const headerTitle = "Каждый может научится новому ! Даже если страшно.";
-
   ];
 
   const headerTitle = "Каждый может научится новому ! Даже если страшно.";
-
 
   return (
     <div className="home">
