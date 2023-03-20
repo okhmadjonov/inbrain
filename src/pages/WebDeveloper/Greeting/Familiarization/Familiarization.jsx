@@ -1,15 +1,7 @@
-import React, {useState} from "react";
-import logo from '../../../../assets/images/logo.png';
-import users from '../../../../assets/images/users.png';
+import React from "react";
 import bightml from '../../../../assets/images/bightml.png';
 import littlehtml from '../../../../assets/images/littlehtml.png';
 import foundation from '../../../../assets/images/foundation.png';
-import {BiSearchAlt} from 'react-icons/bi';
-
-import { IconContext } from 'react-icons';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import { Link } from 'react-router-dom';
 import './familiarization.scss';
 import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
@@ -27,7 +19,10 @@ const titlehead = 'Текущий урок: Привет посмотри вид
         <div className="familiarpage">
 
             <div className="familiarcontainer">
-                <Header title={titlehead} />
+                <div>
+                    <Header title={titlehead} />
+
+                </div>
                 <div className="aboutlesson">
                     <div className="introduction">Привет мы команда Inbrain - посмотри пожалуйста видео чтобы <br/> продолжить дальше обучение  : )</div>
                     <div className="aboutfoundation">
@@ -90,4 +85,4 @@ const titlehead = 'Текущий урок: Привет посмотри вид
     )
 }
 
-export default Familiarization
+export default Familiarization;

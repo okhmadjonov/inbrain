@@ -22,7 +22,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/Webdev/lesson_1" element={<HtmlMainPanel />} />
               <Route path="/Webdev/Task_1" element={<MainTasksPanel />} />
-              <Route path="/Familiarization" element={<Familiarization />} />
+              <Route path="/Familiarization" element={<Familiarization/>} /> 
               <Route path="/Salutation" element={<Salutation />} />
               <Route path="/Listlessons" element={<Listlessons />} />
               <Route path="/Userpage" element={<User />} />

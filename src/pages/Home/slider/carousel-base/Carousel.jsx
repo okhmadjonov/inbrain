@@ -42,7 +42,7 @@ export const Carousel = ({ children }) => {
 
   return (
     <div className="main-container">
-      <div className='left'>
+      <div >
   
         <FaChevronLeft className="arrow" onClick={handleLeftArrowClick} />
 
