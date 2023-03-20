@@ -20,7 +20,6 @@ const Nav = styled.div`
   text-align: center;
   display: flex;
   justify-content: center;
-
 `;
 
 const Navopen = styled.div`
@@ -54,13 +53,12 @@ const SidebarNav = styled.nav`
   justify-content: center;
   position: absolute;
   top: 0;
-  left: ${({ sidebar }) => (sidebar ? "0" : '-200%')};
+  left: ${({ sidebar }) => (sidebar ? "0" : "-200%")};
   transition: 350ms;
 `;
 
 const SidebarWrap = styled.div`
   width: 100%;
-  
 `;
 
 const Sidebar = () => {
@@ -72,8 +70,11 @@ const Sidebar = () => {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
-          <Navopen style={{marginLeft: '100px'}}>
-            <FaIcons.FaChevronRight style={{width: '40px', justifyContent: 'center'}} onClick={showSidebar} />
+          <Navopen style={{ marginLeft: "100px" }}>
+            <FaIcons.FaChevronRight
+              style={{ width: "40px", justifyContent: "center" }}
+              onClick={showSidebar}
+            />
           </Navopen>
 
           <NavIcon to="#" onClick={showSidebar}>
@@ -99,7 +100,7 @@ const Sidebar = () => {
                 background: "none",
                 color: "#FFFFFF",
                 marginLeft: "7%",
-                border: 'none',
+                border: "none",
               }}>
               <AccordionSummary
                 expandIcon={<MdExpandMore style={{ fontSize: "2.5rem" }} />}
@@ -285,29 +286,48 @@ const Sidebar = () => {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography style={{ display: "grid", gap: "20px" }}>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                <Typography
+                  style={{ display: "grid", gap: "20px", cursor: "pointer" }}>
+                  <Link
+                    to="/Webdev/lesson_1"
+                    style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     Базовые элементы HTML
-                  </li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                  </Link>
+                  <Link
+                    to="/Webdev/Tags"
+                    style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     Теги HTML
-                  </li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                  </Link>
+                  <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     Заголовки
-                  </li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Абзац</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Урок 4</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Урок 5</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Урок 6</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Урок 7</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Урок 8</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Урок 9</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                  </Link>
+                  <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                    Абзац
+                  </Link>
+                  <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                    Урок 4
+                  </Link>
+                  <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                    Урок 5
+                  </Link>
+                  <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                    Урок 6
+                  </Link>
+                  <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                    Урок 7
+                  </Link>
+                  <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                    Урок 8
+                  </Link>
+                  <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                    Урок 9
+                  </Link>
+                  <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     Урок 10
-                  </li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                  </Link>
+                  <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     Урок 11
-                  </li>
+                  </Link>
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -330,7 +350,7 @@ const Sidebar = () => {
                 }
                 aria-controls="panel1a-content"
                 id="panel1a-header">
-                <Typography>
+                <Typography style={{ cursor: "pointer" }}>
                   <div
                     style={{
                       display: "flex",

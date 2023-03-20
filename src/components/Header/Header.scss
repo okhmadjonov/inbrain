@@ -8,6 +8,11 @@
   align-items: center;
   margin-top: 50px;
 
+  #search__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .logo {
     width: 30%;
     height: 100%;
@@ -24,50 +29,50 @@
     color: #000000;
   }
 
-  .Searchbar{
+  .Searchbar {
     display: flex;
     align-items: center;
     width: 555px;
     height: 68px;
     justify-content: space-between;
-    background: #F8F8FF;
+    background: #f8f8ff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-    
-    .input{
+
+    .input {
       width: 400px;
       height: 60px;
       border: none;
-      font-family: 'Inter';
+      font-family: "Inter";
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
       margin-left: 20px;
       color: #000000;
-      background: #F8F8FF;
+      background: #f8f8ff;
       border: none;
     }
-    .Search{
-        width: 56px;
-        height: 38.56px;
-        color: #ffffff;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-        border: none;
-        background: none;
-        background-color: #000000;
-        border-radius: 110.164px;
-        margin-right: 20px;
-        cursor: pointer;
-        &:hover{
-          background: #1C84FF;
-        }
-        &:active{
-          background: #ffcc00;
-        }
+    .Search {
+      width: 56px;
+      height: 38.56px;
+      color: #ffffff;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      border: none;
+      background: none;
+      background-color: #000000;
+      border-radius: 110.164px;
+      margin-right: 20px;
+      cursor: pointer;
+      &:hover {
+        background: #1c84ff;
+      }
+      &:active {
+        background: #ffcc00;
+      }
     }
   }
 
@@ -84,7 +89,6 @@
     background-color: #000000;
     border-radius: 110.164px;
     cursor: pointer;
-    
   }
 
   .languages {
