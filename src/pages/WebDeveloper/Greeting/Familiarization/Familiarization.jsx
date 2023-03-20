@@ -19,7 +19,10 @@ const titlehead = 'Текущий урок: Привет посмотри вид
         <div className="familiarpage">
 
             <div className="familiarcontainer">
-                <Header title={titlehead} />
+                <div>
+                    <Header title={titlehead} />
+
+                </div>
                 <div className="aboutlesson">
                     <div className="introduction">Привет мы команда Inbrain - посмотри пожалуйста видео чтобы <br/> продолжить дальше обучение  : )</div>
                     <div className="aboutfoundation">
@@ -82,4 +85,4 @@ const titlehead = 'Текущий урок: Привет посмотри вид
     )
 }
 
-export default Familiarization
+export default Familiarization;
