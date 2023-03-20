@@ -192,22 +192,23 @@ const Sidebar = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header">
                 <Typography>
-                  <div
+                  <Link to={'/Familiarization'}
                     style={{
                       display: "flex",
                       textAlign: "center",
                       alignItems: "center",
                       fontSize: "18px",
                       fontFamily: "Inter",
+                      color: '#FFFFFF'
                     }}>
                     Приветствие
-                  </div>
+                  </Link >
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography style={{ display: "grid", gap: "20px" }}>
                   <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                    <Link style={{ color: "#FFFFFF" }}>Привет</Link>
+                    <Link to={'/Salutation'} style={{ color: "#FFFFFF" }}>Привет</Link>
                   </li>
                   <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     <Link style={{ color: "#FFFFFF" }}>
@@ -220,7 +221,7 @@ const Sidebar = () => {
                     </Link>
                   </li>
                   <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                    <Link style={{ color: "#FFFFFF" }}>
+                    <Link to={'Listlessons'} style={{ color: "#FFFFFF" }}>
                       Как устроено обучение
                     </Link>
                   </li>
@@ -286,28 +287,18 @@ const Sidebar = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography style={{ display: "grid", gap: "20px" }}>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                    Базовые элементы HTML
-                  </li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                    Теги HTML
-                  </li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                    Заголовки
-                  </li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Абзац</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Урок 4</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Урок 5</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Урок 6</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Урок 7</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Урок 8</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>Урок 9</li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                    Урок 10
-                  </li>
-                  <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                    Урок 11
-                  </li>
+                  <li style={{ color: "#FFFFFF", fontSize: "12px", cursor: 'pointer' }}>Базовые элементы HTML</li>
+                  <li style={{ color: "#FFFFFF", fontSize: "12px", cursor: 'pointer' }}>Теги HTML</li>
+                  <li style={{ color: "#FFFFFF", fontSize: "12px", cursor: 'pointer' }}>Заголовки</li>
+                  <li style={{ color: "#FFFFFF", fontSize: "12px", cursor: 'pointer'}}>Абзац</li>
+                  <li style={{ fontSize: "12px", cursor: 'pointer' }}><Link style={{color: '#FFFFFF'}} to={'/Lesson4/11'}>Урок 4</Link></li>
+                  <li style={{ color: "#FFFFFF", fontSize: "12px", cursor: 'pointer' }}>Урок 5</li>
+                  <li style={{ color: "#FFFFFF", fontSize: "12px", cursor: 'pointer' }}>Урок 6</li>
+                  <li style={{ color: "#FFFFFF", fontSize: "12px", cursor: 'pointer' }}>Урок 7</li>
+                  <li style={{ color: "#FFFFFF", fontSize: "12px", cursor: 'pointer' }}>Урок 8</li>
+                  <li style={{ color: "#FFFFFF", fontSize: "12px", cursor: 'pointer' }}>Урок 9</li>
+                  <li style={{ color: "#FFFFFF", fontSize: "12px", cursor: 'pointer' }}>Урок 10</li>
+                  <li style={{ color: "#FFFFFF", fontSize: "12px", cursor: 'pointer' }}>Урок 11</li>
                 </Typography>
               </AccordionDetails>
             </Accordion>
