@@ -30,13 +30,15 @@ import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
 
 const Home = () => {
-  const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <img src={leftgroup} alt="prevArrow" {...props} />
+  const SlickArrowRight = ({ currentSlide, slideCount, style, ...props }) => (
+    <img style={{ ...style, width: '60px', height: '60px', marginTop: '60px' }} src={rightgroup} alt="nextArrow" {...props} />
   );
 
-  const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-    <img src={rightgroup} alt="nextArrow" {...props} />
+  const SlickArrowLeft = ({ currentSlide, slideCount, style,  ...props }) => (
+    <img style={{ ...style, width: '60px', height: '60px', marginTop: '60px' }} src={leftgroup} alt="prevArrow" {...props} />
+    
   );
+
   const data = [
     {
       id: 1,
@@ -81,9 +83,8 @@ const Home = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 0,
-    prevArrow: <SlickArrowLeft />,
     nextArrow: <SlickArrowRight />,
+    prevArrow: <SlickArrowLeft />,
     responsive: [
       {
         breakpoint: 1024,
