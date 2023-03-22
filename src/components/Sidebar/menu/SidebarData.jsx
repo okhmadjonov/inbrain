@@ -103,14 +103,14 @@ export const SidebarData = [
         iconOpened: <RiIcons.RiArrowUpSFill />,
       },
       {
-        title: "CheckTasks",
+        title: "Tasks",
         path: "/Webdev/Task_1",
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpened: <RiIcons.RiArrowUpSFill />,
       },
       {
         title: "Теги HTML",
-        path: "/Webdev/Lorem",
+        path: "/Webdev/Tags",
       },
       {
         title: "Заголовки",
