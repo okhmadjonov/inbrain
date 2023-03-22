@@ -32,11 +32,11 @@ import Familiarization from "../WebDeveloper/Greeting/Familiarization/Familiariz
 
 const Home = () => {
   const SlickArrowRight = ({ currentSlide, slideCount, style, ...props }) => (
-    <img style={{ ...style, width: '60px', height: '60px', marginTop: '60px' }} src={rightgroup} alt="nextArrow" {...props} />
+    <img style={{ ...style, width: '60px', height: '60px', marginTop: '60px', marginRight: '-22px' }} src={rightgroup} alt="nextArrow" {...props} />
   );
 
   const SlickArrowLeft = ({ currentSlide, slideCount, style,  ...props }) => (
-    <img style={{ ...style, width: '60px', height: '60px', marginTop: '60px' }} src={leftgroup} alt="prevArrow" {...props} />
+    <img style={{ ...style, width: '60px', height: '60px', marginTop: '60px', zIndex: '999' }} src={leftgroup} alt="prevArrow" {...props} />
     
   );
 
