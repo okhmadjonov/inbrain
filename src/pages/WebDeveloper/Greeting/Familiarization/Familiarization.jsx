@@ -5,6 +5,7 @@ import foundation from '../../../../assets/images/foundation.png';
 import './familiarization.scss';
 import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
+import { Link } from "react-router-dom";
 
 
 
@@ -67,7 +68,7 @@ const titlehead = 'Текущий урок: Привет посмотри вид
                         <p className="topro">Веб-разработчик с нуля до PRO</p>
                         <p className="learnjs">Вы научитесь верстать сайты на HTML и <br/> CSS, изучите JavaScript. И сделаете <br/> первые проекты для портфолио.</p>
                         <div className="startcourse">
-                            <button className="start_btn">Начать вводный курс</button>
+                            <Link to={'/Salutation'} className="start_btn">Начать вводный курс</Link>
                             <p className="durationcourse">10 месяцев</p>
                         </div>
                     </div>
