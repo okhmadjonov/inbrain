@@ -308,9 +308,13 @@ const Sidebar = () => {
                   <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     Абзац
                   </Link>
+
+                  <Link to={'/Lesson4/11'} style={{ color: "#FFFFFF", fontSize: "12px" }}>
+
                   <Link
                     to="/Listlessons"
                     style={{ color: "#FFFFFF", fontSize: "12px" }}>
+
                     Урок 4
                   </Link>
                   <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
