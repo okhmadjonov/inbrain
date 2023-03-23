@@ -20,19 +20,40 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
-import leftgroup from '../../assets/images/leftgroup.png';
-import rightgroup from '../../assets/images/rightgroup.png';
+import leftgroup from "../../assets/images/leftgroup.png";
+import rightgroup from "../../assets/images/rightgroup.png";
 import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
 import Video from '../../assets/images/youtube.png';
 const Home = () => {
   const SlickArrowRight = ({ currentSlide, slideCount, style, ...props }) => (
-    <img style={{ ...style, width: '60px', height: '60px', marginTop: '60px', marginRight: '-22px' }} src={rightgroup} alt="nextArrow" {...props} />
+    <img
+      style={{
+        ...style,
+        width: "60px",
+        height: "60px",
+        marginTop: "60px",
+        marginRight: "-22px",
+      }}
+      src={rightgroup}
+      alt="nextArrow"
+      {...props}
+    />
   );
 
-  const SlickArrowLeft = ({ currentSlide, slideCount, style,  ...props }) => (
-    <img style={{ ...style, width: '60px', height: '60px', marginTop: '60px', zIndex: '999' }} src={leftgroup} alt="prevArrow" {...props} />
-    
+  const SlickArrowLeft = ({ currentSlide, slideCount, style, ...props }) => (
+    <img
+      style={{
+        ...style,
+        width: "60px",
+        height: "60px",
+        marginTop: "60px",
+        zIndex: "999",
+      }}
+      src={leftgroup}
+      alt="prevArrow"
+      {...props}
+    />
   );
 
   const data = [
@@ -155,7 +176,6 @@ const Home = () => {
 
   return (
     <>
-
       <div className="home">
         <div className="home__container">
           <Header title={headerTitle} />
@@ -243,7 +263,11 @@ const Home = () => {
                 <>
                   <div className="item">
                     <div>
-                      <img className="itemdemo" src={item.img} alt="Item demo" />
+                      <img
+                        className="itemdemo"
+                        src={item.img}
+                        alt="Item demo"
+                      />
                       <div className="itemhead">{item.title}</div>
                     </div>
 
@@ -254,7 +278,11 @@ const Home = () => {
               {soon.map((item) => (
                 <div className="item">
                   <div>
-                    <img className="itemdemo" src={item.img} alt="Item demo 2" />
+                    <img
+                      className="itemdemo"
+                      src={item.img}
+                      alt="Item demo 2"
+                    />
                     <div className="itemhead">{item.title}</div>
                   </div>
                   <p className="itemhead">{item.p}</p>
@@ -269,7 +297,9 @@ const Home = () => {
 
             <div className="tasksdeveloper">
               <div className="tasks">
-                <p className="writecode">Писать код на HTML, CSS и JavaScript</p>
+                <p className="writecode">
+                  Писать код на HTML, CSS и JavaScript
+                </p>
                 <p className="createwebsite">
                   Разрабатывать сайты и веб-приложения
                 </p>
@@ -324,9 +354,9 @@ const Home = () => {
           <div className="reviews_part">
             <div className="reviewhead">Что говорят о нас студенты ?</div>
             <p className="reviewtxt">
-              Если вы хотите получить знания и поменять специализацию, или освоить
-              самую <br /> востребованную профессию во всем мире то вы правильно{" "}
-              <br /> сделали что выбрали нас !
+              Если вы хотите получить знания и поменять специализацию, или
+              освоить самую <br /> востребованную профессию во всем мире то вы
+              правильно <br /> сделали что выбрали нас !
             </p>
             <div className="comment_part">
               <Slider {...settings}>
@@ -344,11 +374,10 @@ const Home = () => {
               </Slider>
             </div>
           </div>
-          <Footer/>
+          <Footer />
         </div>
-      </div>    
+      </div>
     </>
-
   );
 };
 

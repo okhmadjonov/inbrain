@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
 import Circle from "./circle/Circle";
 import Lesson_1 from "./lesson_1/Lesson_1";
@@ -73,6 +74,7 @@ const MainPanel = () => {
           {step2 && <Lesson_2 />}
           {step3 && <Lesson_3 />}
         </div>
+        <Footer />
       </div>
     </div>
   );

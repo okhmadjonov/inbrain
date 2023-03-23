@@ -1,24 +1,25 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Html_Task_1.scss";
+import "./Task_Result.scss";
 import question from "../../../../../assets/images/question.png";
 import ref from "../../../../../assets/images/ref.png";
 
 import { FaTimes, FaArrowRight } from "react-icons/fa";
 import Footer from "../../../../../components/Footer/Footer";
+import Header from "../../../../../components/Header/Header";
+import { BsTypeH3 } from "react-icons/bs";
 
-const Html_Task_1 = () => {
-  const [active1, setActive1] = useState(true);
-  const [active2, setActive2] = useState(true);
-  const handleClick1 = () => {
-    setActive1((current) => !current);
-  };
-  const handleClick2 = () => {
-    setActive2((current) => !current);
-  };
+const Task_Result = () => {
+  const title = (
+    <h3>
+      Текущий урок: Приветствие / Привет /{" "}
+      <span style={{ color: "#1c84ff" }}>1</span> из 14
+    </h3>
+  );
   return (
     <div className="html__tasks">
       <div className="tasks__container">
+        <Header title={title} />
         <div className="tasks__inner">
           <div className="task1__card">
             <div className="task1__header">
@@ -79,24 +80,6 @@ const Html_Task_1 = () => {
                           <span>button</span>&gt;
                         </p>
                       </div>
-                      <div className={active1 ? "modal__info" : " hideModal"}>
-                        <div className="info">
-                          <div className="info__container">
-                            <div className="close" onClick={handleClick1}>
-                              <span className="closeIcon">
-                                {" "}
-                                <FaTimes />
-                              </span>
-                            </div>
-                            <div className="title">
-                              <p>Это тренажёр, или окно ответа</p>
-                            </div>
-                            <div className="subtitle">
-                              <p>Сюда можно писать код.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                   <div className="body__left-bottom">
@@ -135,28 +118,6 @@ const Html_Task_1 = () => {
                       <div className="result">
                         <button>Hello world</button>
                       </div>
-                      <div className={active2 ? "result__info" : " hideModal"}>
-                        <div className="info2">
-                          <div className="info2__container">
-                            <div className="close" onClick={handleClick2}>
-                              <span className="closeIcon">
-                                {" "}
-                                <FaTimes />
-                              </span>
-                            </div>
-                            <div className="title">
-                              <p>Окно результата</p>
-                            </div>
-                            <div className="subtitle">
-                              <p>
-                                Когда вы напишете код и нажмёте кнопку
-                                «Проверить», здесь появится результат, как в
-                                браузере.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                   <div className="body__right-bottom">
@@ -184,4 +145,4 @@ const Html_Task_1 = () => {
   );
 };
 
-export default Html_Task_1;
+export default Task_Result;
