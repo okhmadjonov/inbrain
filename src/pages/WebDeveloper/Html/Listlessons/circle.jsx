@@ -1,21 +1,22 @@
+<<<<<<< HEAD
+import React from 'react';
+import 'react-input-range/lib/css/index.css';
+import InputRange from 'react-input-range';
+=======
 import React, { useState } from "react";
 import "./Listlesson.scss";
 import CircleSlider from "./CircleSlider";
 const Circlepart = () => {
   const [count, setCount] = useState(1);
+>>>>>>> e0823ed109334f8a14f39a95c6c6de0743de3d8c
 
-  let step1 = false,
-    step2 = false,
-    step3 = false,
-    step4 = false,
-    step5 = false,
-    step6 = false,
-    step7 = false,
-    step8 = false,
-    step9 = false,
-    step10 = false,
-    step11 = false;
+class Circlepart extends React.Component {
+  constructor(props) {
+    super(props);
 
+<<<<<<< HEAD
+    this.state = { value : 4}
+=======
   switch (count) {
     case 1:
       step1 = true;
@@ -54,13 +55,17 @@ const Circlepart = () => {
       break;
     default:
       step1 = true;
+>>>>>>> e0823ed109334f8a14f39a95c6c6de0743de3d8c
   }
 
-  return (
-    <div className="main__html">
-      <CircleSlider setCount={setCount} />
-    </div>
-  );
-};
+  render() {
+    return (
+      <InputRange
+        maxValue={11}
+        value={this.state.value}
+        onChange={value => this.setState({ value })} />
+    );
+  }
+}
 
 export default Circlepart;

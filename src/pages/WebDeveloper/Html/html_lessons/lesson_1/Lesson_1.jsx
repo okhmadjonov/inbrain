@@ -64,10 +64,10 @@ const Lesson_1 = (props) => {
                     <div className="bottom">
                       {" "}
                       <p>
-                        &lt;<span style={{ color: "red" }}>button</span>&gt;
-                        Кнопка с надписью &lt;/
-                        <span style={{ color: "red" }}>button</span>
-                        &gt;{" "}
+                        <span style={{ color: "red" }}>&lt;button&gt;</span>
+                        Кнопка с надписью 
+                        <span style={{ color: "red" }}>&lt;/button&gt;</span>
+                        {" "}
                       </p>
                     </div>
                   </div>
