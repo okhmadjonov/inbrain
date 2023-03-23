@@ -12,6 +12,7 @@ import MainTasksPanel from "../../pages/WebDeveloper/Html/html_tasks/MainTasksPa
 import "./App.scss";
 import Tags from "../../pages/Handbook/Html/tags/Tags";
 import Lessonfour from "../../pages/WebDeveloper/Html/Listlessons/Listlesson";
+import Result from "../../pages/WebDeveloper/Html/html_tasks/results/Task_Result";
 
 function App() {
   return (
@@ -28,8 +29,9 @@ function App() {
               <Route path="/Familiarization" element={<Familiarization />} />
               <Route path="/Salutation" element={<Salutation />} />
               <Route path="/Listlessons" element={<Listlessons />} />
+              <Route path="/Result" element={<Result />} />
               <Route path="/Userpage" element={<User />} />
-              <Route path="/Lesson4/11" element={<Lessonfour/>} />
+              <Route path="/Lesson4/11" element={<Lessonfour />} />
               <Route path="*" element={<Navigate to="/" replace={true} />} />
             </Routes>
           </div>

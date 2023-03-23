@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
 import Html_Task_1 from "./task_1/Html_Task_1";
 
@@ -16,6 +17,7 @@ const MainTasksPanel = () => {
           <Header title={title} />
         </div>
         <Html_Task_1 />
+        <Footer />
       </div>
     </div>
   );
