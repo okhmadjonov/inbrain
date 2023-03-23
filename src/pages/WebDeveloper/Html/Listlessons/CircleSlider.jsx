@@ -19,7 +19,7 @@ const MainContainer = styled.div`
 `;
 
 const MainContainerLeft = styled.div`
-  width: 75%;
+  width: 100%;
 `;
 
 const StepContainer = styled.div`
@@ -112,14 +112,7 @@ const Circle = ({ setCount }) => {
           <StepContainer width={width}>
             {steps.map(({ step, label }) => (
               <StepWrapper key={step}>
-                <StepStyle
-                  onClick={() => {
-                    setActiveStep(step);
-                    setCount(step);
-                  }}
-                  qadam={
-                    activeStep >= step ? "completed" : "incomplete"
-                  }></StepStyle>
+                  
               </StepWrapper>
             ))}
           </StepContainer>
