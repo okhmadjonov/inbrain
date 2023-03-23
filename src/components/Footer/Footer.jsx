@@ -1,19 +1,19 @@
- import React from "react";
- import "./Footer.scss";
- import logofooter from "../../assets/images/logofooter.png";
- import footlocation from "../../assets/images/footlocation.png";
- import footphone from "../../assets/images/footphone.png";
- import foottg from "../../assets/images/foottg.png";
- import foottube from "../../assets/images/foottube.png";
- import footinsta from "../../assets/images/footinsta.png";
- const Footer = () => {
-   return (
-     <div className="footer">
-       <div className="footpart">
-         <div className="footadress">
-           <img src={logofooter} alt="Logo" />
-           <div className="adresses">
-             <div className="adress">
+import React from "react";
+import "./Footer.scss";
+import logofooter from "../../assets/images/logofooter.png";
+import footlocation from "../../assets/images/footlocation.png";
+import footphone from "../../assets/images/footphone.png";
+import foottg from "../../assets/images/foottg.png";
+import foottube from "../../assets/images/foottube.png";
+import footinsta from "../../assets/images/footinsta.png";
+const Footer = () => {
+  return (
+    <div className="footer">
+      <div className="footpart">
+        <div className="footadress">
+          <img src={logofooter} alt="Logo" />
+          <div className="adresses">
+            <div className="adress">
               <img className="location" src={footlocation} alt="Location" />
               <p className="adressoffice">
                 39, Mukhammad Yusuf Street, <br /> Tashkent, 100077
