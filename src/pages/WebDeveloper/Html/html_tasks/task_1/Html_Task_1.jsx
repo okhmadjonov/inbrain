@@ -5,6 +5,7 @@ import question from "../../../../../assets/images/question.png";
 import ref from "../../../../../assets/images/ref.png";
 
 import { FaTimes, FaArrowRight } from "react-icons/fa";
+import Footer from "../../../../../components/Footer/Footer";
 
 const Html_Task_1 = () => {
   const [active1, setActive1] = useState(true);
@@ -178,6 +179,7 @@ const Html_Task_1 = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );
