@@ -19,7 +19,7 @@ const MainContainer = styled.div`
 `;
 
 const MainContainerLeft = styled.div`
-  width: 75%;
+  width: 100%;
 `;
 
 const StepContainer = styled.div`
@@ -103,7 +103,7 @@ const Circle = ({ setCount }) => {
 
   const totalSteps = steps.length;
 
-  const width = `${(100 / (totalSteps - 1)) * (activeStep - 1)}%`;
+  const width = `${(150 / (totalSteps - 1)) * (activeStep - 1)}%`;
 
   return (
     <CircleContainer>

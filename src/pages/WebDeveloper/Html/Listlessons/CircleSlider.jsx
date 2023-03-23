@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 const CircleContainer = styled.div`
   width: 100%;
-  max-width: 1920px;
+  /* max-width: 1920px; */
   height: auto;
   margin: 0 auto;
 `;
 
 const MainContainer = styled.div`
   width: 100%;
-  max-width: 1336px;
+  /* max-width: 1336px; */
   height: 200px;
   margin: 0 auto;
   display: flex;
@@ -19,7 +19,7 @@ const MainContainer = styled.div`
 `;
 
 const MainContainerLeft = styled.div`
-  width: 75%;
+  width: 100%;
 `;
 
 const StepContainer = styled.div`
@@ -74,16 +74,6 @@ const StepStyle = styled.div`
   }
 `;
 
-const CircleCounter = styled.div`
-  width: 20%;
-  height: 100%;
-  display: flex;
-  font-weight: 700;
-  font-size: 70px;
-  align-items: center;
-  text-align: justify;
-  justify-content: flex-end;
-`;
 const Circle = ({ setCount }) => {
   const [activeStep, setActiveStep] = useState(1);
   const steps = [
@@ -98,7 +88,6 @@ const Circle = ({ setCount }) => {
     { step: 9 },
     { step: 10 },
     { step: 11 },
-
   ];
 
   const totalSteps = steps.length;
@@ -112,19 +101,11 @@ const Circle = ({ setCount }) => {
           <StepContainer width={width}>
             {steps.map(({ step, label }) => (
               <StepWrapper key={step}>
-                <StepStyle
-                  onClick={() => {
-                    setActiveStep(step);
-                    setCount(step);
-                  }}
-                  qadam={
-                    activeStep >= step ? "completed" : "incomplete"
-                  }></StepStyle>
+                  
               </StepWrapper>
             ))}
           </StepContainer>
         </MainContainerLeft>
-
       </MainContainer>
     </CircleContainer>
   );

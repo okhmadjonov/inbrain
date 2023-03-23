@@ -11,9 +11,13 @@ import MainTasksPanel from "../../pages/WebDeveloper/Html/html_tasks/MainTasksPa
 
 import "./App.scss";
 import Tags from "../../pages/Handbook/Html/tags/Tags";
+
 import LessonModal from "../../pages/WebDeveloper/Html/html_lessons/lesson_1/LessonModal";
 import Context from "../Context/Context";
 const obj = {}
+
+import Lessonfour from "../../pages/WebDeveloper/Html/Listlessons/Listlesson";
+
 function App() {
   return (
     <Context.Provider value={obj}>
@@ -30,7 +34,11 @@ function App() {
               <Route path="/Salutation" element={<Salutation />} />
               <Route path="/Listlessons" element={<Listlessons />} />
               <Route path="/Userpage" element={<User />} />
+
               <Route path="/modal" element={<LessonModal />} />
+
+              <Route path="/Lesson4/11" element={<Lessonfour/>} />
+
               <Route path="*" element={<Navigate to="/" replace={true} />} />
             </Routes>
           </div>

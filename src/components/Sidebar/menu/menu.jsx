@@ -193,22 +193,26 @@ const Sidebar = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header">
                 <Typography>
-                  <div
+                  <Link
+                    to={"/Familiarization"}
                     style={{
                       display: "flex",
                       textAlign: "center",
                       alignItems: "center",
                       fontSize: "18px",
                       fontFamily: "Inter",
+                      color: "#FFFFFF",
                     }}>
                     Приветствие
-                  </div>
+                  </Link>
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography style={{ display: "grid", gap: "20px" }}>
                   <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                    <Link style={{ color: "#FFFFFF" }}>Привет</Link>
+                    <Link to={"/Salutation"} style={{ color: "#FFFFFF" }}>
+                      Привет
+                    </Link>
                   </li>
                   <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     <Link style={{ color: "#FFFFFF" }}>
@@ -221,7 +225,7 @@ const Sidebar = () => {
                     </Link>
                   </li>
                   <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                    <Link style={{ color: "#FFFFFF" }}>
+                    <Link to={"Listlessons"} style={{ color: "#FFFFFF" }}>
                       Как устроено обучение
                     </Link>
                   </li>
@@ -304,7 +308,13 @@ const Sidebar = () => {
                   <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     Абзац
                   </Link>
-                  <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+
+                  <Link to={'/Lesson4/11'} style={{ color: "#FFFFFF", fontSize: "12px" }}>
+
+                  <Link
+                    to="/Listlessons"
+                    style={{ color: "#FFFFFF", fontSize: "12px" }}>
+
                     Урок 4
                   </Link>
                   <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>

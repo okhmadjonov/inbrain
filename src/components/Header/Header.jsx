@@ -40,15 +40,15 @@ const Header = (props) => {
           <BiSearchAlt />
         </Button>
       </InputGroup>
-      <button
+      <div
         id="search__btn"
         style={{
           display: isShown ? "block" : "none",
         }}
         onClick={handleClick}
         className="search">
-        <BiSearchAlt />
-      </button>
+        <BiSearchAlt className="search_icon" />
+      </div>
       <div className="languages">
         <button className="languagebtn">RU</button>
         <button className="languagebtn">UZ</button>
