@@ -16,20 +16,15 @@ import "slick-carousel/slick/slick-theme.css";
 import petrov from "../../assets/images/petrov.png";
 import Slider from "react-slick";
 import CarouselCompound from "./slider/carousel-compound";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import LeftArrow from "../../assets/images/left-arrow.svg";
-import RightArrow from "../../assets/images/right-arrow.svg";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import leftgroup from '../../assets/images/leftgroup.png';
 import rightgroup from '../../assets/images/rightgroup.png';
 import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
-import Familiarization from "../WebDeveloper/Greeting/Familiarization/Familiarization";
-
+import Video from '../../assets/images/youtube.png';
 const Home = () => {
   const SlickArrowRight = ({ currentSlide, slideCount, style, ...props }) => (
     <img style={{ ...style, width: '60px', height: '60px', marginTop: '60px', marginRight: '-22px' }} src={rightgroup} alt="nextArrow" {...props} />
@@ -167,13 +162,18 @@ const Home = () => {
           <div className="app__main-container">
             <CarouselCompound infinite>
               <CarouselCompound.Page>
-                <img src={course} className="item item-1" alt="Color" />
+                <div className="item item-1" alt="Color"   >
+                  <img style={{zIndex: '999', position: 'absolute'}} src={Video} />
+
+                  <img className="course" src={course} />
+                  
+                </div>
               </CarouselCompound.Page>
               <CarouselCompound.Page>
                 <img src={Skoro} className="item item-2" alt="Skore" />
               </CarouselCompound.Page>
               <CarouselCompound.Page>
-                <img src={course} className="item item-3" alt="Skore 3" />
+                <img src={Skoro} className="item item-3" alt="Skore 3" />
               </CarouselCompound.Page>
             </CarouselCompound>
           </div>

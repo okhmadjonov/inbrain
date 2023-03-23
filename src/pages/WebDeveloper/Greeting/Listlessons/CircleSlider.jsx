@@ -26,7 +26,6 @@ const StepContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
   position: relative;
 
   :before {
@@ -62,6 +61,7 @@ const StepStyle = styled.div`
   height: 18px;
   border-radius: 50%;
   cursor: pointer;
+  margin-left: 77px;
   background-color: ${({ qadam }) =>
     qadam === "completed" ? "#1C84FF" : "#000"};
   transition: 0.4s ease;
@@ -103,7 +103,7 @@ const Circle = ({ setCount }) => {
 
   const totalSteps = steps.length;
 
-  const width = `${(150 / (totalSteps - 1)) * (activeStep - 1)}%`;
+  const width = `${(100 / (totalSteps - 1)) * (activeStep - 2)}%`;
 
   return (
     <CircleContainer>
