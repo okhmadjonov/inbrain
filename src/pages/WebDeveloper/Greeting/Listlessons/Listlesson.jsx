@@ -50,7 +50,7 @@ const listtitle = 'Текущий урок: Приветствие'
                                 <button className="continuelearnbtn">Продолжить обучение <AiOutlineRight/></button>
                             </div>
                             <div>
-                                <img className="numberlesson" src={numberlesson} />
+                                <img alt="images" className="numberlesson" src={numberlesson} />
                             </div>
                         </div>
 
@@ -60,39 +60,39 @@ const listtitle = 'Текущий урок: Приветствие'
                             <div className="courscard">
                                 
                                     <div className="yourcoursescard">
-                                        <img className="itemimg" src={Hi} />
+                                        <img alt="images" className="itemimg" src={Hi} />
                                         <p className="itemtitle" >Привет</p>
                                     </div>
                                     <div className="yourcoursescard">
-                                        <img className="itemimg" src={aboutwebdev} />
+                                        <img alt="images" className="itemimg" src={aboutwebdev} />
                                         <p className="itemtitle" >Что такое <br/>веб-разработка</p>
                                     </div>
                                     <div className="yourcoursescard">
-                                        <img className="itemimg" src={employment} />
+                                        <img alt="images" className="itemimg" src={employment} />
                                         <p className="itemtitle" >Про <br/> Трудоустройство</p>
                                     </div>
                                     <div className="yourcoursescard">
-                                        <img className="itemimg" src={Howtraining} />
+                                        <img alt="images" className="itemimg" src={Howtraining} />
                                         <p className="itemtitle" >Как устроено <br/> обучение</p>
                                     </div>
                                     <div className="yourcoursescard">
-                                        <img className="itemimg" src={Escortteam} />
+                                        <img alt="images" className="itemimg" src={Escortteam} />
                                         <p className="itemtitle" >Команда <br/>сопровождения</p>
                                     </div>
                                     <div className="yourcoursescard">
-                                        <img className="itemimg" src={learningprogramm} />
+                                        <img alt="images" className="itemimg" src={learningprogramm} />
                                         <p className="itemtitle" >Программа <br/> обучения</p>
                                     </div>
                                     <div className="yourcoursescard">
-                                        <img className="itemimg" src={petprojects} />
+                                        <img alt="images" className="itemimg" src={petprojects} />
                                         <p className="itemtitle" >Какие проекты <br/> предстоит делать?</p>
                                     </div>
                                     <div className="yourcoursescard">
-                                        <img className="itemimg" src={realprojects} />
+                                        <img alt="images" className="itemimg" src={realprojects} />
                                         <p className="itemtitle" >Про реальные <br/> проекты</p>
                                     </div>
                                     <div className="yourcoursescard">
-                                        <img className="itemimg" src={timeforlearn} />
+                                        <img alt="images" className="itemimg" src={timeforlearn} />
                                         <p className="itemtitle" >Сколько времени <br/>придётся тратить <br/>на учёбу?</p>
                                     </div>
 
