@@ -167,6 +167,11 @@ const Html_Task_1 = () => {
                       <div className="start__again">
                         <p>Начать заного</p>
                       </div>
+                      <div className="check__task">
+                        <Link className="check" to="/Result">
+                          Проверить задание <FaArrowRight />
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
