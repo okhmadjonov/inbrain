@@ -126,7 +126,11 @@ const Sidebar = () => {
                     </div>
 
                     <div className="ml-3">
-                      <p className="m-0 p-0">UserName</p>
+                      <p
+                        className="m-0 p-0"
+                        style={{ fontSize: "18px", color: "#fff" }}>
+                        UserName
+                      </p>
                       <span style={{ fontSize: "11px", color: "#ffcc00" }}>
                         balance: 99 000 сум
                       </span>
@@ -284,6 +288,7 @@ const Sidebar = () => {
                       display: "flex",
                       textAlign: "center",
                       alignItems: "center",
+                      color: "#FFFFFF",
                     }}>
                     HTML
                   </div>
@@ -476,6 +481,7 @@ const Sidebar = () => {
                       display: "flex",
                       textAlign: "center",
                       alignItems: "center",
+                      color: "#FFFFFF",
                     }}>
                     HTML
                   </div>
@@ -621,6 +627,7 @@ const Sidebar = () => {
                       display: "flex",
                       textAlign: "center",
                       alignItems: "center",
+                      color: "#FFFFFF",
                     }}>
                     HTML
                   </div>
