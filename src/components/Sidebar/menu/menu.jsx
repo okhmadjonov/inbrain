@@ -284,6 +284,7 @@ const Sidebar = () => {
                       display: "flex",
                       textAlign: "center",
                       alignItems: "center",
+                      color: '#FFFFFF'
                     }}>
                     HTML
                   </div>
@@ -308,13 +309,8 @@ const Sidebar = () => {
                   <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     Абзац
                   </Link>
-
                   <Link
-                    to={"/Lesson4/11"}
-                    style={{ color: "#FFFFFF", fontSize: "12px" }}></Link>
-
-                  <Link
-                    to="/Listlessons"
+                    to="/Lesson4/11"
                     style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     Урок 4
                   </Link>
