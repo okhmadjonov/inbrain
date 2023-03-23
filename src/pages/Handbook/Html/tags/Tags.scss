@@ -1,3 +1,6 @@
+.main_tags{
+  position: relative;
+}
 .guide {
   padding: 30px;
   background: #f8f8ff;
@@ -49,6 +52,9 @@
   padding: 30px 0px;
   .table_left {
     ul {
+      li:hover{
+        color:#1c84ff;
+      }
       li::before {
         content: "•";
         position: absolute;
@@ -58,6 +64,7 @@
     }
   }
   li {
+    cursor: pointer;
     padding: 10px;
     position: relative;
     font-size: 20px;
