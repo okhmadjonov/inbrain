@@ -9,16 +9,11 @@ import "./Lesson_1.scss";
 import LessonModal from "./LessonModal";
 import Context from "../../../../../components/Context/Context";
 const Lesson_1 = (props) => {
-
-  const { modal } = useContext(Context)
-
+  const { modal } = useContext(Context);
 
   return (
     <div className="lesson_1">
-    
-    {
-      modal ? <LessonModal /> : null
-    }
+      {modal ? <LessonModal /> : null}
       <div className="lesson_1__container">
         <div className="lesson_1__content">
           <div className="lesson__html">
@@ -74,9 +69,10 @@ const Lesson_1 = (props) => {
                       {" "}
                       <p>
                         <span style={{ color: "red" }}>&lt;button&gt;</span>
-                        Кнопка с надписью 
-                        <span style={{ color: "red" }}>&lt;/button&gt;</span>
-                        {" "}
+                        Кнопка с надписью
+                        <span style={{ color: "red" }}>
+                          &lt;/button&gt;
+                        </span>{" "}
                       </p>
                     </div>
                   </div>

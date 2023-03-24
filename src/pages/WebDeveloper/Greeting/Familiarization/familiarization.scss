@@ -236,51 +236,47 @@
             border: none;
           }
 
-          .aboutcourse{
-        
+          .aboutcourse {
             width: 50%;
             margin-left: 80px;
             height: 80%;
-            color: #FFFFFF;
+            color: #ffffff;
             display: grid;
-            .kurs{
-          
+            .kurs {
               width: 37px;
               height: 21px;
-              font-family: 'Inter';
+              font-family: "Inter";
               font-style: normal;
               font-weight: 300;
               font-size: 16px;
-              color: #1C84FF;
+              color: #1c84ff;
             }
-            .topro{
-          
+            .topro {
               top: 10%;
-              font-family: 'Inter';
+              font-family: "Inter";
               font-style: normal;
               font-weight: 600;
-              font-size: 30px;    
+              font-size: 30px;
               color: #000000;
             }
-            .learnjs{ 
+            .learnjs {
               width: 100%;
-          
+
               top: 30%;
               height: 126px;
-              font-family: 'Inter';
+              font-family: "Inter";
               font-style: normal;
               font-weight: 500;
               font-size: 24px;
               line-height: 42px;
               color: #000000;
             }
-            .startcourse{
-          
+            .startcourse {
               width: 80%;
               display: flex;
               top: 80%;
               gap: 10%;
-              .start_btn{
+              .start_btn {
                 width: 65%;
                 height: 58px;
                 color: #fff;
@@ -294,20 +290,20 @@
                 display: flex;
                 border: none;
               }
-              .durationcourse{
-                  width: 120px;
-                  margin-top: 15px;
-                  color: #FFCC00;
-                  font-size: 20px;
+              .durationcourse {
+                width: 120px;
+                margin-top: 15px;
+                color: #ffcc00;
+                font-size: 20px;
               }
             }
 
-          .durationcourse {
-            width: 120px;
-            margin-top: 15px;
-            color: #ffcc00;
-            font-size: 20px;
-
+            .durationcourse {
+              width: 120px;
+              margin-top: 15px;
+              color: #ffcc00;
+              font-size: 20px;
+            }
           }
         }
       }
