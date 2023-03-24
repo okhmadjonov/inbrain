@@ -36,7 +36,7 @@ const Header = (props) => {
           aria-describedby="basic-addon2"
           style={{ outline: "none" }}
         />
-        <Button className="Search" id="button-addon2">
+        <Button className="Search" id="button-addon2" onClick={handleClick}>
           <BiSearchAlt />
         </Button>
       </InputGroup>
