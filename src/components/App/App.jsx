@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
@@ -28,10 +28,10 @@ const AppContainer = styled.div`
   /* border: 1px solid black; */
 `;
 const AppHomeContainer = styled.div`
-  width: 78%;
+  width: 77%;
   height: 100%;
   margin: 0 auto;
-  /* border: 1px solid red; */
+  /* border: 1px solid purple; */
 `;
 function App() {
   return (

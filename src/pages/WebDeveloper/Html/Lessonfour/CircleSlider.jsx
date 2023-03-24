@@ -3,14 +3,12 @@ import styled from "styled-components";
 
 const CircleContainer = styled.div`
   width: 100%;
-  /* max-width: 1920px; */
   height: auto;
   margin: 0 auto;
 `;
 
 const MainContainer = styled.div`
   width: 100%;
-  /* max-width: 1336px; */
   height: 200px;
   margin: 0 auto;
   display: flex;
@@ -57,22 +55,22 @@ const StepWrapper = styled.div`
   z-index: 1;
 `;
 
-const StepStyle = styled.div`
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: ${({ qadam }) =>
-    qadam === "completed" ? "#1C84FF" : "#000"};
-  transition: 0.4s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  :hover {
-    background-color: #1c84ff;
-    transition: 0.4s ease;
-  }
-`;
+// const StepStyle = styled.div`
+//   width: 18px;
+//   height: 18px;
+//   border-radius: 50%;
+//   cursor: pointer;
+//   background-color: ${({ qadam }) =>
+//     qadam === "completed" ? "#1C84FF" : "#000"};
+//   transition: 0.4s ease;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   :hover {
+//     background-color: #1c84ff;
+//     transition: 0.4s ease;
+//   }
+// `;
 
 const Circle = ({ setCount }) => {
   const [activeStep, setActiveStep] = useState(1);
