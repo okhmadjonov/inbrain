@@ -34,7 +34,7 @@ const listtitle = 'Текущий урок: Приветствие/Привет/
 
                          <div className="training">
                             <div>
-                                <div className="trainhead">Как устроено обучение</div>
+                                <div className="trainhead">Урок 4</div>
                                 <div className="description">
                                     Всё обучение в Практикуме разбито на спринты. <br/> Спринт — это двухнедельный отрезок, который <br/>  построен <br/> 
                                     определённым образом: сначала вы изучаете теорию, <br/>  потом практикуетесь в тренажёре, <br/> 

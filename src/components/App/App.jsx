@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Home from "../../pages/Home/Home";
 import Familiarization from "../../pages/WebDeveloper/Greeting/Familiarization/Familiarization";
@@ -38,11 +38,7 @@ function App() {
               <Route path="/Result" element={<Result />} />
               <Route path="/Userpage" element={<User />} />
 
-
               <Route path="/modal" element={<LessonModal />} />
-
-              <Route path="/Lesson4/11" element={<Lessonfour/>} />
-
 
               <Route path="/Lesson4/11" element={<Lessonfour />} />
 

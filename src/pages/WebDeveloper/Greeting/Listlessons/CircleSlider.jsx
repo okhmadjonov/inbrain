@@ -103,7 +103,7 @@ const Circle = ({ setCount }) => {
 
   const totalSteps = steps.length;
 
-  const width = `${(100 / (totalSteps - 1)) * (activeStep - 2)}%`;
+  const width = `${(100 / (totalSteps - 1)) * (activeStep - 0)}%`;
 
   return (
     <CircleContainer>

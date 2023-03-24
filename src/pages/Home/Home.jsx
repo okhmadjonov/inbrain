@@ -24,7 +24,7 @@ import leftgroup from "../../assets/images/leftgroup.png";
 import rightgroup from "../../assets/images/rightgroup.png";
 import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
-import Video from '../../assets/images/youtube.png';
+import Video from "../../assets/images/youtube.png";
 const Home = () => {
   const SlickArrowRight = ({ currentSlide, slideCount, style, ...props }) => (
     <img
@@ -182,18 +182,23 @@ const Home = () => {
           <div className="app__main-container">
             <CarouselCompound infinite>
               <CarouselCompound.Page>
-                <div className="item item-1" alt="Color"   >
-                  <img style={{zIndex: '999', position: 'absolute'}} src={Video} />
-
+                <div className="item item-1" alt="Color">
+                  <img
+                    style={{ zIndex: "999", position: "absolute" }}
+                    src={Video}
+                  />
                   <img className="course" src={course} />
-                  
                 </div>
               </CarouselCompound.Page>
               <CarouselCompound.Page>
-                <img src={Skoro} className="item item-2" alt="Skore" />
+                <div className="item item-2">
+                  <img src={Skoro}  alt="Skore" />
+                </div>
               </CarouselCompound.Page>
               <CarouselCompound.Page>
-                <img src={Skoro} className="item item-3" alt="Skore 3" />
+                <div className="item item-3">
+                  <img src={Skoro} alt="Skore 3" />
+                </div>
               </CarouselCompound.Page>
             </CarouselCompound>
           </div>
