@@ -23,12 +23,15 @@ const AppContainer = styled.div`
   position: relative;
   margin: 0 auto;
   display: flex;
-  gap: 40px;
+  justify-content: flex-start;
+  gap: 20px;
+  /* border: 1px solid black; */
 `;
 const AppHomeContainer = styled.div`
-  width: 80%;
+  width: 78%;
   height: 100%;
   margin: 0 auto;
+  /* border: 1px solid red; */
 `;
 function App() {
   return (
