@@ -98,7 +98,9 @@ const Circle = ({ setCount }) => {
         <MainContainerLeft>
           <StepContainer width={width}>
             {steps.map(({ step, label }) => (
-              <StepWrapper key={step}></StepWrapper>
+              <StepWrapper key={step}>
+                  
+              </StepWrapper>
             ))}
           </StepContainer>
         </MainContainerLeft>

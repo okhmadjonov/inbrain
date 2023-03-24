@@ -74,7 +74,7 @@ const User = () => {
                             <div className="htmlstart">
                                 <div className="html">
                                     <div className="htmlrectangle"> 
-                                        <img style={{width: '97px', height: '95px'}} src={htmldemo} />
+                                        <img style={{width: '97px', height: '95px', marginTop: '20px'}} src={htmldemo} />
                                         <p>0 из 19</p>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@ const User = () => {
                             <div className="cssstart">
                                 <div className="css">
                                     <div className="cssrectangle">
-                                        <img style={{width: '97px', height: '95px'}} src={cssdemo} />
+                                        <img style={{width: '97px', height: '95px', marginTop: '30px'}} src={cssdemo} />
                                         <p>0 из 24</p>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@ const User = () => {
                             <div className="jsstart">
                                 <div className="js">
                                     <div className="jsrectangle">
-                                        <img style={{width: '97px', height: '95px'}} src={jsdemo} />
+                                        <img style={{width: '97px', height: '95px', marginTop: '30px'}} src={jsdemo} />
                                         <p>0 из 19</p>
                                     </div>
                                 </div>

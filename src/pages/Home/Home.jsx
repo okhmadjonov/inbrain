@@ -176,52 +176,41 @@ const Home = () => {
   const headerTitle = "Каждый может научится новому ! Даже если страшно.";
 
   return (
+    
     <div className="home">
-      <div className="home__container">
-        <Header title={headerTitle} />
-        <div className="app__main-container">
-          <CarouselCompound infinite>
-            <CarouselCompound.Page>
-              <div className="item item-1" alt="Color">
-                <img
-                  style={{ zIndex: "999", position: "absolute" }}
-                  src={Video}
-                />
-                <img className="course" src={course} />
-              </div>
-            </CarouselCompound.Page>
-            <CarouselCompound.Page>
-              <div className="item item-2" alt="Color">
-                <img
-                  style={{ zIndex: "999", position: "absolute" }}
-                  src={Video}
-                />
-                <img className="course" src={course} />
-              </div>
-            </CarouselCompound.Page>
-            <CarouselCompound.Page>
-              <div className="item item-3" alt="Color">
-                <img
-                  style={{ zIndex: "999", position: "absolute" }}
-                  src={Video}
-                />
-                <img className="course" src={course} />
-              </div>
-            </CarouselCompound.Page>
-          </CarouselCompound>
-        </div>
-        <div className="ourgoal">
-          <div className="whatweteach">
-            <div className="teachhead">Чему мы учим ?</div>
-            <p className="teachtxt">
-              Если вы хотите получить знания и поменять <br /> специализацию,
-              или освоить самую <br /> востребованную профессию во всем мире{" "}
-              <br />
-              то вы правильно <br /> сделали что выбрали нас !
-            </p>
+        <div className="home__container">
+          <Header title={headerTitle} />
+          <div className="app__main-container">
+            <CarouselCompound infinite>
+              <CarouselCompound.Page>
+                <div className="item item-1" alt="Color">
+                  <img
+                    style={{ zIndex: "999", position: "absolute" }}
+                    src={Video}
+                  />
+                  <img className="course" src={course} />
+                </div>
+              </CarouselCompound.Page>
+              <CarouselCompound.Page>
+                <img src={course} className="item item-2" alt="Skore" />
+              </CarouselCompound.Page>
+              <CarouselCompound.Page>
+                <img src={course} className="item item-3" alt="Skore 3" />
+              </CarouselCompound.Page>
+            </CarouselCompound>
           </div>
-          <div className="linktoinfo">
-            <div className="meet">Давайте знакомится</div>
+          <div className="ourgoal">
+            <div className="whatweteach">
+              <div className="teachhead">Чему мы учим ?</div>
+              <p className="teachtxt">
+                Если вы хотите получить знания и поменять <br /> специализацию,
+                или освоить самую <br /> востребованную профессию во всем мире{" "}
+                <br />
+                то вы правильно <br /> сделали что выбрали нас !
+              </p>
+            </div>
+            <div className="linktoinfo">
+              <div className="meet">Давайте знакомится</div>
 
             <div className="button">
               <Link to="/Familiarization" className="clickme">
