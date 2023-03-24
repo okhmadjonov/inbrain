@@ -1,12 +1,12 @@
 .lesson_modal {
-    position: relative;
+    position: absolute;
     margin-top: 190px;
     padding: 40px 100px;
     background-color: #8ff;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-
+    z-index: 5;
     &_cart {
         position: absolute;
         display: flex;
