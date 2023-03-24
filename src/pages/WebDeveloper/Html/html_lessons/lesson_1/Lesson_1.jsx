@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Video from "../videoPlayer/Video";
-import Header from "../../../../../components/Header/Header";
 import context__img from "../../../../../assets/images/lesson__html__context__img.png";
 import knopka__img from "../../../../../assets/images/knopka.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import "./Lesson_1.scss";
+import LessonModal from "./LessonModal";
+import Context from "../../../../../components/Context/Context";
 const Lesson_1 = (props) => {
+
+  const { modal } = useContext(Context)
+
+
   return (
     <div className="lesson_1">
+    
+    {
+      modal ? <LessonModal /> : null
+    }
       <div className="lesson_1__container">
         <div className="lesson_1__content">
           <div className="lesson__html">

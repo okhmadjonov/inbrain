@@ -1,6 +1,7 @@
 .app {
   width: 100%;
   height: 100%;
+  // background-color: #000;
   .app__container {
     width: 100%;
     height: 100%;
@@ -19,4 +20,15 @@
       margin: 0 auto;
     }
   }
+}
+
+.black {
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 23456789009876543213;
+  // opacity: 50%;
 }

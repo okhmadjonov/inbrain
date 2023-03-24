@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import React, { useState } from "react";
+import {  Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Home from "../../pages/Home/Home";
 import Familiarization from "../../pages/WebDeveloper/Greeting/Familiarization/Familiarization";
@@ -13,11 +13,19 @@ import "./App.scss";
 import Tags from "../../pages/Handbook/Html/tags/Tags";
 import LessonModal from "../../pages/WebDeveloper/Html/html_lessons/lesson_1/LessonModal";
 import Context from "../Context/Context";
-const obj = {}
+
+
 function App() {
+  
+  const [ modal, setModal ] = useState(false)
+  const ModalFunc = (bol) => {
+    setModal(bol)
+  }
+  const obj = { modal, ModalFunc }
   return (
     <Context.Provider value={obj}>
       <div className="app">
+      <div className={`${ modal ? 'black' : null}`}>
         <div className="app__container">
           <Sidebar />
           <div className="app__home__container">
@@ -34,6 +42,7 @@ function App() {
               <Route path="*" element={<Navigate to="/" replace={true} />} />
             </Routes>
           </div>
+        </div>
         </div>
       </div>
     </Context.Provider>
