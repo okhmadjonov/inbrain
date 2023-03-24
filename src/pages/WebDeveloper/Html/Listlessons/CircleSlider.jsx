@@ -3,14 +3,12 @@ import styled from "styled-components";
 
 const CircleContainer = styled.div`
   width: 100%;
-
   height: auto;
   margin: 0 auto;
 `;
 
 const MainContainer = styled.div`
   width: 100%;
-  /* max-width: 1336px; */
   height: 200px;
   margin: 0 auto;
   display: flex;
