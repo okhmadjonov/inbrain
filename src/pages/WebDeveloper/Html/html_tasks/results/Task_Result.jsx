@@ -22,12 +22,12 @@ const Task_Result = () => {
     </h3>
   );
   return (
-    <div className="html__tasks">
-      <div className="tasks__container">
+    <div className="task__result">
+      <div className="result__container">
         <Header title={title} />
-        <div className="tasks__inner">
-          <div className="task1__card">
-            <div className="task1__header">
+        <div className="result__inner">
+          <div className="result__card">
+            <div className="result__header">
               <div className="header__left">
                 <div className="title">
                   <p className="top__title">
@@ -48,7 +48,7 @@ const Task_Result = () => {
                 </Link>
               </div>
             </div>
-            <div className="task1__content">
+            <div className="result__content">
               <div className="content__header">
                 <div className="header__left">
                   <p>index.html</p>
@@ -111,7 +111,7 @@ const Task_Result = () => {
                         <p>
                           Свобода слова — превыше всего. Но тренажёр пропустит
                           вас дальше только с написанным словом Нравится между
-                          тегами &lt;button&gt; и &lt;/button&gt;.
+                          тегами <pre>&lt;button&gt; и &lt;/button&gt;</pre>.
                         </p>
                       </div>
                     </div>
@@ -138,11 +138,9 @@ const Task_Result = () => {
                     <div className="right__bottom-container">
                       <div className="bottom__ref">
                         <img src={ref} alt="Bottom ref " />
-                      </div>
-                      <div className="start__again">
                         <p>Начать заного</p>
                       </div>
-                     
+
                     </div>
                   </div>
                 </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Home from "../../pages/Home/Home";
 import Familiarization from "../../pages/WebDeveloper/Greeting/Familiarization/Familiarization";
@@ -11,12 +11,16 @@ import MainTasksPanel from "../../pages/WebDeveloper/Html/html_tasks/MainTasksPa
 
 import "./App.scss";
 import Tags from "../../pages/Handbook/Html/tags/Tags";
-import Lessonfour from "../../pages/WebDeveloper/Html/Listlessons/Listlesson";
+
+import LessonModal from "../../pages/WebDeveloper/Html/html_lessons/lesson_1/LessonModal";
+import Context from "../Context/Context";
 import Result from "../../pages/WebDeveloper/Html/html_tasks/results/Task_Result";
+import Lessonfour from "../../pages/WebDeveloper/Html/Listlessons/Listlesson";
+const obj = {};
 
 function App() {
   return (
-    <BrowserRouter>
+    <Context.Provider value={obj}>
       <div className="app">
         <div className="app__container">
           <Sidebar />
@@ -31,13 +35,17 @@ function App() {
               <Route path="/Listlessons" element={<Listlessons />} />
               <Route path="/Result" element={<Result />} />
               <Route path="/Userpage" element={<User />} />
+
+              <Route path="/modal" element={<LessonModal />} />
+
               <Route path="/Lesson4/11" element={<Lessonfour />} />
+
               <Route path="*" element={<Navigate to="/" replace={true} />} />
             </Routes>
           </div>
         </div>
       </div>
-    </BrowserRouter>
+    </Context.Provider>
   );
 }
 

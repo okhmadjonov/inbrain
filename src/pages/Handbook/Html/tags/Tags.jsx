@@ -1,12 +1,13 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
-import Modal from '../tags/modal/Modal';
-import left_str from '../../../../assets/images/left_str.png';
-import right from '../../../../assets/images/right.png';
-import search_icon from '../../../../assets/images/search_icon.png'
+import Modal from "../tags/modal/Modal";
+import left_str from "../../../../assets/images/left_str.png";
+import right from "../../../../assets/images/right.png";
+import search_icon from "../../../../assets/images/search_icon.png";
 import "./Tags.scss";
 const Tags = () => {
+  const title = "Каждый может научится новому ! Даже если страшно.";
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -40,16 +41,20 @@ const Tags = () => {
     { title: "<!DOCTYPE>", body: "Defines the Document Type" },
     { title: "<a>", body: "Defines a pyperlink" },
     { title: "<abbr>", body: "Defines an abbreviation or an acronym" },
-  ]
+  ];
   return (
     <div>
       <div className="main_tags">
-        <Header />
+        <Header title={title} />
         <div className="guide">
           <h1>Справочник по элементам HTML</h1>
           <div className="btns">
-            <button><img src={left_str}/>        Назад</button>
-            <button>Дальше        <img src={right}/></button>
+            <button>
+              <img src={left_str} /> Назад
+            </button>
+            <button>
+              Дальше <img src={right} />
+            </button>
           </div>
         </div>
         <h1 style={{ margin: "30px 10px" }}>Теги HTML в алфавитном порядке</h1>
@@ -65,7 +70,11 @@ const Tags = () => {
             <div className="table_left">
               <ul style={{ listStyle: "none" }}>
                 {titles.map((items, i) => {
-                  return <li onClick={toggleModal} key={i}>{items.title}</li>;
+                  return (
+                    <li onClick={toggleModal} key={i}>
+                      {items.title}
+                    </li>
+                  );
                 })}
               </ul>
             </div>
@@ -78,16 +87,25 @@ const Tags = () => {
             </div>
           </div>
         </div>
-        <div className="guide" style={{marginTop:"40px"}}>
+        <div className="guide" style={{ marginTop: "40px" }}>
           <h1>Справочник по элементам HTML</h1>
           <div className="btns">
-            <button><img src={left_str}/>    Назад</button>
-            <button>Дальше       <img src={right}/></button>
+            <button>
+              <img src={left_str} /> Назад
+            </button>
+            <button>
+              Дальше <img src={right} />
+            </button>
           </div>
         </div>
-        <Modal modal={modal} setModal={setModal} toggleModal={toggleModal} titles={titles}/>
+        <Modal
+          modal={modal}
+          setModal={setModal}
+          toggleModal={toggleModal}
+          titles={titles}
+        />
         <Footer />
-      </div>  
+      </div>
     </div>
   );
 };
