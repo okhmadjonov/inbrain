@@ -1,11 +1,15 @@
 import "./Video.scss";
 import { BsFillPlayFill } from "react-icons/bs";
 import { FaRegHandPointer } from "react-icons/fa";
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import video from "../../../../../assets/videos/vid.mp4";
+import Context from "../../../../../components/Context/Context";
 const Video = ({ setModal }) => {
   const [isplay, setisplay] = useState(false);
   const audioRef = useRef(null);
+
+  const { ModalFunc } = useContext(Context)
+
   const handleClick = () => {
     audioRef.current.play();
   };
@@ -30,8 +34,8 @@ const Video = ({ setModal }) => {
 
           <div
             className="modal__finger"
-            style={{ cursor: "pointer" }}
-            onClick={() => setModal((current) => !current)}>
+            onClick={() => ModalFunc(true)}
+            style={{ cursor: "pointer" }}>
             <FaRegHandPointer
               style={{
                 backgroundColor: "#dd515d",
