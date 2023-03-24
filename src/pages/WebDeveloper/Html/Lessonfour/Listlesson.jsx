@@ -1,17 +1,16 @@
 import React from "react";
-import numberlesson from '../../../../assets/images/numberlesson.png';
-import Hi from '../../../../assets/images/Hi.png';
-import Howtraining from '../../../../assets/images/Howtraining.png';
-import {AiOutlineRight} from 'react-icons/ai';
-import {FaUser} from 'react-icons/fa';
+import numberlesson from "../../../../assets/images/numberlesson.png";
+import Hi from "../../../../assets/images/Hi.png";
+import Howtraining from "../../../../assets/images/Howtraining.png";
+import { AiOutlineRight } from "react-icons/ai";
+import { FaUser } from "react-icons/fa";
 import Circlepart from "./circle";
 import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
-import './Listlesson.scss';
-
-
+import "./Listlesson.scss";
 
 const Lessonfour = () => {
+
 
 const listtitle = 'Текущий урок: Приветствие/Привет/1 из 14'
 
@@ -19,7 +18,7 @@ const listtitle = 'Текущий урок: Приветствие/Привет/
 
     return(
         
-        <>
+        
 
             <div className="lessonfourpage">
 
@@ -35,7 +34,7 @@ const listtitle = 'Текущий урок: Приветствие/Привет/
 
                          <div className="training">
                             <div>
-                                <div className="trainhead">Как устроено обучение</div>
+                                <div className="trainhead">Урок 4</div>
                                 <div className="description">
                                     Всё обучение в Практикуме разбито на спринты. <br/> Спринт — это двухнедельный отрезок, который <br/>  построен <br/> 
                                     определённым образом: сначала вы изучаете теорию, <br/>  потом практикуетесь в тренажёре, <br/> 
@@ -97,17 +96,12 @@ const listtitle = 'Текущий урок: Приветствие/Привет/
                     </div>
                     <div className="footlist">
                         <Footer/>
-
                     </div>
-                </div> 
-            </div>
-
-        </>
+                </div>
+            </div> 
 
     )
+  
 }
-
-
-
-
+      
 export default Lessonfour;
