@@ -1,8 +1,13 @@
 import React, { useState } from "react";
+import { HiArrowDownTray } from "react-icons/hi2"
+import { MdOutlineNavigateNext } from "react-icons/md"
+
+
 import { Link } from "react-router-dom";
 import "./Task_Result.scss";
 import question from "../../../../../assets/images/question.png";
 import ref from "../../../../../assets/images/ref.png";
+import thanksimg from "../../../../../assets/images/thanksimg.png";
 
 import { FaTimes, FaArrowRight } from "react-icons/fa";
 import Footer from "../../../../../components/Footer/Footer";
@@ -90,7 +95,7 @@ const Task_Result = () => {
                       <div className="bottom__subtitle">
                         <p>
                           Перед вами окно редактора кода с файлом index.html. В
-                          нём уже создана кнопка с текстом Hello world. Но
+                          нём уже создана кнопка с текстом Hello world. <br /> <br />  Но
                           аудитория сервиса, который мы делаем, русскоязычная,
                           поэтому текст на кнопке нужно перевести. Замените
                           текст Hello world между &lt;button&gt; и
@@ -112,11 +117,20 @@ const Task_Result = () => {
                     </div>
                   </div>
                 </div>
+        {/*--//------//--------//-------//----//BODY-RIGHT//--------//------//------//---  */}
                 <div className="body__right">
                   <div className="result__field">
                     <div className="result__container">
                       <div className="result">
                         <button>Hello world</button>
+                      </div>
+                      <div className="result__check">
+                          <h1>Правильный ответ !!! <br /> Так держать, идем дальше.</h1>
+                          <img src={thanksimg} width="250px" alt="error" />
+                          <div className="btn__wrapper">
+                            <button className="btn__primary">Скачать исходник  <HiArrowDownTray size={24} /></button>
+                            <button className="btn__primary">Продолжить<MdOutlineNavigateNext size={26} /></button>
+                          </div>
                       </div>
                     </div>
                   </div>
@@ -126,6 +140,7 @@ const Task_Result = () => {
                         <img src={ref} alt="Bottom ref " />
                         <p>Начать заного</p>
                       </div>
+
                     </div>
                   </div>
                 </div>

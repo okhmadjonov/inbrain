@@ -15,6 +15,8 @@ export const Carousel = ({ children }) => {
       return Math.min(newOffset, 0)
     })
   }
+
+  
   const handleRightArrowClick = () => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset - PAGE_WIDTH
