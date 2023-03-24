@@ -25,7 +25,8 @@ import rightgroup from "../../assets/images/rightgroup.png";
 import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
 import Video from "../../assets/images/youtube.png";
-const Home = () => {
+
+const Home = (props) => {
   const SlickArrowRight = ({ currentSlide, slideCount, style, ...props }) => (
     <img
       style={{
@@ -191,10 +192,22 @@ const Home = () => {
                 </div>
               </CarouselCompound.Page>
               <CarouselCompound.Page>
-                  <img src={Skoro} className="item item-2" alt="Skore" />
+              <div className="item item-2" alt="Color">
+                  <img
+                    style={{ zIndex: "999", position: "absolute" }}
+                    src={Video}
+                  />
+                  <img className="course" src={course} />
+                </div>
               </CarouselCompound.Page>
               <CarouselCompound.Page>
-                  <img src={Skoro} className="item item-3" alt="Skore 3" />
+              <div className="item item-3" alt="Color">
+                  <img
+                    style={{ zIndex: "999", position: "absolute" }}
+                    src={Video}
+                  />
+                  <img className="course" src={course} />
+                </div>
               </CarouselCompound.Page>
             </CarouselCompound>
           </div>

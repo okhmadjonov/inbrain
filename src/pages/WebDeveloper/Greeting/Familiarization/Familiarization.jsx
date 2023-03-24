@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 
 
-const Familiarization = () => {
+const Familiarization = (props) => {
 
     
 const titlehead = 'Текущий урок: Привет посмотри видео'

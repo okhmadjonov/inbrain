@@ -49,11 +49,11 @@ const SidebarNav = styled.nav`
   width: 17%;
   max-width: 17%;
   height: 5400px;
-  display: flex;
+  display: ${({sidebar}) => (sidebar ? "flex" : 'none')};
   justify-content: center;
   position: absolute;
   top: 0;
-  left: ${({ sidebar }) => (sidebar ? "0" : "-200%")};
+  left: 0;
   transition: 350ms;
 `;
 
