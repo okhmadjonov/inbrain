@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const CircleContainer = styled.div`
   width: 100%;
-  /* max-width: 1920px; */
+
   height: auto;
   margin: 0 auto;
 `;
@@ -100,9 +100,7 @@ const Circle = ({ setCount }) => {
         <MainContainerLeft>
           <StepContainer width={width}>
             {steps.map(({ step, label }) => (
-              <StepWrapper key={step}>
-                  
-              </StepWrapper>
+              <StepWrapper key={step}></StepWrapper>
             ))}
           </StepContainer>
         </MainContainerLeft>
