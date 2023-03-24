@@ -129,7 +129,7 @@ const Sidebar = () => {
                       <p
                         className="m-0 p-0"
                         style={{ fontSize: "18px", color: "#fff" }}>
-                        UserName
+                        User name
                       </p>
                       <span style={{ fontSize: "11px", color: "#ffcc00" }}>
                         balance: 99 000 сум
