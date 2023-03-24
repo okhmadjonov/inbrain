@@ -106,7 +106,7 @@ const Sidebar = () => {
                 expandIcon={<MdExpandMore style={{ fontSize: "2.5rem" }} />}
                 aria-controls="panel1a-content"
                 id="panel1a-header">
-                <Typography>
+                <Typography style={{ marginTop: "-20px" }}>
                   <div
                     style={{
                       display: "flex",
@@ -125,7 +125,7 @@ const Sidebar = () => {
                       />
                     </div>
 
-                    <div className="ml-3">
+                    <div className="ml-2">
                       <p
                         className="m-0 p-0"
                         style={{ fontSize: "18px", color: "#fff" }}>

@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 const CircleContainer = styled.div`
   width: 100%;
-  max-width: 1920px;
+  /* max-width: 1920px; */
   height: auto;
   margin: 0 auto;
 `;
 
 const MainContainer = styled.div`
   width: 100%;
-  max-width: 1336px;
+  /* max-width: 1336px; */
   height: 200px;
   margin: 0 auto;
   display: flex;
@@ -26,6 +26,7 @@ const StepContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: space-between;
   position: relative;
 
   :before {
@@ -57,12 +58,12 @@ const StepWrapper = styled.div`
 `;
 
 const StepStyle = styled.div`
-  width: 4px;
-  height: 4px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   cursor: pointer;
-  margin-left: 77px;
-  background-color:
+  background-color: ${({ qadam }) =>
+    qadam === "completed" ? "#1C84FF" : "#000"};
   transition: 0.4s ease;
   display: flex;
   justify-content: center;
@@ -73,19 +74,21 @@ const StepStyle = styled.div`
   }
 `;
 
-const CircleCounter = styled.div`
-  width: 20%;
-  height: 100%;
-  display: flex;
-  font-weight: 700;
-  font-size: 70px;
-  align-items: center;
-  text-align: justify;
-  justify-content: flex-end;
-`;
 const Circle = ({ setCount }) => {
   const [activeStep, setActiveStep] = useState(1);
-  const steps = ['','','','','','','','','','','','','',];
+  const steps = [
+    { step: 1 },
+    { step: 2 },
+    { step: 3 },
+    { step: 4 },
+    { step: 5 },
+    { step: 6 },
+    { step: 7 },
+    { step: 8 },
+    { step: 9 },
+    { step: 10 },
+    { step: 11 },
+  ];
 
   const totalSteps = steps.length;
 
@@ -98,12 +101,7 @@ const Circle = ({ setCount }) => {
           <StepContainer width={width}>
             {steps.map(({ step, label }) => (
               <StepWrapper key={step}>
-                <StepStyle
-                  onClick={() => {
-                    setActiveStep(step);
-                    setCount(step);
-                  }}
-                ></StepStyle>
+                  
               </StepWrapper>
             ))}
           </StepContainer>

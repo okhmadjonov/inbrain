@@ -191,14 +191,10 @@ const Home = () => {
                 </div>
               </CarouselCompound.Page>
               <CarouselCompound.Page>
-                <div className="item item-2">
-                  <img src={Skoro}  alt="Skore" />
-                </div>
+                  <img src={Skoro} className="item item-2" alt="Skore" />
               </CarouselCompound.Page>
               <CarouselCompound.Page>
-                <div className="item item-3">
-                  <img src={Skoro} alt="Skore 3" />
-                </div>
+                  <img src={Skoro} className="item item-3" alt="Skore 3" />
               </CarouselCompound.Page>
             </CarouselCompound>
           </div>
