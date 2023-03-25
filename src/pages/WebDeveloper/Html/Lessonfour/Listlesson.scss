@@ -1,55 +1,17 @@
-.listpage {
+.lessonfourpage {
   width: 100%;
 
-  .listcontainer {
+  .lessonfourcontainer {
     width: 100%;
-    height: 100%;
-    .header_list {
-      width: 100%;
-      margin-top: 50px;
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-
-      .headlogo {
-        width: 318px;
-        height: 69px;
-      }
-      .familiarlesson {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 27px;
-        /* identical to box height */
-
-        color: #000000;
-      }
-      .search {
-        width: 56px;
-        height: 38.56px;
-        color: #ffffff;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-        border: none;
-        background: none;
-        background-color: #000000;
-        border-radius: 110.164px;
-      }
-      .users {
-        width: 137px;
-        height: 40px;
-      }
-    }
 
     .list_main {
       width: 100%;
       margin-top: 80px;
       .circlepart {
+        width: 100%;
         height: 200px;
         display: grid;
+        border: 1px solid black;
         .thislesson {
           font-family: "Inter";
           font-style: normal;
@@ -88,6 +50,26 @@
           line-height: 27px;
 
           color: #000000;
+        }
+        .tohome {
+          width: 183px;
+          height: 60px;
+          left: 466px;
+          top: 625px;
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          background: #18191b;
+          border-radius: 20px;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          margin-top: 20px;
+          font-size: 18px;
+          line-height: 22px;
+          color: #ffffff;
         }
         .continuelearnbtn {
           width: 280px;
@@ -130,37 +112,41 @@
           width: 100%;
           margin-top: 80px;
           display: flex;
-          gap: 3%;
-          flex-wrap: wrap;
-        }
-        .yourcoursescard {
-          width: 31.2%;
-          height: 420px;
-          display: grid;
-          justify-content: center;
           align-items: center;
-          text-align: center;
-          margin-bottom: 5%;
-          background: #18191b;
-          border-radius: 50px;
-          cursor: pointer;
-          &:active {
-            background: #1c84ff;
-          }
-          .itemimg {
-            width: 230px;
-            height: 200px;
-            cursor: pointer;
-          }
-          .itemtitle {
-            font-family: "Inter";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 25px;
-            line-height: 36px;
+          justify-content: space-between;
+          //   gap: 3%;
+          //   flex-wrap: wrap;
+          border: 1px solid black;
+
+          .yourcoursescard {
+            width: 350px;
+            height: 400px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            color: #ffffff;
+            margin-bottom: 5%;
+            background: #18191b;
+            border-radius: 50px;
             cursor: pointer;
+            &:active {
+              background: #1c84ff;
+            }
+            .itemimg {
+              width: 230px;
+              height: 200px;
+              cursor: pointer;
+            }
+            .itemtitle {
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 25px;
+              line-height: 36px;
+              text-align: center;
+              color: #ffffff;
+              cursor: pointer;
+            }
           }
         }
       }

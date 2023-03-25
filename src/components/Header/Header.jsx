@@ -12,7 +12,6 @@ const Header = (props) => {
   const handleClick = (event) => {
     setIsShown((current) => !current);
   };
-
   const title = props.title;
   return (
     <div className="header">
@@ -20,14 +19,14 @@ const Header = (props) => {
         <img src={logo} alt="Logo" />
       </Link>
       <p
-        style={{ display: isShown ? "block" : "none", marginTop: "55px" }}
+        style={{ display: isShown ? "block" : "none" ,  marginTop: "55px" }}
         className="learn">
         {title}
       </p>
       <InputGroup
         className="Searchbar"
         style={{
-          display: isShown ? "none" : "flex",
+          display: isShown ? "none" : "flex", 
         }}>
         <Form.Control
           className="input"
@@ -36,19 +35,19 @@ const Header = (props) => {
           aria-describedby="basic-addon2"
           style={{ outline: "none" }}
         />
-        <Button className="Search" id="button-addon2">
+        <Button  onClick={handleClick} className="Search" id="button-addon2">
           <BiSearchAlt />
         </Button>
       </InputGroup>
-      <button
+      <div
         id="search__btn"
         style={{
           display: isShown ? "block" : "none",
         }}
         onClick={handleClick}
         className="search">
-        <BiSearchAlt />
-      </button>
+        <BiSearchAlt className="search_icon" />
+      </div>
       <div className="languages">
         <button className="languagebtn">RU</button>
         <button className="languagebtn">UZ</button>

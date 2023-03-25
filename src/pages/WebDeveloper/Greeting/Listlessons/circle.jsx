@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./Listlesson.scss";
-import CircleSlider from './CircleSlider';
-import Familiarization from "../Familiarization/Familiarization";
-import Salutation from "../salutation/salutation";
-import Listlessons from "./Listlesson";
+import CircleSlider from "./CircleSlider";
+
 const Circlepart = () => {
   const [count, setCount] = useState(1);
 
@@ -18,7 +16,6 @@ const Circlepart = () => {
     step9 = false,
     step10 = false,
     step11 = false;
-
 
   switch (count) {
     case 1:

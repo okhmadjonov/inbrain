@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
+import * as FiIcons from "react-icons/fi";
 import petrov from "../../../assets/images/petrov.png";
 import { Accordion } from "@mui/material";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -12,13 +13,21 @@ import Typography from "@mui/material/Typography";
 import { IconContext } from "react-icons/lib";
 import "./menu.scss";
 import Burger from "./Burger";
-const Nav = styled.div`
-  margin-left: 0;
-  background-color: #18191b;
-  height: 5400px;
-  width: 80px;
-  text-align: center;
+
+const SidebarContainer = styled.div`
+  width: auto;
   display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  position: relative;
+  border: 1px solid black;
+`;
+const Nav = styled.div`
+  background-color: #18191b;
+  width: 80px;
+  height: 5400px;
+  text-align: center;
+  display: ${({ sidebar }) => (sidebar ? "none" : "flex")};
   justify-content: center;
 `;
 
@@ -26,12 +35,53 @@ const Navopen = styled.div`
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-left: 100%;
   width: 40px;
   height: 40px;
   border-radius: 0 0 10px 0;
   background: #18191b;
   cursor: pointer;
+  margin-left: 140%;
+  margin-top: -1px;
+`;
+
+const Navopen_f = styled.div`
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 10px 0;
+  background: #1c84ff;
+  cursor: pointer;
+  margin-left: 150%;
+  margin-top: -1px;
+`;
+
+const Navopen_s = styled.div`
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 10px 0;
+  background: #1c84ff;
+  cursor: pointer;
+  margin-left: 150%;
+  margin-top: -1px;
+`;
+
+const Navclose = styled.div`
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 0 10px 0;
+  background: #18191b;
+  /* background: black; */
+  cursor: pointer;
+  margin-left: 100%;
+  margin-top: -1px;
 `;
 
 const NavIcon = styled(Link)`
@@ -46,15 +96,14 @@ const NavIcon = styled(Link)`
 
 const SidebarNav = styled.nav`
   background: #15171c;
-  width: 17%;
-  max-width: 17%;
+  width: 320px;
   height: 5400px;
-  display: flex;
+  display: ${({ sidebar }) => (sidebar ? "flex" : "none")};
   justify-content: center;
-  position: absolute;
   top: 0;
-  left: ${({ sidebar }) => (sidebar ? "0" : "-200%")};
-  transition: 350ms;
+  margin-left: -80px;
+  z-index: 111;
+  transition: 1s;
 `;
 
 const SidebarWrap = styled.div`
@@ -66,24 +115,328 @@ const Sidebar = () => {
 
   const showSidebar = () => setSidebar(!sidebar);
 
+  const Homeicon = () => {
+    if (window.location.pathname === "/") {
+      return (
+        <Navopen>
+          <FaIcons.FaChevronRight
+            style={{ width: "40px", justifyContent: "center" }}
+            onClick={showSidebar}
+          />
+        </Navopen>
+      );
+    }
+  };
+  const Familiarizationicon = () => {
+    if (window.location.pathname === "/Familiarization") {
+      return (
+        <Navopen_f>
+          <FaIcons.FaChevronRight
+            style={{ width: "40px", justifyContent: "center" }}
+            onClick={showSidebar}
+          />
+        </Navopen_f>
+      );
+    }
+  };
+  const Salutationicon = () => {
+    if (window.location.pathname === "/Salutation") {
+      return (
+        <Navopen_s>
+          <FiIcons.FiArrowRight
+            style={{
+              width: "40px",
+              fontSize: "1.5rem",
+              justifyContent: "center",
+            }}
+            onClick={showSidebar}
+          />
+        </Navopen_s>
+      );
+    }
+  };
+  const Userpageicon = () => {
+    if (window.location.pathname === "/Userpage") {
+      return (
+        <Navopen_s>
+          <FiIcons.FiArrowRight
+            style={{
+              width: "40px",
+              fontSize: "1.5rem",
+              justifyContent: "center",
+            }}
+            onClick={showSidebar}
+          />
+        </Navopen_s>
+      );
+    }
+  };
+  const Listlessonsicon = () => {
+    if (window.location.pathname === "/Listlessons") {
+      return (
+        <Navopen_s>
+          <FiIcons.FiArrowRight
+            style={{
+              width: "40px",
+              fontSize: "1.5rem",
+              justifyContent: "center",
+            }}
+            onClick={showSidebar}
+          />
+        </Navopen_s>
+      );
+    }
+  };
+  const Lessononeicon = () => {
+    if (window.location.pathname === "/Webdev/lesson_1") {
+      return (
+        <Navopen_s>
+          <FiIcons.FiArrowRight
+            style={{
+              width: "40px",
+              fontSize: "1.5rem",
+              justifyContent: "center",
+            }}
+            onClick={showSidebar}
+          />
+        </Navopen_s>
+      );
+    }
+  };
+  const Tagsicon = () => {
+    if (window.location.pathname === "/Webdev/Tags") {
+      return (
+        <Navopen_s>
+          <FiIcons.FiArrowRight
+            style={{
+              width: "40px",
+              fontSize: "1.5rem",
+              justifyContent: "center",
+            }}
+            onClick={showSidebar}
+          />
+        </Navopen_s>
+      );
+    }
+  };
+  const Taskoneicon = () => {
+    if (window.location.pathname === "/Webdev/Task_1") {
+      return (
+        <Navopen_s>
+          <FiIcons.FiArrowRight
+            style={{
+              width: "40px",
+              fontSize: "1.5rem",
+              justifyContent: "center",
+            }}
+            onClick={showSidebar}
+          />
+        </Navopen_s>
+      );
+    }
+  };
+  const Resulticon = () => {
+    if (window.location.pathname === "/Result") {
+      return (
+        <Navopen_s>
+          <FiIcons.FiArrowRight
+            style={{
+              width: "40px",
+              fontSize: "1.5rem",
+              justifyContent: "center",
+            }}
+            onClick={showSidebar}
+          />
+        </Navopen_s>
+      );
+    }
+  };
+  const Modalicon = () => {
+    if (window.location.pathname === "/Modal") {
+      return (
+        <Navopen_s>
+          <FiIcons.FiArrowRight
+            style={{
+              width: "40px",
+              fontSize: "1.5rem",
+              justifyContent: "center",
+            }}
+            onClick={showSidebar}
+          />
+        </Navopen_s>
+      );
+    }
+  };
+  const Lessonfouricon = () => {
+    if (window.location.pathname === "/Lesson4/11") {
+      return (
+        <Navopen_s>
+          <FiIcons.FiArrowRight
+            style={{
+              width: "40px",
+              fontSize: "1.5rem",
+              justifyContent: "center",
+            }}
+            onClick={showSidebar}
+          />
+        </Navopen_s>
+      );
+    }
+  };
+
+  const Homemenuicon = () => {
+    if (window.location.pathname === "/") {
+      return <Burger />;
+    }
+  };
+  const Familiarmenuicon = () => {
+    if (window.location.pathname === "/Familiarization") {
+      return <Burger />;
+    }
+  };
+  const Salutationmenuicon = () => {
+    if (window.location.pathname === "/Salutation") {
+      return (
+        <div className="burger">
+          <div className="burger__container">
+            <div className="burger1"></div>
+            <div className="burger2"></div>
+          </div>
+        </div>
+      );
+    }
+  };
+  const Listlessonsmenuicon = () => {
+    if (window.location.pathname === "/Listlessons") {
+      return (
+        <div className="burger">
+          <div className="burger__container">
+            <div className="burger1"></div>
+            <div className="burger2"></div>
+          </div>
+        </div>
+      );
+    }
+  };
+  const Userpagemenuicon = () => {
+    if (window.location.pathname === "/Userpage") {
+      return (
+        <div className="burger">
+          <div className="burger__container">
+            <div className="burger1"></div>
+            <div className="burger2"></div>
+          </div>
+        </div>
+      );
+    }
+  };
+  const Lessononemenuicon = () => {
+    if (window.location.pathname === "/Webdev/lesson_1") {
+      return (
+        <div className="burger">
+          <div className="burger__container">
+            <div className="burger1"></div>
+            <div className="burger2"></div>
+          </div>
+        </div>
+      );
+    }
+  };
+  const Tagsmenuicon = () => {
+    if (window.location.pathname === "/Webdev/Tags") {
+      return (
+        <div className="burger">
+          <div className="burger__container">
+            <div className="burger1"></div>
+            <div className="burger2"></div>
+          </div>
+        </div>
+      );
+    }
+  };
+  const Taskonemenuicon = () => {
+    if (window.location.pathname === "/Webdev/Task_1") {
+      return (
+        <div className="burger">
+          <div className="burger__container">
+            <div className="burger1"></div>
+            <div className="burger2"></div>
+          </div>
+        </div>
+      );
+    }
+  };
+  const Resultmenuicon = () => {
+    if (window.location.pathname === "/Result") {
+      return (
+        <div className="burger">
+          <div className="burger__container">
+            <div className="burger1"></div>
+            <div className="burger2"></div>
+          </div>
+        </div>
+      );
+    }
+  };
+  const Modalmenuicon = () => {
+    if (window.location.pathname === "/Modal") {
+      return (
+        <div className="burger">
+          <div className="burger__container">
+            <div className="burger1"></div>
+            <div className="burger2"></div>
+          </div>
+        </div>
+      );
+    }
+  };
+  const Lessonfourmenuicon = () => {
+    if (window.location.pathname === "/Lesson4/11") {
+      return (
+        <div className="burger">
+          <div className="burger__container">
+            <div className="burger1"></div>
+            <div className="burger2"></div>
+          </div>
+        </div>
+      );
+    }
+  };
+
   return (
-    <>
+    <SidebarContainer>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
-          <Navopen style={{ marginLeft: "100px" }}>
-            <FaIcons.FaChevronRight
-              style={{ width: "40px", justifyContent: "center" }}
-              onClick={showSidebar}
-            />
-          </Navopen>
-
+          <div>
+            {Homeicon()}
+            {Familiarizationicon()}
+            {Salutationicon()}
+            {Listlessonsicon()}
+            {Userpageicon()}
+            {Lessononeicon()}
+            {Tagsicon()}
+            {Taskoneicon()}
+            {Resulticon()}
+            {Modalicon()}
+            {Lessonfouricon()}
+          </div>
           <NavIcon to="#" onClick={showSidebar}>
-            <Burger />
+            {Homemenuicon()}
+            {Familiarmenuicon()}
+            {Salutationmenuicon()}
+            {Listlessonsmenuicon()}
+            {Userpagemenuicon()}
+            {Lessononemenuicon()}
+            {Tagsmenuicon()}
+            {Taskonemenuicon()}
+            {Resultmenuicon()}
+            {Modalmenuicon()}
+            {Lessonfourmenuicon()}
           </NavIcon>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
-            <Navopen to="#">
+            <Navclose to="#">
               <AiIcons.AiOutlineClose
                 style={{
                   color: "#ffcc00",
@@ -92,8 +445,7 @@ const Sidebar = () => {
                 }}
                 onClick={showSidebar}
               />
-            </Navopen>
-
+            </Navclose>
             <Accordion
               style={{
                 marginTop: "40px",
@@ -106,7 +458,7 @@ const Sidebar = () => {
                 expandIcon={<MdExpandMore style={{ fontSize: "2.5rem" }} />}
                 aria-controls="panel1a-content"
                 id="panel1a-header">
-                <Typography>
+                <Typography style={{ marginTop: "-20px" }}>
                   <div
                     style={{
                       display: "flex",
@@ -125,8 +477,12 @@ const Sidebar = () => {
                       />
                     </div>
 
-                    <div className="ml-3">
-                      <p className="m-0 p-0">UserName</p>
+                    <div className="ml-2">
+                      <p
+                        className="m-0 p-0"
+                        style={{ fontSize: "18px", color: "#fff" }}>
+                        User name
+                      </p>
                       <span style={{ fontSize: "11px", color: "#ffcc00" }}>
                         balance: 99 000 сум
                       </span>
@@ -193,22 +549,26 @@ const Sidebar = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header">
                 <Typography>
-                  <div
+                  <Link
+                    to={"/Familiarization"}
                     style={{
                       display: "flex",
                       textAlign: "center",
                       alignItems: "center",
                       fontSize: "18px",
                       fontFamily: "Inter",
+                      color: "#FFFFFF",
                     }}>
                     Приветствие
-                  </div>
+                  </Link>
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography style={{ display: "grid", gap: "20px" }}>
                   <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                    <Link style={{ color: "#FFFFFF" }}>Привет</Link>
+                    <Link to={"/Salutation"} style={{ color: "#FFFFFF" }}>
+                      Привет
+                    </Link>
                   </li>
                   <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     <Link style={{ color: "#FFFFFF" }}>
@@ -221,7 +581,7 @@ const Sidebar = () => {
                     </Link>
                   </li>
                   <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                    <Link style={{ color: "#FFFFFF" }}>
+                    <Link to={"Listlessons"} style={{ color: "#FFFFFF" }}>
                       Как устроено обучение
                     </Link>
                   </li>
@@ -280,6 +640,7 @@ const Sidebar = () => {
                       display: "flex",
                       textAlign: "center",
                       alignItems: "center",
+                      color: "#FFFFFF",
                     }}>
                     HTML
                   </div>
@@ -304,7 +665,9 @@ const Sidebar = () => {
                   <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     Абзац
                   </Link>
-                  <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                  <Link
+                    to="/Lesson4/11"
+                    style={{ color: "#FFFFFF", fontSize: "12px" }}>
                     Урок 4
                   </Link>
                   <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
@@ -465,6 +828,7 @@ const Sidebar = () => {
                       display: "flex",
                       textAlign: "center",
                       alignItems: "center",
+                      color: "#FFFFFF",
                     }}>
                     HTML
                   </div>
@@ -610,6 +974,7 @@ const Sidebar = () => {
                       display: "flex",
                       textAlign: "center",
                       alignItems: "center",
+                      color: "#FFFFFF",
                     }}>
                     HTML
                   </div>
@@ -700,7 +1065,7 @@ const Sidebar = () => {
           </SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>
-    </>
+    </SidebarContainer>
   );
 };
 export default Sidebar;

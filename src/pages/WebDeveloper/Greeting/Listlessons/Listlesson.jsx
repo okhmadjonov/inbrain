@@ -25,7 +25,7 @@ const listtitle = 'Текущий урок: Приветствие'
 
     return(
         
-        <>
+        
 
             <div className="listpage">
 
@@ -109,7 +109,7 @@ const listtitle = 'Текущий урок: Приветствие'
                 </div> 
             </div>
 
-        </>
+        
 
     )
 }

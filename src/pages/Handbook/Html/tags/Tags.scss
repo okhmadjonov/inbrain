@@ -1,3 +1,6 @@
+.main_tags {
+  position: relative;
+}
 .guide {
   padding: 30px;
   background: #f8f8ff;
@@ -21,22 +24,29 @@
   padding: 30px;
   background: #f8f8ff;
   border-radius: 30px;
-  border: 2px solid rgba(0, 0, 0, 0.179);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   margin-bottom: 30px;
   position: relative;
   .search {
     width: 100%;
     padding: 15px 10px;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.179);
+    border-radius: 20px;
+    border: 2px solid #d7d7d7;
     outline: none;
+    background: #f8f8ff;
+    display: flex;
+    align-items: center;
   }
   .icon_menu {
-    background-color: blue;
+    background-color: #1c84ff;
     padding: 8px;
-    top: 30px;
-    border-radius: 13px;
+    top: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
     position: absolute;
+    // margin-top: 3px;
   }
 }
 
@@ -49,6 +59,9 @@
   padding: 30px 0px;
   .table_left {
     ul {
+      li:hover {
+        color: #1c84ff;
+      }
       li::before {
         content: "•";
         position: absolute;
@@ -58,6 +71,7 @@
     }
   }
   li {
+    cursor: pointer;
     padding: 10px;
     position: relative;
     font-size: 20px;

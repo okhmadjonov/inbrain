@@ -1,6 +1,6 @@
 import React from "react";
 import course from "../../assets/images/verstka.png";
-import Skoro from "../../assets/images/skoro.jpg";
+
 import bow from "../../assets/images/bow.png";
 import foundation from "../../assets/images/foundation.png";
 import htmldemo from "../../assets/images/htmldemo.png";
@@ -16,28 +16,45 @@ import "slick-carousel/slick/slick-theme.css";
 import petrov from "../../assets/images/petrov.png";
 import Slider from "react-slick";
 import CarouselCompound from "./slider/carousel-compound";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import LeftArrow from "../../assets/images/left-arrow.svg";
-import RightArrow from "../../assets/images/right-arrow.svg";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
-import leftgroup from '../../assets/images/leftgroup.png';
-import rightgroup from '../../assets/images/rightgroup.png';
+import leftgroup from "../../assets/images/leftgroup.png";
+import rightgroup from "../../assets/images/rightgroup.png";
 import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
-import Familiarization from "../WebDeveloper/Greeting/Familiarization/Familiarization";
+import Video from "../../assets/images/youtube.png";
 
 const Home = () => {
   const SlickArrowRight = ({ currentSlide, slideCount, style, ...props }) => (
-    <img style={{ ...style, width: '60px', height: '60px', marginTop: '60px' }} src={rightgroup} alt="nextArrow" {...props} />
+    <img
+      style={{
+        ...style,
+        width: "60px",
+        height: "60px",
+        marginTop: "60px",
+        marginRight: "-22px",
+      }}
+      src={rightgroup}
+      alt="nextArrow"
+      {...props}
+    />
   );
 
-  const SlickArrowLeft = ({ currentSlide, slideCount, style,  ...props }) => (
-    <img style={{ ...style, width: '60px', height: '60px', marginTop: '60px' }} src={leftgroup} alt="prevArrow" {...props} />
-    
+  const SlickArrowLeft = ({ currentSlide, slideCount, style, ...props }) => (
+    <img
+      style={{
+        ...style,
+        width: "60px",
+        height: "60px",
+        marginTop: "60px",
+        zIndex: "999",
+      }}
+      src={leftgroup}
+      alt="prevArrow"
+      {...props}
+    />
   );
 
   const data = [
@@ -159,196 +176,213 @@ const Home = () => {
   const headerTitle = "Каждый может научится новому ! Даже если страшно.";
 
   return (
-    <>
-
-      <div className="home">
-        <div className="home__container">
-          <Header title={headerTitle} />
-          <div className="app__main-container">
-            <CarouselCompound infinite>
-              <CarouselCompound.Page>
-                <img src={course} className="item item-1" alt="Color" />
-              </CarouselCompound.Page>
-              <CarouselCompound.Page>
-                <img src={Skoro} className="item item-2" alt="Skore" />
-              </CarouselCompound.Page>
-              <CarouselCompound.Page>
-                <img src={course} className="item item-3" alt="Skore 3" />
-              </CarouselCompound.Page>
-            </CarouselCompound>
-          </div>
-          <div className="ourgoal">
-            <div className="whatweteach">
-              <div className="teachhead">Чему мы учим ?</div>
-              <p className="teachtxt">
-                Если вы хотите получить знания и поменять <br /> специализацию,
-                или освоить самую <br /> востребованную профессию во всем мире{" "}
-                <br />
-                то вы правильно <br /> сделали что выбрали нас !
-              </p>
-            </div>
-            <div className="linktoinfo">
-              <div className="meet">Давайте знакомится</div>
-
-              <div className="button">
-                <Link to="/Familiarization" className="clickme">
-                  <span className="linkbtn">Жми сюда :)</span>{" "}
-                  <img className="bow" src={bow} alt="Skore 31" />{" "}
-                </Link>
+    <div className="home">
+      <div className="home__container">
+        <Header title={headerTitle} />
+        <div className="app__main-container">
+          <CarouselCompound infinite>
+            <CarouselCompound.Page>
+              <div className="item item-1" alt="Color">
+                <img
+                  style={{ zIndex: "999", position: "absolute" }}
+                  src={Video}
+                  alt="Item 1"
+                />
+                <img className="course" src={course} alt="Item 1" />
               </div>
-            </div>
-          </div>
-          <div className="webdev">
-            <div className="foundation">
-              <div className="webdevcourse">
-                <img src={foundation} alt="Foundation" />
+            </CarouselCompound.Page>
+            <CarouselCompound.Page>
+              <div className="item item-2" alt="Color">
+                <img
+                  style={{ zIndex: "999", position: "absolute" }}
+                  src={Video}
+                  alt="Item 2"
+                />
+                <img className="course" src={course} alt="Item 3" />
               </div>
-            </div>
-            <div className="aboutcourse">
-              <p className="kurs">Курс</p>
-              <p className="topro">Веб-разработчик с нуля до PRO</p>
-              <p className="learnjs">
-                Вы научитесь верстать сайты на HTML и <br /> CSS, изучите
-                JavaScript. И сделаете <br /> первые проекты для портфолио.
-              </p>
-              <div className="startcourse">
-                <Link to="/Salutation" className="start_btn">
-                  Начать вводный курс
-                </Link>
-
-                <p className="durationcourse">10 месяцев</p>
+            </CarouselCompound.Page>
+            <CarouselCompound.Page>
+              <div className="item item-3" alt="Color">
+                <img
+                  style={{ zIndex: "999", position: "absolute" }}
+                  src={Video}
+                  alt="Item 3"
+                />
+                <img className="course" src={course} alt="Item 3" />
               </div>
-            </div>
-          </div>
-          <div className="courses_part">
-            <div className="techhead">
-              <div className="learningtechnology">
-                <p className="technology">Технологии</p>
-                <p className="startfromnull">Обучение с нуля</p>
-              </div>
-              <button className="startlearnbtn"> Начать обучение </button>
-            </div>
-
-            <div className="aboutourtechnology">
-              А вот технологии, которые будете использовать.
+            </CarouselCompound.Page>
+          </CarouselCompound>
+        </div>
+        <div className="ourgoal">
+          <div className="whatweteach">
+            <div className="teachhead">Чему мы учим ?</div>
+            <p className="teachtxt">
+              Если вы хотите получить знания и поменять <br /> специализацию,
+              или освоить самую <br /> востребованную профессию во всем мире{" "}
               <br />
-              <p className="abouttechhead">
-                Мы регулярно сверяемся с действующими разработчиками и
-                руководителями из <br /> индустрии, чтобы в программе оставались
-                только актуальные навыки и <br /> инструменты.
-              </p>
-            </div>
-            <div className="democourses">
-              {activedata.map((item) => (
-                <>
-                  <div className="item">
-                    <div>
-                      <img className="itemdemo" src={item.img} alt="Item demo" />
-                      <div className="itemhead">{item.title}</div>
-                    </div>
+              то вы правильно <br /> сделали что выбрали нас !
+            </p>
+          </div>
+          <div className="linktoinfo">
+            <div className="meet">Давайте знакомится</div>
 
-                    <button className="startlearnitem">{item.btn}</button>
-                  </div>
-                </>
-              ))}
-              {soon.map((item) => (
+            <div className="button">
+              <Link to="/Familiarization" className="clickme">
+                <span className="linkbtn">Жми сюда :)</span>{" "}
+                <img className="bow" src={bow} alt="Skore 31" />{" "}
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="webdev">
+          <div className="foundation">
+            <div className="webdevcourse">
+              <img src={foundation} alt="Foundation" />
+            </div>
+          </div>
+          <div className="aboutcourse">
+            <p className="kurs">Курс</p>
+            <p className="topro">Веб-разработчик с нуля до PRO</p>
+            <p className="learnjs">
+              Вы научитесь верстать сайты на HTML и <br /> CSS, изучите
+              JavaScript. И сделаете <br /> первые проекты для портфолио.
+            </p>
+            <div className="startcourse">
+              <Link to="/Salutation" className="start_btn">
+                Начать вводный курс
+              </Link>
+
+              <p className="durationcourse">10 месяцев</p>
+            </div>
+          </div>
+        </div>
+        <div className="courses_part">
+          <div className="techhead">
+            <div className="learningtechnology">
+              <p className="technology">Технологии</p>
+              <p className="startfromnull">Обучение с нуля</p>
+            </div>
+            <button className="startlearnbtn"> Начать обучение </button>
+          </div>
+
+          <div className="aboutourtechnology">
+            А вот технологии, которые будете использовать.
+            <br />
+            <p className="abouttechhead">
+              Мы регулярно сверяемся с действующими разработчиками и
+              руководителями из <br /> индустрии, чтобы в программе оставались
+              только актуальные навыки и <br /> инструменты.
+            </p>
+          </div>
+          <div className="democourses">
+            {activedata.map((item) => (
+              <>
                 <div className="item">
                   <div>
-                    <img className="itemdemo" src={item.img} alt="Item demo 2" />
+                    <img className="itemdemo" src={item.img} alt="Item demo" />
                     <div className="itemhead">{item.title}</div>
                   </div>
-                  <p className="itemhead">{item.p}</p>
+
+                  <button className="startlearnitem">{item.btn}</button>
+                </div>
+              </>
+            ))}
+            {soon.map((item) => (
+              <div className="item">
+                <div>
+                  <img className="itemdemo" src={item.img} alt="Item demo 2" />
+                  <div className="itemhead">{item.title}</div>
+                </div>
+                <p className="itemhead">{item.p}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="jobdeveloper">
+          <div className="jobhead">
+            Что именно вы будете делать, когда станете веб-разработчиком
+          </div>
+
+          <div className="tasksdeveloper">
+            <div className="tasks">
+              <p className="writecode">Писать код на HTML, CSS и JavaScript</p>
+              <p className="createwebsite">
+                Разрабатывать сайты и веб-приложения
+              </p>
+              <p className="jobwithcollective">
+                Работать над продуктом вместе с командой
+              </p>
+              <p className="helpbusinesses">
+                Помогать бизнесу развиваться, а <br /> пользователям —
+                становиться счастливее
+              </p>
+            </div>
+            <div>
+              <img
+                className="collectivework"
+                src={collectivework}
+                alt="Collective work"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="contactus">
+          <div className="helpchoosing">
+            <div className="choosing">Поможем в выборе!</div>
+            <div className="ask_us">
+              <img className="student" src={student} alt="Student" />
+              <p className="asktxt">
+                Если у вас есть вопросы о <br />
+                формате или вы не знаете, <br />
+                что выбрать, оставьте свой <br />
+                номер — мы позвоним, <br />
+                чтобы ответить на все ваши <br />
+                опросы.
+              </p>
+            </div>
+          </div>
+          <div className="registr">
+            <input className="name" placeholder="Имя" />
+            <input className="phone" placeholder="Телефон" />
+            <input className="email" placeholder="Почта" />
+            <div className="sendinfo">
+              <div className="soglasie">
+                Нажимая на кнопку, я соглашаюсь на <br /> обработку{" "}
+                <a href="/">персональных данных</a> и с <br />{" "}
+                <a href="/">правилами пользования платформой</a>
+              </div>
+              <button className="registr_btn">
+                <big>отправить</big>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="reviews_part">
+          <div className="reviewhead">Что говорят о нас студенты ?</div>
+          <p className="reviewtxt">
+            Если вы хотите получить знания и поменять специализацию, или освоить
+            самую <br /> востребованную профессию во всем мире то вы правильно{" "}
+            <br /> сделали что выбрали нас !
+          </p>
+          <div className="comment_part">
+            <Slider {...settings}>
+              {data.map((item) => (
+                <div className="review_card">
+                  <div className="head_card">
+                    <img className="petrov" src={item.img} alt="Petrov" />
+                    <p className="username">{item.name}</p>
+                  </div>
+                  <div className="comment">
+                    <p className="commenttxt">{item.text}</p>
+                  </div>
                 </div>
               ))}
-            </div>
+            </Slider>
           </div>
-          <div className="jobdeveloper">
-            <div className="jobhead">
-              Что именно вы будете делать, когда станете веб-разработчиком
-            </div>
-
-            <div className="tasksdeveloper">
-              <div className="tasks">
-                <p className="writecode">Писать код на HTML, CSS и JavaScript</p>
-                <p className="createwebsite">
-                  Разрабатывать сайты и веб-приложения
-                </p>
-                <p className="jobwithcollective">
-                  Работать над продуктом вместе с командой
-                </p>
-                <p className="helpbusinesses">
-                  Помогать бизнесу развиваться, а <br /> пользователям —
-                  становиться счастливее
-                </p>
-              </div>
-              <div>
-                <img
-                  className="collectivework"
-                  src={collectivework}
-                  alt="Collective work"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="contactus">
-            <div className="helpchoosing">
-              <div className="choosing">Поможем в выборе!</div>
-              <div className="ask_us">
-                <img className="student" src={student} alt="Student" />
-                <p className="asktxt">
-                  Если у вас есть вопросы о <br />
-                  формате или вы не знаете, <br />
-                  что выбрать, оставьте свой <br />
-                  номер — мы позвоним, <br />
-                  чтобы ответить на все ваши <br />
-                  опросы.
-                </p>
-              </div>
-            </div>
-            <div className="registr">
-              <input className="name" placeholder="Имя" />
-              <input className="phone" placeholder="Телефон" />
-              <input className="email" placeholder="Почта" />
-              <div className="sendinfo">
-                <div className="soglasie">
-                  Нажимая на кнопку, я соглашаюсь на <br /> обработку{" "}
-                  <a href="/">персональных данных</a> и с <br />{" "}
-                  <a href="/">правилами пользования платформой</a>
-                </div>
-                <button className="registr_btn">
-                  <big>отправить</big>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="reviews_part">
-            <div className="reviewhead">Что говорят о нас студенты ?</div>
-            <p className="reviewtxt">
-              Если вы хотите получить знания и поменять специализацию, или освоить
-              самую <br /> востребованную профессию во всем мире то вы правильно{" "}
-              <br /> сделали что выбрали нас !
-            </p>
-            <div className="comment_part">
-              <Slider {...settings}>
-                {data.map((item) => (
-                  <div className="review_card">
-                    <div className="head_card">
-                      <img className="petrov" src={item.img} alt="Petrov" />
-                      <p className="username">{item.name}</p>
-                    </div>
-                    <div className="comment">
-                      <p className="commenttxt">{item.text}</p>
-                    </div>
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          </div>
-          <Footer/>
         </div>
-      </div>    
-    </>
-
+        <Footer />
+      </div>
+    </div>
   );
 };
 
