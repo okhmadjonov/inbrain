@@ -18,8 +18,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+Link{
+  list-style: none;
+}
 
 a{
-  text-decoration: none;
-  
+  text-decoration: none; 
 }
