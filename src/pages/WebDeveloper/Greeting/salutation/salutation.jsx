@@ -1,25 +1,9 @@
 import React, { useState } from "react";
-import logo from "../../../../assets/images/logo.png";
-import users from "../../../../assets/images/users.png";
 import videolessonimg from "../../../../assets/images/videolessonimg.png";
 import taskimg from "../../../../assets/images/taskimg.png";
-
-import { BiSearchAlt } from "react-icons/bi";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import thanksimg from "../../../../assets/images/thanksimg.png";
-import { IconContext } from "react-icons";
-import * as AiIcons from "react-icons/ai";
-import * as HiIcons from "react-icons/hi2";
-import { Link } from "react-router-dom";
-import petrov from "../../../../assets/images/petrov.png";
-import footphone from "../../../../assets/images/footphone.png";
-import foottg from "../../../../assets/images/foottg.png";
-import foottube from "../../../../assets/images/foottube.png";
-import footinsta from "../../../../assets/images/footinsta.png";
-import logofooter from "../../../../assets/images/logofooter.png";
-import footlocation from "../../../../assets/images/footlocation.png";
 import "./salutation.scss";
-import styled from "styled-components";
 import Header from "../../../../components/Header/Header";
 import Footer from "../../../../components/Footer/Footer";
 

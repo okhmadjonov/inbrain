@@ -1,6 +1,6 @@
 import React from "react";
 import course from "../../assets/images/verstka.png";
-import Skoro from "../../assets/images/skoro.jpg";
+
 import bow from "../../assets/images/bow.png";
 import foundation from "../../assets/images/foundation.png";
 import htmldemo from "../../assets/images/htmldemo.png";
@@ -186,8 +186,9 @@ const Home = () => {
                 <img
                   style={{ zIndex: "999", position: "absolute" }}
                   src={Video}
+                  alt="Item 1"
                 />
-                <img className="course" src={course} />
+                <img className="course" src={course} alt="Item 1" />
               </div>
             </CarouselCompound.Page>
             <CarouselCompound.Page>
@@ -195,8 +196,9 @@ const Home = () => {
                 <img
                   style={{ zIndex: "999", position: "absolute" }}
                   src={Video}
+                  alt="Item 2"
                 />
-                <img className="course" src={course} />
+                <img className="course" src={course} alt="Item 3" />
               </div>
             </CarouselCompound.Page>
             <CarouselCompound.Page>
@@ -204,8 +206,9 @@ const Home = () => {
                 <img
                   style={{ zIndex: "999", position: "absolute" }}
                   src={Video}
+                  alt="Item 3"
                 />
-                <img className="course" src={course} />
+                <img className="course" src={course} alt="Item 3" />
               </div>
             </CarouselCompound.Page>
           </CarouselCompound>

@@ -44,22 +44,22 @@ const Familiarization = () => {
               Посмотрите видео: Что такое веб разработка ?
             </div>
             <div className="videolessons">
-              <img className="bigimg" src={bightml} />
+              <img className="bigimg" src={bightml} alt="BigImg" />
               <div className="lessons">
                 <div className="firstlesson">
-                  <img className="littlimg" src={littlehtml} />
+                  <img className="littlimg" src={littlehtml} alt="BigImg2" />
                   <p className="firsttxt">
                     Кто придумал <br /> HTML ?
                   </p>
                 </div>
                 <div className="secondlesson">
-                  <img className="littlimg" src={littlehtml} />
+                  <img className="littlimg" src={littlehtml} alt="BigImg3" />
                   <p className="secondtxt">
                     Где используют <br /> HTML ?
                   </p>
                 </div>
                 <div className="thirdlesson">
-                  <img className="littlimg" src={littlehtml} />
+                  <img className="littlimg" src={littlehtml} alt="BigImg4" />
                   <p className="thirdtxt">
                     Для чего нужен <br /> HTML ?
                   </p>
@@ -70,7 +70,7 @@ const Familiarization = () => {
           <div className="webdev_f">
             <div className="foundation">
               <div className="webdevcourse">
-                <img src={foundation} />
+                <img src={foundation} alt="BigImg5" />
               </div>
             </div>
             <div className="aboutcourse">

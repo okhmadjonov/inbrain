@@ -50,10 +50,10 @@ const Tags = () => {
           <h1>Справочник по элементам HTML</h1>
           <div className="btns">
             <button>
-              <img src={left_str} /> Назад
+              <img src={left_str} alt="LeftImg" /> Назад
             </button>
             <button>
-              Дальше <img src={right} />
+              Дальше <img src={right} alt="RightImg" />
             </button>
           </div>
         </div>
@@ -91,10 +91,10 @@ const Tags = () => {
           <h1>Справочник по элементам HTML</h1>
           <div className="btns">
             <button>
-              <img src={left_str} /> Назад
+              <img src={left_str} alt="LeftImg" /> Назад
             </button>
             <button>
-              Дальше <img src={right} />
+              Дальше <img src={right} alt="LeftImg" />
             </button>
           </div>
         </div>
