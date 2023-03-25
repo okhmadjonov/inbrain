@@ -96,13 +96,14 @@ const NavIcon = styled(Link)`
 
 const SidebarNav = styled.nav`
   background: #15171c;
-  width: 310px;
+  width: 320px;
   height: 5400px;
   display: ${({ sidebar }) => (sidebar ? "flex" : "none")};
   justify-content: center;
   top: 0;
   margin-left: -80px;
   z-index: 111;
+  transition: 1s;
 `;
 
 const SidebarWrap = styled.div`

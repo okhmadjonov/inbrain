@@ -29,7 +29,7 @@ const AppContainer = styled.div`
   /* border: 1px solid black; */
 `;
 const AppHomeContainer = styled.div`
-  width: 77%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
   /* border: 1px solid purple; */
