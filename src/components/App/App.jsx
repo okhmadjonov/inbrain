@@ -25,7 +25,6 @@ function App() {
   return (
     <Context.Provider value={obj}>
       <div className="app">
-      <div className={`${ modal ? 'black' : null}`}>
         <div className="app__container">
           <Sidebar />
           <div className="app__home__container">
@@ -44,7 +43,6 @@ function App() {
           </div>
         </div>
         </div>
-      </div>
     </Context.Provider>
   );
 }

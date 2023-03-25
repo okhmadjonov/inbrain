@@ -10,7 +10,7 @@ import Context from '../../../../../components/Context/Context';
 
 const LessonModal = () => {
 
-  const { ModalFunc } = useContext(Context)
+  const { ModalFunc, modal } = useContext(Context)
 
 //   const [text, setText] = useState("");
   const [isCopied, setIsCopied] = useState(false);
@@ -31,6 +31,9 @@ const LessonModal = () => {
   };
 
     return (
+      <>
+
+       { modal ? <div className='modal_background'></div> :  null}
         <div className='lesson_modal'>
             <h1 className='lesson_modal_title'>Текущий урок: <span className='lesson_modal_title_span'>Базовые элементы. HTML</span></h1>
             <Video />
@@ -56,6 +59,7 @@ const LessonModal = () => {
           <p className='lesson_modal_info1'>Наверняка вы обратили внимание на конструкции с угловыми скобками — это HTML-теги. Теги описывают элементы сайта. Например, тег &lt;button&gt; описывает кнопку.
             </p>
         </div>
+      </>
     );
 };
 
