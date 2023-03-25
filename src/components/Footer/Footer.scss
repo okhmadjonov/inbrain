@@ -3,7 +3,9 @@
   height: 250px;
   bottom: 0;
   position: relative;
-
+  p {
+    font-weight: 400;
+  }
   .footpart {
     display: flex;
     align-items: center;
@@ -18,7 +20,7 @@
       gap: 5%;
       .adresses {
         display: grid;
-        gap: 15%;
+        gap: 50%;
         .adress {
           display: flex;
           align-items: center;
@@ -58,7 +60,7 @@
     }
     .social_menu {
       display: grid;
-      gap: 20%;
+      gap: 25%;
       .socialhead {
         font-family: "Inter";
         font-style: normal;
@@ -69,7 +71,7 @@
       }
       .socialmedia {
         display: grid;
-        gap: 15%;
+        gap: 20%;
         .telegramm {
           display: flex;
           gap: 7%;
@@ -125,7 +127,11 @@
     }
     .menu_items {
       display: grid;
-      gap: 20%;
+      gap: 50%;
+      margin-top: -21px;
+      display: grid;
+      gap: 50%;
+      margin-top: -21px;
       .itemhead {
         font-family: "Inter";
         font-style: normal;
@@ -136,12 +142,14 @@
       }
       .about_item {
         display: grid;
-        gap: 15%;
+        gap: 35%;
+        margin-top: -11px;
       }
     }
     .additionally {
       display: grid;
-      gap: 20%;
+      gap: 37%;
+      margin-top: -8px;
       .addithead {
         font-family: "Inter";
         font-style: normal;
@@ -152,7 +160,7 @@
       }
       .addit_menu {
         display: grid;
-        gap: 15%;
+        gap: 33%;
       }
     }
   }
