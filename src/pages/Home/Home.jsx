@@ -104,7 +104,7 @@ const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 1,  
     nextArrow: <SlickArrowRight />,
     prevArrow: <SlickArrowLeft />,
     responsive: [
@@ -284,7 +284,7 @@ const Home = () => {
                     <div className="itemhead">{item.title}</div>
                   </div>
 
-                  <button className="startlearnitem">{t("homepage.18")}</button>
+                  <button className="startlearnitem">{item.btn}</button>
                 </div>
               </>
             ))}
