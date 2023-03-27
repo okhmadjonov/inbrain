@@ -25,8 +25,12 @@ import rightgroup from "../../assets/images/rightgroup.png";
 import Footer from "../../components/Footer/Footer";
 import "./Home.scss";
 import Video from "../../assets/images/youtube.png";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
+  const headerTitle = t("headerTitle.1");
+
   const SlickArrowRight = ({ currentSlide, slideCount, style, ...props }) => (
     <img
       style={{
@@ -172,8 +176,6 @@ const Home = () => {
       p: "Совсем скоро",
     },
   ];
-
-  const headerTitle = "Каждый может научится новому ! Даже если страшно.";
 
   return (
     <div className="home">

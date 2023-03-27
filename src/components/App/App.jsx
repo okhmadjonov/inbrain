@@ -43,7 +43,6 @@ function App() {
   const obj = { modal, ModalFunc };
   return (
     <Context.Provider value={obj}>
-
       <AppContainer>
         <Sidebar />
         <AppHomeContainer>
@@ -63,7 +62,6 @@ function App() {
           </Routes>
         </AppHomeContainer>
       </AppContainer>
-
     </Context.Provider>
   );
 }
