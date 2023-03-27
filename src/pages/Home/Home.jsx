@@ -217,20 +217,20 @@ const Home = () => {
         </div>
         <div className="ourgoal">
           <div className="whatweteach">
-            <div className="teachhead">Чему мы учим ?</div>
+            <div className="teachhead">{t("homepage.1")}</div>
             <p className="teachtxt">
-              Если вы хотите получить знания и поменять <br /> специализацию,
-              или освоить самую <br /> востребованную профессию во всем мире{" "}
-              <br />
-              то вы правильно <br /> сделали что выбрали нас !
+              {t("homepage.2")}
+              <br /> {t("homepage.3")} <br />
+              {t("homepage.4")} <br />
+              {t("homepage.5")} <br /> {t("homepage.6")}
             </p>
           </div>
           <div className="linktoinfo">
-            <div className="meet">Давайте знакомится</div>
+            <div className="meet">{t("homepage.7")}</div>
 
             <div className="button">
               <Link to="/Familiarization" className="clickme">
-                <span className="linkbtn">Жми сюда :)</span>{" "}
+                <span className="linkbtn">{t("homepage.8")}:)</span>{" "}
                 <img className="bow" src={bow} alt="Skore 31" />{" "}
               </Link>
             </div>
@@ -243,37 +243,36 @@ const Home = () => {
             </div>
           </div>
           <div className="aboutcourse">
-            <p className="kurs">Курс</p>
-            <p className="topro">Веб-разработчик с нуля до PRO</p>
+            <p className="kurs">{t("homepage.9")}</p>
+            <p className="topro">{t("homepage.10")}</p>
             <p className="learnjs">
-              Вы научитесь верстать сайты на HTML и <br /> CSS, изучите
-              JavaScript. И сделаете <br /> первые проекты для портфолио.
+              {t("homepage.11")} <br /> {t("homepage.12")} <br />
+              {t("homepage.13")}
             </p>
             <div className="startcourse">
               <Link to="/Salutation" className="start_btn">
-                Начать вводный курс
+                {t("homepage.14")}
               </Link>
 
-              <p className="durationcourse">10 месяцев</p>
+              <p className="durationcourse">{t("homepage.15")}</p>
             </div>
           </div>
         </div>
         <div className="courses_part">
           <div className="techhead">
             <div className="learningtechnology">
-              <p className="technology">Технологии</p>
-              <p className="startfromnull">Обучение с нуля</p>
+              <p className="technology">{t("homepage.16")}</p>
+              <p className="startfromnull">{t("homepage.17")}</p>
             </div>
-            <button className="startlearnbtn"> Начать обучение </button>
+            <button className="startlearnbtn">{t("homepage.18")}</button>
           </div>
 
           <div className="aboutourtechnology">
-            А вот технологии, которые будете использовать.
+            {t("homepage.19")}
             <br />
             <p className="abouttechhead">
-              Мы регулярно сверяемся с действующими разработчиками и
-              руководителями из <br /> индустрии, чтобы в программе оставались
-              только актуальные навыки и <br /> инструменты.
+              {t("homepage.20")} <br /> {t("homepage.21")}
+              <br /> {t("homepage.22")}.
             </p>
           </div>
           <div className="democourses">
@@ -285,7 +284,7 @@ const Home = () => {
                     <div className="itemhead">{item.title}</div>
                   </div>
 
-                  <button className="startlearnitem">{item.btn}</button>
+                  <button className="startlearnitem">{t("homepage.18")}</button>
                 </div>
               </>
             ))}
@@ -295,28 +294,21 @@ const Home = () => {
                   <img className="itemdemo" src={item.img} alt="Item demo 2" />
                   <div className="itemhead">{item.title}</div>
                 </div>
-                <p className="itemhead">{item.p}</p>
+                <p className="itemhead">{t("homepage.50")}</p>
               </div>
             ))}
           </div>
         </div>
         <div className="jobdeveloper">
-          <div className="jobhead">
-            Что именно вы будете делать, когда станете веб-разработчиком
-          </div>
+          <div className="jobhead">{t("homepage.23")}</div>
 
           <div className="tasksdeveloper">
             <div className="tasks">
-              <p className="writecode">Писать код на HTML, CSS и JavaScript</p>
-              <p className="createwebsite">
-                Разрабатывать сайты и веб-приложения
-              </p>
-              <p className="jobwithcollective">
-                Работать над продуктом вместе с командой
-              </p>
+              <p className="writecode">{t("homepage.24")}</p>
+              <p className="createwebsite">{t("homepage.25")}</p>
+              <p className="jobwithcollective">{t("homepage.26")}</p>
               <p className="helpbusinesses">
-                Помогать бизнесу развиваться, а <br /> пользователям —
-                становиться счастливее
+                {t("homepage.27")} <br /> {t("homepage.28")}
               </p>
             </div>
             <div>
@@ -330,41 +322,42 @@ const Home = () => {
         </div>
         <div className="contactus">
           <div className="helpchoosing">
-            <div className="choosing">Поможем в выборе!</div>
+            <div className="choosing">{t("homepage.29")}</div>
             <div className="ask_us">
               <img className="student" src={student} alt="Student" />
               <p className="asktxt">
-                Если у вас есть вопросы о <br />
-                формате или вы не знаете, <br />
-                что выбрать, оставьте свой <br />
-                номер — мы позвоним, <br />
-                чтобы ответить на все ваши <br />
-                опросы.
+                {t("homepage.30")} <br />
+                {t("homepage.31")}
+                <br />
+                {t("homepage.32")}
+                <br />
+                {t("homepage.33")} <br />
+                {t("homepage.34")} <br />
+                {t("homepage.35")}
               </p>
             </div>
           </div>
           <div className="registr">
-            <input className="name" placeholder="Имя" />
-            <input className="phone" placeholder="Телефон" />
-            <input className="email" placeholder="Почта" />
+            <input className="name" placeholder={t("homepage.36")} />
+            <input className="phone" placeholder={t("homepage.37")} />
+            <input className="email" placeholder={t("homepage.38")} />
             <div className="sendinfo">
               <div className="soglasie">
-                Нажимая на кнопку, я соглашаюсь на <br /> обработку{" "}
-                <a href="/">персональных данных</a> и с <br />{" "}
-                <a href="/">правилами пользования платформой</a>
+                {t("homepage.39")}
+                <br /> {t("homepage.40")} <a href="/">{t("homepage.41")}</a>{" "}
+                <br /> <a href="/">{t("homepage.42")}</a>
               </div>
               <button className="registr_btn">
-                <big>отправить</big>
+                <big>{t("homepage.43")}</big>
               </button>
             </div>
           </div>
         </div>
         <div className="reviews_part">
-          <div className="reviewhead">Что говорят о нас студенты ?</div>
+          <div className="reviewhead">{t("homepage.44")}</div>
           <p className="reviewtxt">
-            Если вы хотите получить знания и поменять специализацию, или освоить
-            самую <br /> востребованную профессию во всем мире то вы правильно{" "}
-            <br /> сделали что выбрали нас !
+            {t("homepage.45")} <br /> {t("homepage.46")} <br />
+            {t("homepage.47")}
           </p>
           <div className="comment_part">
             <Slider {...settings}>
@@ -372,10 +365,10 @@ const Home = () => {
                 <div className="review_card">
                   <div className="head_card">
                     <img className="petrov" src={item.img} alt="Petrov" />
-                    <p className="username">{item.name}</p>
+                    <p className="username">{t("homepage.48")}</p>
                   </div>
                   <div className="comment">
-                    <p className="commenttxt">{item.text}</p>
+                    <p className="commenttxt">{t("homepage.49")}</p>
                   </div>
                 </div>
               ))}
