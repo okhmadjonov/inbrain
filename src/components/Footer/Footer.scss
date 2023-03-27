@@ -1,0 +1,167 @@
+.footer {
+  width: 100%;
+  height: 250px;
+  bottom: 0;
+  position: relative;
+  p {
+    font-weight: 400;
+  }
+  .footpart {
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    .footadress {
+      display: grid;
+      gap: 5%;
+      .adresses {
+        display: grid;
+        gap: 50%;
+        .adress {
+          display: flex;
+          align-items: center;
+          gap: 2%;
+          .location {
+            width: 31px;
+            height: 31px;
+          }
+          .adressoffice {
+            width: 256px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #000000;
+          }
+        }
+        .footcontact {
+          display: flex;
+          align-items: center;
+          gap: 2%;
+          .phone {
+            width: 26px;
+            height: 25px;
+          }
+          .ournumber {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+          }
+        }
+      }
+    }
+    .social_menu {
+      display: grid;
+      gap: 25%;
+      .socialhead {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+      }
+      .socialmedia {
+        display: grid;
+        gap: 20%;
+        .telegramm {
+          display: flex;
+          gap: 7%;
+          align-items: center;
+          .foottg {
+            width: 25px;
+            height: 21px;
+          }
+          .tg {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+          }
+        }
+        .instagramm {
+          display: flex;
+          gap: 7%;
+          align-items: center;
+          .footinsta {
+            width: 26px;
+            height: 26px;
+          }
+          .insta {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+          }
+        }
+        .youtube {
+          display: flex;
+          gap: 7%;
+          align-items: center;
+          .foottube {
+            width: 27px;
+            height: 27px;
+          }
+          .tube {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+          }
+        }
+      }
+    }
+    .menu_items {
+      display: grid;
+      gap: 50%;
+      margin-top: -21px;
+      display: grid;
+      gap: 50%;
+      margin-top: -21px;
+      .itemhead {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+      }
+      .about_item {
+        display: grid;
+        gap: 35%;
+        margin-top: -11px;
+      }
+    }
+    .additionally {
+      display: grid;
+      gap: 37%;
+      margin-top: -8px;
+      .addithead {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+      }
+      .addit_menu {
+        display: grid;
+        gap: 33%;
+      }
+    }
+  }
+}
