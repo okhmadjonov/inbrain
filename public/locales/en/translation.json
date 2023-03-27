@@ -1,5 +1,42 @@
 { 
     "headerTitle":{
         "1":"Everyone can learn something new ! Even if it's scary."
+    },
+
+
+    "footer":{
+        "1":"Muhammad Yusuf Street,",
+        "2": "Tashkent, 100077",
+        "3":"Social networks:",
+        "4":"Menu items:",
+        "5": "About us",
+        "6": "Courses",
+        "7": "Employment",
+        "8":"Optional",
+        "9": "Privacy Policy",
+        "10": "Terms of use",
+        "11":"Forum"
+      },
+
+    "LessonFirst":{
+        "1":"Current lesson:",
+        "2":"Basic elements. HTML",
+        "3":"Site pages are assembled from elements, like a LEGO constructor. Text blocks, pictures, links, buttons are all elements of the site. Elements are described in HTML. Any web page contains code in this language and is saved in an HTML file .When you open a website, it is the HTML file that is loaded into the browser first.",
+        "4":"An HTML file is just a text file with a .html extension. But what's written in an HTML file is not a list of groceries or life notes, but HTML code.",
+        "5":"To understand how HTML works, let's look at an example. Here is a button with a label. Click on it to go further:",
+        "6": "Button with an inscription",
+        "7":"And here is the code that describes this button. If you write it in an HTML file, such a button will appear on the site:",
+        "8":"Copy code",
+        "9": "Button with the inscription",
+        "10":" You must have noticed the constructions with angle brackets - these are HTML tags. Tags describe site elements. For example, the &lt;button&gt; tag describes a button.",
+        "11": "Most often tags are paired. Opening tag",
+        "12": "says: «Here the button starts» and the closing",
+        "13":": «button ended.",
+        "14":" «Text between»",
+        "15":"will be displayed on the button.",
+        "16":" This text can be anything. You can write «Submit» or «Register» there and place a button where such actions are expected. You can write on the button «Go to the task» and place it right here:",
+        "17": "Return to the list of lessons",
+        "18": "Go to task"
+      
     }
 }

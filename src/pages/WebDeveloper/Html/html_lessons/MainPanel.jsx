@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
 import Circle from "./circle/Circle";
@@ -7,7 +8,7 @@ import Lesson_2 from "./lesson_2/Lesson_2";
 import Lesson_3 from "./lesson_3/Lesson_3";
 const MainPanel = () => {
   const [count, setCount] = useState(1);
-
+  const { t } = useTranslation();
   let step1 = false,
     step2 = false,
     step3 = false,
@@ -60,7 +61,7 @@ const MainPanel = () => {
       step1 = true;
   }
 
-  const headerTitle = "Каждый может научится новому ! Даже если страшно.";
+  const headerTitle = t("headerTitle.1");
 
   return (
     <div className="main">

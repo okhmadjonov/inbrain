@@ -1,5 +1,46 @@
 { 
     "headerTitle":{
         "1":"Har kim yangi narsalarni o'rganishi mumkin! Qo'rqinchli bo'lsa ham."
+    },
+
+
+    "footer":{
+
+        "1":"Muhammad Yusuf ko'chasi,",
+        "2": "Toshkent, 100077",
+        "3":"Ijtimoiy tarmoqlar:",
+        "4":"Menyu bandlari:",
+        "5": "Biz haqimizda",
+        "6": "Kurslar",
+        "7": "Bandlik",
+        "8":"Ixtiyoriy",
+        "9": "Maxfiylik siyosati",
+        "10": "Foydalanish shartlari",
+        "11":"Forum"
+    },
+
+
+
+
+    "LessonFirst":{
+        "1":"Joriy dars:",
+        "2":"Asosiy elementlar. HTML",
+        "3":"Sayt sahifalari LEGO konstruktori kabi elementlardan yig'ilgan. Matn bloklari, rasmlar, havolalar, tugmalar saytning barcha elementlaridir. Elementlar HTMLda tasvirlangan. Har qanday veb-sahifa shu tildagi kodni o'z ichiga oladi va shu tilda saqlanadi. HTML fayli .Veb-saytni ochganingizda, u avval brauzerga yuklanadigan HTML fayldir.",
+        "4":"HTML fayl shunchaki .html kengaytmali matnli fayldir. Lekin HTML faylida yozilgan narsalar oziq-ovqat yoki hayot eslatmalari ro'yxati emas, balki HTML kodidir.",
+        "5":"HTML qanday ishlashini tushunish uchun misolni ko'rib chiqaylik. Mana yorliqli tugma. Keyingiga o'tish uchun ustiga bosing:",
+        "6": "Yozuvli tugma",
+        "7":"Mana bu tugmani tavsiflovchi kod. Agar uni HTML faylga yozsangiz, saytda shunday tugma paydo bo'ladi:",
+        "8":"Kodni nusxalash",
+        "9": "Yozuvli tugma",
+        "10":" Siz burchakli qavsli konstruktsiyalarga e'tibor bergan bo'lsangiz kerak - bu HTML teglari. Teglar sayt elementlarini tavsiflaydi. Masalan, &lt;button&gt; tegi tugmani tasvirlaydi.",
+        "11": "Ko'pincha teglar birlashtiriladi. Ochilish tegi",
+        "12": "deydi: «Bu erda tugma boshlanadi» va yopilish",
+        "13":": «tugma tugadi.",
+        "14": "Oradagi matn",
+        "15":"tugmachasida ko'rsatiladi.",
+        "16":" Bu matn har qanday bo'lishi mumkin. U erda «Yuborish» yoki «Ro'yxatdan o'tish» deb yozishingiz va bunday harakatlar kutilayotgan tugmani qo'yishingiz mumkin. «Vazifaga o'tish» tugmachasiga yozib, uni shu yerga joylashtirishingiz mumkin: ",
+        "17": "Darslar ro'yxatiga qaytish",
+        "18": "Vazifaga o'tish"
+      
     }
 }
