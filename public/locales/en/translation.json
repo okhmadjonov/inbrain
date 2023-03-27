@@ -92,5 +92,26 @@
         "17": "Return to the list of lessons",
         "18": "Go to task"
       
+    },
+    "TaskFirst":{
+        "1":"Current lesson: Greeting / Hello /",
+         "2": "from",
+         "3":"Job:",
+         "4":"Basic elements. HTML",
+         "5": "Lesson: ",
+         "6": "Read the theory again",
+         "7": "Browser",
+         "8": "This is a simulator, or an answer window",
+         "9":"You can write code here.",
+         "10":"Lesson 1: Basic elements. HTML",
+         "11":" Here is the code editor window with the index.html file. A button with the text Hello world has already been created in it. But the audience of the service we are making is Russian-speaking, so the text on the button needs to be translated. Replace the Hello world text between ." ,
+         "12":" and",
+         "13":"the Russian equivalent of this word is «Hello world». When you do this, click «Check» - the result will be displayed in the window on the right.",
+         "14": "Hint",
+         "15": "Freedom of speech is above all. But the simulator will let you go further only with the written word Like between the tags",
+         "16" : "Result window",
+         "17":" When you write the code and press the «Check» button, the result will appear here, just like in the browser.",
+         "18": "Start over",
+         "19": "Check job"
+         }
     }
-}

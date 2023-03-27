@@ -8,6 +8,16 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    // order: [
+    //   "querystring",
+    //   "cookie",
+    //   "localStorage",
+    //   "sessionStorage",
+    //   "navigator",
+    //   "htmlTag",
+    //   "path",
+    //   "subdomain",
+    // ],
     lng: window.localStorage.defaultLanguage,
     fallbackLng: "ru",
     debug: true,

@@ -94,5 +94,27 @@
         "17": "Darslar ro'yxatiga qaytish",
         "18": "Vazifaga o'tish"
       
+    },
+    "TaskFirst":{
+        "1":"Joriy dars: Salomlashish / Salom /",
+         "2": "dan",
+         "3":"Ish:",
+         "4":"Asosiy elementlar. HTML",
+         "5": "Dars: ",
+         "6": "Nazariyani yana o'qing",
+         "7": "Brauzer",
+         "8": "Bu simulyator oynasi",
+         "9":"Bu yerda kod yozishingiz mumkin.",
+         "10":"1-dars: Asosiy elementlar. HTML",
+         "11":" Mana index.html fayli bo'lgan kod muharriri oynasi. Unda «Salom dunyo»  matnli tugma allaqachon yaratilgan. Lekin biz ko'rsatayotgan xizmat auditoriyasi rus tilida so'zlashuvchilardir, shuning uchun matn tugmani tarjima qilish kerak. Salom dunyo matnini . orasiga almashtiring." ,
+         "12":" va",
+         "13":"Ushbu so'zning ruscha ekvivalenti «Salom dunyo» . Buni qilganingizda  «Tekshirish»  tugmasini bosing - natija o'ng tarafdagi oynada ko'rsatiladi.",
+         "14": "Maslahat",
+         "15": "So'z erkinligi hamma narsadan ustundir. Lekin simulyator sizga teglar orasidagi «Like»  yozuvi bilangina oldinga borish imkonini beradi",
+         "16" : "Natija oynasi",
+         "17":" Kodni yozib, «Tekshirish»  tugmasini bosganingizda, natija xuddi brauzerdagi kabi shu yerda paydo bo'ladi.",
+         "18": "qaytadan boshlang",
+         "19": "Ishni tekshirish"
+         
     }
 }
