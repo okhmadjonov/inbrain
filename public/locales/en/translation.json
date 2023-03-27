@@ -112,6 +112,13 @@
          "16" : "Result window",
          "17":" When you write the code and press the «Check» button, the result will appear here, just like in the browser.",
          "18": "Start over",
-         "19": "Check job"
-         }
+         "19": "Check job",
+         "20":"This is the code editor window with the index.html file. A button with the text Hello world has already been created in it.",
+         "21":"But the audience of the service we are making is Russian-speaking, so the text on the button needs to be translated. Replace the Hello world text between ",
+         "22":" the Russian equivalent of this word is Hello world. When you do this, click Check - the result will be displayed in the window on the right.",
+         "23": "Correct answer !!!",
+         "24": "Keep it up, let's move on.",
+         "25": "Download source",
+         "26": "Continue"
+        }
     }
