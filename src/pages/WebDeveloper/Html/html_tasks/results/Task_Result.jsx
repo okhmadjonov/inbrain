@@ -7,11 +7,8 @@ import "./Task_Result.scss";
 import question from "../../../../../assets/images/question.png";
 import ref from "../../../../../assets/images/ref.png";
 import thanksimg from "../../../../../assets/images/thanksimg.png";
-
-import { FaTimes, FaArrowRight } from "react-icons/fa";
 import Footer from "../../../../../components/Footer/Footer";
 import Header from "../../../../../components/Header/Header";
-import { BsTypeH3 } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 
 const Task_Result = () => {
@@ -151,6 +148,7 @@ const Task_Result = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
