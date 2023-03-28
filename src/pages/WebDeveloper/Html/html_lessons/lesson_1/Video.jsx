@@ -1,6 +1,5 @@
 // import "./Video.scss";
 import { BsFillPlayFill } from "react-icons/bs";
-import { FaRegHandPointer } from "react-icons/fa";
 import { useRef, useState } from "react";
 import video from "../../../../../assets/videos/vid.mp4";
 const Video = ({ setModal }) => {

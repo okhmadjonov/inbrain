@@ -36,15 +36,6 @@ const SubMenu = ({ item }) => {
   return (
     <>
       <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
-        {/* <Link to={"/User"} className="userselect">
-          <img className="selectimg" src={petrov} />
-          <div className="userdiv">
-            <div className="selectusername">
-              {item.name}
-              <br /> <span className="selectbalance">{item.balance}</span>{" "}
-            </div>
-          </div>
-        </Link> */}
         <div>
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>

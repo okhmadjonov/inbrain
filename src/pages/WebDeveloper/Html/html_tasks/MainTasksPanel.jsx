@@ -1,15 +1,18 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
 import Html_Task_1 from "./task_1/Html_Task_1";
 
 const MainTasksPanel = () => {
+  const { t } = useTranslation();
   const title = (
-    <h3>
-      Текущий урок: Приветствие / Привет /{" "}
-      <span style={{ color: "#1c84ff" }}>1</span> из 14
-    </h3>
+    <>
+      {t("TaskFirst.1")}
+      <span style={{ color: "#1c84ff" }}>1</span> {t("TaskFirst.2")} 14
+    </>
   );
+
   return (
     <div className="main__tasks__panel">
       <div className="tasks__container">

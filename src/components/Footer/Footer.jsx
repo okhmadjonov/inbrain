@@ -6,7 +6,9 @@ import footphone from "../../assets/images/footphone.png";
 import foottg from "../../assets/images/foottg.png";
 import foottube from "../../assets/images/foottube.png";
 import footinsta from "../../assets/images/footinsta.png";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div className="footer">
       <div className="footpart">
@@ -16,7 +18,7 @@ const Footer = () => {
             <div className="adress">
               <img className="location" src={footlocation} alt="Location" />
               <p className="adressoffice">
-                39, Mukhammad Yusuf Street, <br /> Tashkent, 100077
+                39, {t("footer.1")}, <br /> {t("footer.2")}
               </p>
             </div>
             <div className="footcontact">
@@ -28,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="social_menu">
-          <div className="socialhead">Социальные сети:</div>
+          <div className="socialhead">{t("footer.3")}:</div>
 
           <div className="socialmedia">
             <div className="telegramm">
@@ -46,19 +48,19 @@ const Footer = () => {
           </div>
         </div>
         <div className="menu_items">
-          <div className="itemhead">Пункты меню:</div>
+          <div className="itemhead">{t("footer.4")}:</div>
           <div className="about_item">
-            <p>О нас</p>
-            <p>Курсы</p>
-            <p>Трудоустройства</p>
+            <p>{t("footer.5")}</p>
+            <p>{t("footer.6")}</p>
+            <p>{t("footer.7")}</p>
           </div>
         </div>
         <div className="additionally">
-          <div className="addithead">Дополнительно:</div>
+          <div className="addithead">{t("footer.8")}:</div>
           <div className="addit_menu">
-            <p>Политика конфиденциальности</p>
-            <p>Правила пользование</p>
-            <p>Форум</p>
+            <p>{t("footer.9")}</p>
+            <p>{t("footer.10")}</p>
+            <p>{t("footer.11")}</p>
           </div>
         </div>
       </div>

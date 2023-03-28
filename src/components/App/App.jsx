@@ -1,6 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
+import styled from "styled-components";
+
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Home from "../../pages/Home/Home";
 import Familiarization from "../../pages/WebDeveloper/Greeting/Familiarization/Familiarization";
@@ -15,7 +16,7 @@ import LessonModal from "../../pages/WebDeveloper/Html/html_lessons/lesson_1/Les
 import Context from "../Context/Context";
 import Result from "../../pages/WebDeveloper/Html/html_tasks/results/Task_Result";
 import Lessonfour from "../../pages/WebDeveloper/Html/Lessonfour/Listlesson";
-const obj = {};
+
 const AppContainer = styled.div`
   width: 100%;
   height: auto;
@@ -31,7 +32,13 @@ const AppHomeContainer = styled.div`
   height: 100%;
   margin: 0 auto;
 `;
+
 function App() {
+  const [modal, setModal] = useState(false);
+  const ModalFunc = (bol) => {
+    setModal(bol);
+  };
+  const obj = { modal, ModalFunc };
   return (
     <Context.Provider value={obj}>
       <AppContainer>

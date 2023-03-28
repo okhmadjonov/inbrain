@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './LessonModal.scss'
 
 import Lego from '../../../../../assets/images/modal/lego.png'
 import { ReactComponent as Cart} from '../../../../../assets/images/modal/cart.svg'
 import Video from './Video';
+import Context from '../../../../../components/Context/Context';
 
 
 
 const LessonModal = () => {
+
+  const { ModalFunc, modal } = useContext(Context)
 
 //   const [text, setText] = useState("");
   const [isCopied, setIsCopied] = useState(false);
@@ -28,10 +31,13 @@ const LessonModal = () => {
   };
 
     return (
+      <>
+
+       { modal ? <div className='modal_background'></div> :  null}
         <div className='lesson_modal'>
             <h1 className='lesson_modal_title'>Текущий урок: <span className='lesson_modal_title_span'>Базовые элементы. HTML</span></h1>
             <Video />
-            <div className='lesson_modal_cart'><Cart  /></div>
+            <div className='lesson_modal_cart' onClick={() => ModalFunc(false)} ><Cart  /></div>
             <p className='lesson_modal_info'>Страницы сайтов собирают из элементов, как конструктор LEGO. Текстовые блоки, картинки,
                 ссылки, кнопки — всё это элементы сайта. Элементы описывают на языке HTML. Любая веб-страница содержит код на этом языке
                 и сохраняется в HTML-файле. Когда вы открываете сайт, именно файл с HTML-кодом первым делом загружается в браузер.
@@ -53,6 +59,7 @@ const LessonModal = () => {
           <p className='lesson_modal_info1'>Наверняка вы обратили внимание на конструкции с угловыми скобками — это HTML-теги. Теги описывают элементы сайта. Например, тег &lt;button&gt; описывает кнопку.
             </p>
         </div>
+      </>
     );
 };
 

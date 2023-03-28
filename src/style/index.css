@@ -15,10 +15,13 @@ body {
   max-width: 1920px;
   height: max-content;
   margin: 0 auto;
+  font-family: "Inter", sans-serif;
 }
 
+Link{
+  list-style: none;
+}
 
 a{
-  text-decoration: none;
-  
+  text-decoration: none; 
 }

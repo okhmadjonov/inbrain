@@ -47,7 +47,6 @@
           font-weight: 500;
           font-size: 20px;
           line-height: 27px;
-
           color: #000000;
         }
         .tohome {
@@ -98,6 +97,7 @@
         display: grid;
         width: 100%;
         height: 700px;
+        grid-template-columns: 1fr;
         margin-top: 50px;
         .your_courses {
           font-family: "Inter";
@@ -110,14 +110,15 @@
         .courscard {
           width: 100%;
           margin-top: 80px;
-          display: flex;
-          align-items: center;
+          display: grid;
+          gap: 50px;
+          grid-template-columns: 1fr 1fr 1fr;
           justify-content: space-between;
           gap: 3%;
           flex-wrap: wrap;
 
           .yourcoursescard {
-            width: 350px;
+            width: 100%;
             height: 400px;
             display: grid;
             justify-content: center;
@@ -126,8 +127,12 @@
             margin-bottom: 5%;
             background: #18191b;
             border-radius: 50px;
+
             cursor: pointer;
             &:active {
+              background: #1c84ff;
+            }
+            &:hover {
               background: #1c84ff;
             }
             .itemimg {

@@ -1,41 +1,33 @@
 import React, { useState } from "react";
-import logo from "../../../../assets/images/logo.png";
-import users from "../../../../assets/images/users.png";
 import videolessonimg from "../../../../assets/images/videolessonimg.png";
 import taskimg from "../../../../assets/images/taskimg.png";
-
-import { BiSearchAlt } from "react-icons/bi";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import thanksimg from "../../../../assets/images/thanksimg.png";
-import { IconContext } from "react-icons";
-import * as AiIcons from "react-icons/ai";
-import * as HiIcons from "react-icons/hi2";
-import { Link } from "react-router-dom";
-import petrov from "../../../../assets/images/petrov.png";
-import footphone from "../../../../assets/images/footphone.png";
-import foottg from "../../../../assets/images/foottg.png";
-import foottube from "../../../../assets/images/foottube.png";
-import footinsta from "../../../../assets/images/footinsta.png";
-import logofooter from "../../../../assets/images/logofooter.png";
-import footlocation from "../../../../assets/images/footlocation.png";
 import "./salutation.scss";
-import styled from "styled-components";
 import Header from "../../../../components/Header/Header";
 import Footer from "../../../../components/Footer/Footer";
+import { useTranslation } from "react-i18next";
 
 const Salutation = () => {
   const [isShown, setIsShown] = useState(true);
-
+  const [user, setUser] = useState(true);
   const handleClick = (event) => {
     setIsShown((current) => !current);
   };
-
-  const saluttitle = "Текущий урок: Приветствие / Привет / 1 из 14";
+  const { t } = useTranslation();
+  const saluttitle = (
+    <p>
+      {t("Familiarization.1")}:{" "}
+      <span style={{ color: "#ffcc00" }}>Приветствие</span> / Привет /
+      <span style={{ color: "#1c84ff" }}> 1</span> из 14
+    </p>
+  );
+  // const saluttitle = "Текущий урок: Приветствие / Привет / 1 из 14";
   return (
     <>
       <div className="salutationpage">
         <div className="salutationcontainer">
-          <Header title={saluttitle} />
+          <Header title={saluttitle} user={user} />
           <div className="mainpart">
             <div className="weareinbrain">Привет мы команда Inbrain : )</div>
             <p className="aboutlessons">
