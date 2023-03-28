@@ -13,7 +13,9 @@ const Familiarization = () => {
   const titlehead = (
     <p>
       {t("Familiarization.1")}:{" "}
-      <span style={{ color: "#1c84ff" }}> {t("Familiarization.2")}</span>
+      <span style={{ color: "#ffcc00" }}>{t("Familiarization.21")}</span> /{" "}
+      {t("Familiarization.22")} /<span style={{ color: "#1c84ff" }}> 1</span>{" "}
+      {t("Familiarization.23")} 14
     </p>
   );
 

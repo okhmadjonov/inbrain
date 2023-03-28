@@ -18,8 +18,7 @@ const Salutation = () => {
   const saluttitle = (
     <p>
       {t("Familiarization.1")}:{" "}
-      <span style={{ color: "#ffcc00" }}>Приветствие</span> / Привет /
-      <span style={{ color: "#1c84ff" }}> 1</span> из 14
+      <span style={{ color: "#1c84ff" }}> {t("Familiarization.2")}</span>
     </p>
   );
   // const saluttitle = "Текущий урок: Приветствие / Привет / 1 из 14";
