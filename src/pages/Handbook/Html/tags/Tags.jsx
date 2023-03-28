@@ -43,13 +43,13 @@ const Tags = () => {
     { title: "<a>", body: "Defines a pyperlink" },
     { title: "<abbr>", body: "Defines an abbreviation or an acronym" },
   ];
-  const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <div>
       <div className="main_tags">
         <Header title={title} />
         <div className="guide">
-          <h1>{t("tags.1")}</h1>
+          <h1>{t('tags.1')}</h1>
           <div className="btns">
             <button>
               <img src={left_str} alt="LeftImg" /> {t("tags.2")}
@@ -90,13 +90,13 @@ const Tags = () => {
           </div>
         </div>
         <div className="guide" style={{ marginTop: "40px" }}>
-          <h1>{t("tags.1")}</h1>
+          <h1>{t('tags.1')}</h1>
           <div className="btns">
             <button>
               <img src={left_str} alt="LeftImg" /> {t("tags.2")}
             </button>
             <button>
-              {t("tags.3")} <img src={right} alt="LeftImg" />
+            {t('tags.3')} <img src={right} alt="LeftImg" />
             </button>
           </div>
         </div>
