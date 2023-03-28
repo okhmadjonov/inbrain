@@ -24,46 +24,48 @@ const Header = (props) => {
       <Link to="/" className="logo">
         <img src={logo} alt="Logo" />
       </Link>
-      <div 
+      <div
         style={{
-          overflow: 'hidden', 
-          width: '650px', 
-          height: '60px', 
-          display: 'flex', 
-          gap: '50px', 
-          textAlign: 'center'
+          overflow: "hidden",
+          width: "650px",
+          height: "60px",
+          display: "flex",
+          gap: "50px",
+          textAlign: "center",
         }}>
-      <p
-        style={{ transform: isShown ? 'translateX(0)' : 'translateX(-200%)', fontSize: '16px' }}
-        className="learn">
-        {title}
-      </p>
-      <div 
-         style={{
-          transform: isShown? 'translateX(-100%)' : 'translateX(-15%)', 
-          marginTop: '10px',
-          background: isShown? 'none': '#F8F8FF',
-          marginLeft: isShown? '50px' : '-30px',
-          boxShadow: isShown? 'none' : ' 0px 1px 3px rgba(0, 0, 0, 0.25)'
-
-          
-        }}   
-        className="searchBox"
-      >
-         <input 
+        <p
           style={{
-            transform: isShown? 'translateX(-100%)' : 'translateX(0)', 
-            width: isShown? '0': '500px', 
-            marginLeft: '20px',
-          }} 
-          className="searchInput" type="text" name="" placeholder="Search"
-        /> 
+            transform: isShown ? "translateX(0)" : "translateX(-200%)",
+            fontSize: "16px",
+          }}
+          className="learn">
+          {title}
+        </p>
+        <div
+          style={{
+            transform: isShown ? "translateX(-100%)" : "translateX(-15%)",
+            marginTop: "10px",
+            background: isShown ? "none" : "#F8F8FF",
+            marginLeft: isShown ? "50px" : "-30px",
+            boxShadow: isShown ? "none" : " 0px 1px 3px rgba(0, 0, 0, 0.25)",
+          }}
+          className="searchBox">
+          <input
+            style={{
+              transform: isShown ? "translateX(-100%)" : "translateX(0)",
+              width: isShown ? "0" : "500px",
+              marginLeft: "20px",
+            }}
+            className="searchInput"
+            type="text"
+            name=""
+            placeholder="Search"
+          />
 
-        <div className="searchButton" onClick={handleClick} >
-          <BiSearchAlt style={{marginTop: '4px'}}/>
+          <div className="searchButton" onClick={handleClick}>
+            <BiSearchAlt style={{ marginTop: "4px" }} />
+          </div>
         </div>
-      </div> 
-
       </div>
       <div className="user__language">
         {props.user ? (
