@@ -6,20 +6,28 @@ import thanksimg from "../../../../assets/images/thanksimg.png";
 import "./salutation.scss";
 import Header from "../../../../components/Header/Header";
 import Footer from "../../../../components/Footer/Footer";
+import { useTranslation } from "react-i18next";
 
 const Salutation = () => {
   const [isShown, setIsShown] = useState(true);
-
+  const [user, setUser] = useState(true);
   const handleClick = (event) => {
     setIsShown((current) => !current);
   };
-
-  const saluttitle = "Текущий урок: Приветствие / Привет / 1 из 14";
+  const { t } = useTranslation();
+  const saluttitle = (
+    <p>
+      {t("Familiarization.1")}:{" "}
+      <span style={{ color: "#ffcc00" }}>Приветствие</span> / Привет /
+      <span style={{ color: "#1c84ff" }}> 1</span> из 14
+    </p>
+  );
+  // const saluttitle = "Текущий урок: Приветствие / Привет / 1 из 14";
   return (
     <>
       <div className="salutationpage">
         <div className="salutationcontainer">
-          <Header title={saluttitle} />
+          <Header title={saluttitle} user={user} />
           <div className="mainpart">
             <div className="weareinbrain">Привет мы команда Inbrain : )</div>
             <p className="aboutlessons">
