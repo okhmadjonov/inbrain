@@ -165,8 +165,45 @@
              "18":"Birinchi portfel loyihalari.",
              "19": "Kirish kursini boshlash",
              "20":"oy",
+
+             "21":""
+            },
+
+        "Salutation":{
+            "1":"Salom",
+            "2":"Salom",
+            "3":"dan",
+            "4":"Salom biz Inbrain jamoasimiz",
+            "5":"Keling, tanishamiz, biz veb-ishlab chiqish kurslarini yaratgan inbrain jamoasimiz. Hozirgi bilim dan",
+            "6":"yangi boshlanuvchilar uchun tan olingan bozor mutaxassislari. Davom etish uchun videoni tomosha qiling.",
+            "7":"Seminardagi barcha mashg'ulotlar sprintlarga bo'lingan. Sprint - bu qurilgan ikki haftalik segment",
+            "8":"ma'lum bir tarzda: avval siz nazariyani o'rganasiz, keyin simulyatorda mashq qilasiz,",
+            "9":"keyin siz loyihani tuzasiz va topshirasiz.",
+            "10":"Loyiha joriy sprint ko'nikmalarini qanday o'rganganingizni tekshiradi, shuning uchun sprint oxirida loyihani yuborish kerak",
+            "11":"tekshirish. Ushbu tekshirish kodni ko'rib chiqish deb ataladi - haqiqiy ishlab chiquvchi (kod tekshiruvi) sizning ishingizga qaraydi va beradi",
+            "12":"sharhlar: nimani yaxshilash kerak va nimani yaxshiroq qilish mumkin.",
+            "13":"Javob variantlaridan birini tanlang:",
+            "14":"Variant",
+            "15":"har qanday, lekin birinchi emas",
+            "16":"Javob uchun rahmat",
+            "17":"Darslar ro'yxatiga qaytish",
+            "18":"Oldinga",
+            "19":"",
+            "20":"",
+            "21":"",
+            "22":"",
+            "23":"",
+            "24":"",
+            "25":"",
+            "26":"",
+            "27":"",
+            "28":"",
+            "29":""
+        }
+
              "21":"Salomlashish",
             "22":"Salom",
             "23":"dan"
             }
+
 }

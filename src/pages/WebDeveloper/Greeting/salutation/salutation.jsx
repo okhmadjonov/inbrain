@@ -18,38 +18,43 @@ const Salutation = () => {
   const saluttitle = (
     <p>
       {t("Familiarization.1")}:{" "}
+
+      <span style={{ color: "#ffcc00" }}>{t("Salutation.1")}</span> / {t("Salutation.2")} /
+      <span style={{ color: "#1c84ff" }}> 1</span> {t("Salutation.3")} 14
+
       <span style={{ color: "#1c84ff" }}> {t("Familiarization.2")}</span>
+
     </p>
   );
-  // const saluttitle = "Текущий урок: Приветствие / Привет / 1 из 14";
+ 
   return (
     <>
       <div className="salutationpage">
         <div className="salutationcontainer">
           <Header title={saluttitle} user={user} />
           <div className="mainpart">
-            <div className="weareinbrain">Привет мы команда Inbrain : )</div>
+            <div className="weareinbrain">{t("Salutation.4")} : )</div>
             <p className="aboutlessons">
-              Давай знакомится мы команда inbrain которая создала курсы по веб
-              разработке. Актуальные знания от <br /> признанных экспертов рынка
-              для новичков. Просмотри пожалуйста видео чтобы продолжить дальше.
+              {t("Salutation.5")}
+              <br /> 
+              {t("Salutation.6")}
             </p>
             <div className="video__lesson__img">
-              <img className="image" src={videolessonimg} />
+              <img className="image" src={videolessonimg} alt='images'/>
             </div>
             <div className="sprint">
-              Всё обучение в Практикуме разбито на спринты. Спринт — это
-              двухнедельный отрезок, который построен <br />
-              определённым образом: сначала вы изучаете теорию, потом
-              практикуетесь в тренажёре, <br />
-              затем делаете и сдаёте проект.
+              {t("Salutation.7")} 
+              <br />
+              {t("Salutation.8")}  
+              <br />
+              {t("Salutation.9")}
               <br />
               <br />
-              Проект проверяет, как вы усвоили навыки текущего спринта, поэтому
-              в конце спринта проект нужно отправить на <br />
-              проверку. Эта проверка называется код-ревью — реальный разработчик
-              (код-ревьюер) смотрит вашу работу и даёт <br />
-              комментарии: что нужно исправить, а что можно сделать лучше.
+              {t("Salutation.10")}
+              <br />
+              {t("Salutation.11")} 
+              <br />
+              {t("Salutation.12")}
             </div>
 
             <div className="testpart">
@@ -57,47 +62,47 @@ const Salutation = () => {
                 <div className="block">
                   <div className="test">
                     <div className="testhead">
-                      Выберите один из вариантов ответа:{" "}
+                      {t("Salutation.13")}{" "}
                     </div>
 
                     <div className="variants">
                       <input name="radio" className="custom" type={"radio"} />
-                      <label></label>
+                      <label>{t("Salutation.14")} №1</label>
                     </div>
                     <div className="variants">
                       <input className="custom2" name="radio" type={"radio"} />
-                      <label></label>
+                      <label>{t("Salutation.14")} №2</label>
                     </div>
                     <div className="variants">
                       <input className="custom3" name="radio" type={"radio"} />
-                      <label></label>
+                      <label>{t("Salutation.14")} №3</label>
                     </div>
                     <div className="variants">
                       <input className="custom4" name="radio" type={"radio"} />
-                      <label></label>
+                      <label>{t("Salutation.14")} {t("Salutation.15")}</label>
                     </div>
                   </div>
                   <div>
-                    <img className="taskimg" src={taskimg} />
+                    <img className="taskimg" src={taskimg} alt='images' />
                   </div>
                 </div>
               </div>
               <div style={{ display: isShown ? "none" : "block" }}>
-                <div className="thanks">Спасибо за ответ !!!</div>
+                <div className="thanks">{t("Salutation.16")}!!!</div>
                 <div>
-                  <img src={thanksimg} />
+                  <img src={thanksimg} alt='images' />
                 </div>
               </div>
               <div className="btns">
                 <div>
                   <button className="returntolist">
                     {" "}
-                    <AiOutlineLeft /> Вернутся к списску уроков
+                    <AiOutlineLeft /> {t("Salutation.17")}
                   </button>
                 </div>
                 <div>
                   <button onClick={handleClick} className="forward">
-                    Вперед <AiOutlineRight />
+                    {t("Salutation.18")} <AiOutlineRight />
                   </button>
                 </div>
               </div>
