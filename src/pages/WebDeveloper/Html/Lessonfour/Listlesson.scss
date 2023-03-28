@@ -11,7 +11,6 @@
         width: 100%;
         height: 200px;
         display: grid;
-        border: 1px solid black;
         .thislesson {
           font-family: "Inter";
           font-style: normal;
@@ -114,9 +113,8 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          //   gap: 3%;
-          //   flex-wrap: wrap;
-          border: 1px solid black;
+          gap: 3%;
+          flex-wrap: wrap;
 
           .yourcoursescard {
             width: 350px;
