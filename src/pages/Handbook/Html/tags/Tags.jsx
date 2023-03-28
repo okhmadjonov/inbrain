@@ -8,7 +8,8 @@ import search_icon from "../../../../assets/images/search_icon.png";
 import "./Tags.scss";
 import { useTranslation } from "react-i18next";
 const Tags = () => {
-  const title = "Каждый может научится новому ! Даже если страшно.";
+  const { t } = useTranslation()
+  const title = t('tags.0')
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -43,7 +44,6 @@ const Tags = () => {
     { title: "<a>", body: "Defines a pyperlink" },
     { title: "<abbr>", body: "Defines an abbreviation or an acronym" },
   ];
-  const { t } = useTranslation()
   return (
     <div>
       <div className="main_tags">
