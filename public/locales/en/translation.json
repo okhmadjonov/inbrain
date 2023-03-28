@@ -120,5 +120,26 @@
          "24": "Keep it up, let's move on.",
          "25": "Download source",
          "26": "Continue"
+        },
+        "User":{
+            "1": "Student card",
+             "2": "Arifzhanov Oybek",
+             "3": "Age",
+             "4":"years",
+             "5": "Trained",
+             "6": "Introduction",
+             "7": "Next course",
+             "8":"from",
+             "9": "Dating",
+             "10": "My courses",
+             "11": "Web developer from scratch to PRO",
+             "12": "You will learn how to make websites in HTML and",
+             "13": "CSS, learn JavaScript. And you will",
+             "14":"first portfolio projects",
+             "15": "Start training",
+             "16":"Reference",
+             "17": "To unlock the guide, start learning the course",
+             "18":" Site pages are assembled from elements, like a LEGO constructor. Text blocks, pictures, links, buttons are all elements of the site. Elements are described in HTML. Any web page contains code in this language and is saved in an HTML file .When you open a website, it is the HTML file that is loaded into the browser first.",
+             "19":""
         }
     }

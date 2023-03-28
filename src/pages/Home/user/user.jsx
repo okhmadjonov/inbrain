@@ -39,7 +39,7 @@ const User = () => {
         <div className="Usercontainer">
           <Header title={headertitle} />
           <div className="User">
-            <div className="cardhead">Карточка ученика</div>
+            <div className="cardhead">{t("User.1")}</div>
 
             <div className="Cardstudent">
               <div className="aboutuser">
@@ -48,15 +48,15 @@ const User = () => {
                     <img className="user" src={user} />
                   </div>
                   <div className="name">
-                    <p className="name_user">Арифжанов Ойбек</p>
+                    <p className="name_user">{t("User.2")}</p>
                     <p className="age_user">
-                      Возраст:<span>18 лет</span>
+                      {t("User.3")}:<span>18 {t("User.4")}</span>
                     </p>
                     <p className="passedcourse">
-                      Прошел обучение: <span>Знакомство</span>{" "}
+                      {t("User.5")}: <span>{t("User.6")}</span>{" "}
                     </p>
                     <p className="nextcourse">
-                      Следующий курс: <span>HTML 5 -</span>
+                      {t("User.7")}: <span>HTML 5 -</span>
                     </p>
                   </div>
                 </div>
@@ -68,19 +68,17 @@ const User = () => {
                   <div className="likerectangle">
                     <div className="likediv">
                       <img className="like" src={like} />
-                      <p className="passednumber">19 из 19</p>
+                      <p className="passednumber">19 {t("User.8")} 19</p>
                     </div>
                   </div>
 
-                  <p className="passedkurs">Знакомства</p>
+                  <p className="passedkurs">{t("User.9")}</p>
                 </div>
               </div>
 
               <div className="mycourse">
-                Мои курсы:
-                <span style={{ color: "#FFCC00" }}>
-                  Веб-разработчик с нуля до PRO
-                </span>{" "}
+                {t("User.10")}:
+                <span style={{ color: "#FFCC00" }}>{t("User.11")}</span>{" "}
               </div>
 
               <div className="htmlstart">
@@ -94,23 +92,23 @@ const User = () => {
                       }}
                       src={htmldemo}
                     />
-                    <p>0 из 19</p>
+                    <p>0 {t("User.8")} 19</p>
                   </div>
                 </div>
                 <div className="desccourse">
                   <p className="_html">HTML 5</p>
                   <p className="incourse">
-                    Вы научитесь верстать сайты на HTML и <br /> CSS, изучите
-                    JavaScript. И сделаете <br /> первые проекты для портфолио.
+                    {t("User.12")} <br /> {t("User.13")} <br />
+                    {t("User.14")}
                   </p>
                 </div>
                 <div className="start_btns">
                   <button className="startlearn">
-                    Начать обучение{" "}
+                    {t("User.15")}
                     <BiChevronRight style={{ fontSize: "2rem" }} />
                   </button>
                   <button onClick={handleOpen} className="linktodoc">
-                    Справочник HTML{" "}
+                    {t("User.16")} HTML
                     <BiChevronRight style={{ fontSize: "2rem" }} />
                   </button>
                   <Modal
@@ -133,19 +131,12 @@ const User = () => {
                         id="modal-modal-title"
                         variant="h6"
                         component="h2">
-                        Чтобы разблокировать справочник начните обучение по
-                        курсу: HTML
+                        {t("User.17")}: HTML
                       </Typography>
                       <Typography
                         id="modal-modal-description"
                         sx={{ mt: 2, width: 900 }}>
-                        Страницы сайтов собирают из элементов, как конструктор
-                        LEGO. Текстовые блоки, картинки, ссылки, кнопки — всё
-                        это элементы сайта. Элементы описывают на языке HTML.
-                        Любая веб-страница содержит код на этом языке и
-                        сохраняется в HTML-файле. Когда вы открываете сайт,
-                        именно файл с HTML-кодом первым делом загружается в
-                        браузер.
+                        {t("User.17")}
                       </Typography>
                     </Box>
                   </Modal>
@@ -162,23 +153,23 @@ const User = () => {
                       }}
                       src={cssdemo}
                     />
-                    <p>0 из 24</p>
+                    <p>0 {t("User.8")} 24</p>
                   </div>
                 </div>
                 <div className="desccourse">
                   <p className="_css">CSS</p>
                   <p className="incourse">
-                    Вы научитесь верстать сайты на HTML и <br /> CSS, изучите
-                    JavaScript. И сделаете <br /> первые проекты для портфолио.
+                    {t("User.12")} <br /> {t("User.13")}
+                    <br /> {t("User.14")}
                   </p>
                 </div>
                 <div className="start_btns">
                   <button className="startlearn">
-                    Начать обучение{" "}
+                    {t("User.15")}
                     <BiChevronRight style={{ fontSize: "2rem" }} />
                   </button>
                   <button className="linktodoc">
-                    Справочник CSS{" "}
+                    {t("User.16")} CSS{" "}
                     <BiChevronRight style={{ fontSize: "2rem" }} />
                   </button>
                 </div>
@@ -194,23 +185,22 @@ const User = () => {
                       }}
                       src={jsdemo}
                     />
-                    <p>0 из 19</p>
+                    <p>0 {t("User.8")} 19</p>
                   </div>
                 </div>
                 <div className="descourse">
                   <p className="_js">JavaScript</p>
                   <p className="incourse">
-                    Вы научитесь верстать сайты на HTML и <br /> CSS, изучите
-                    JavaScript. И сделаете <br /> первые проекты для портфолио.
+                    {t("User.12")} <br /> {t("User.13")} <br /> {t("User.14")}
                   </p>
                 </div>
                 <div className="start_btns">
                   <button className="startlearn">
-                    Начать обучение{" "}
+                    {t("User.15")}{" "}
                     <BiChevronRight style={{ fontSize: "2rem" }} />
                   </button>
                   <button className="linktodoc">
-                    Справочник CSS{" "}
+                    {t("User.16")} JavaScript{" "}
                     <BiChevronRight style={{ fontSize: "2rem" }} />
                   </button>
                 </div>

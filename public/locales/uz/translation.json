@@ -122,5 +122,26 @@
          "24": "Davom eting, oldinga.",
          "25": "Yuklab olish manbasi",
          "26": "Davom etish"
+    },
+    "User":{
+        "1": "Talaba kartasi",
+            "2": "Orifjonov Oybek",
+             "3": "Yosh",
+             "4":"yosh",
+             "5": "O'qitilgan",
+             "6": "Tanishuv",
+             "7": "Keyingi kurs",
+             "8":"dan",
+             "9": "Tanishuv",
+             "10": "Mening kurslarim",
+             "11": "Noldan PROgacha veb-ishlab chiqaruvchi",
+             "12": "Siz HTML-da veb-saytlar yaratishni o'rganasiz va",
+             "13": "CSS, JavaScript-ni o'rganing. Va siz ham o'rganasiz",
+             "14":"birinchi portfel loyihalari",
+             "15": "Mashqni boshlang",
+             "16":"Havola",
+             "17": "Qo'llanmani ochish uchun kursni o'rganishni boshlang",
+             "18":" Sayt sahifalari LEGO konstruktori kabi elementlardan yig'ilgan. Matn bloklari, rasmlar, havolalar, tugmalar saytning barcha elementlari. Elementlar HTMLda tasvirlangan. Har qanday veb-sahifa shu tildagi kodni o'z ichiga oladi va shu tilda saqlanadi. HTML fayli .Veb-saytni ochganingizda, u avval brauzerga yuklanadigan HTML fayldir.",
+             "19":""
     }
 }
