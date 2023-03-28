@@ -75,11 +75,21 @@
         }
         .lessons {
           display: grid;
-
+          cursor: pointer;
+          img {
+            border-radius: 30px;
+            &:hover {
+              background: rgba(1, 169, 225, 0.1);
+              background-repeat: repeat;
+            }
+          }
           .firstlesson {
             display: flex;
             align-items: center;
             gap: 40px;
+            &:hover {
+              color: #1c84ff;
+            }
 
             .firsttxt {
               width: 215px;
@@ -91,7 +101,6 @@
               line-height: 29px;
               &:hover {
                 color: #1c84ff;
-                cursor: pointer;
               }
             }
           }
