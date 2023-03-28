@@ -24,6 +24,9 @@
         "3":"Further",
         "4":"HTML tags in alphabetical order"
       },
+      "modal":{
+        "1":"Site pages are assembled from elements, like a LEGO constructor. Text blocks, pictures, links, buttons - all these are elements of the site. Elements are described in HTML. Any web page contains code in this language and is saved in an HTML file. When you open a website, it is the HTML file that is loaded into the browser first."
+      },
 
 
       "homepage":{
