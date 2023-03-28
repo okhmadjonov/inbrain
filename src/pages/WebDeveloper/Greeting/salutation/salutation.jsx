@@ -18,15 +18,13 @@ const Salutation = () => {
   const saluttitle = (
     <p>
       {t("Familiarization.1")}:{" "}
-
-      <span style={{ color: "#ffcc00" }}>{t("Salutation.1")}</span> / {t("Salutation.2")} /
-      <span style={{ color: "#1c84ff" }}> 1</span> {t("Salutation.3")} 14
-
+      <span style={{ color: "#ffcc00" }}>{t("Salutation.1")}</span> /{" "}
+      {t("Salutation.2")} /<span style={{ color: "#1c84ff" }}> 1</span>{" "}
+      {t("Salutation.3")} 14
       <span style={{ color: "#1c84ff" }}> {t("Familiarization.2")}</span>
-
     </p>
   );
- 
+
   return (
     <>
       <div className="salutationpage">
@@ -36,23 +34,23 @@ const Salutation = () => {
             <div className="weareinbrain">{t("Salutation.4")} : )</div>
             <p className="aboutlessons">
               {t("Salutation.5")}
-              <br /> 
+              <br />
               {t("Salutation.6")}
             </p>
             <div className="video__lesson__img">
-              <img className="image" src={videolessonimg} alt='images'/>
+              <img className="image" src={videolessonimg} alt="images" />
             </div>
             <div className="sprint">
-              {t("Salutation.7")} 
+              {t("Salutation.7")}
               <br />
-              {t("Salutation.8")}  
+              {t("Salutation.8")}
               <br />
               {t("Salutation.9")}
               <br />
               <br />
               {t("Salutation.10")}
               <br />
-              {t("Salutation.11")} 
+              {t("Salutation.11")}
               <br />
               {t("Salutation.12")}
             </div>
@@ -61,9 +59,7 @@ const Salutation = () => {
               <div style={{ display: isShown ? "block" : "none" }}>
                 <div className="block">
                   <div className="test">
-                    <div className="testhead">
-                      {t("Salutation.13")}{" "}
-                    </div>
+                    <div className="testhead">{t("Salutation.13")} </div>
 
                     <div className="variants">
                       <input name="radio" className="custom" type={"radio"} />
@@ -79,18 +75,20 @@ const Salutation = () => {
                     </div>
                     <div className="variants">
                       <input className="custom4" name="radio" type={"radio"} />
-                      <label>{t("Salutation.14")} {t("Salutation.15")}</label>
+                      <label>
+                        {t("Salutation.14")} {t("Salutation.15")}
+                      </label>
                     </div>
                   </div>
                   <div>
-                    <img className="taskimg" src={taskimg} alt='images' />
+                    <img className="taskimg" src={taskimg} alt="images" />
                   </div>
                 </div>
               </div>
               <div style={{ display: isShown ? "none" : "block" }}>
                 <div className="thanks">{t("Salutation.16")}!!!</div>
                 <div>
-                  <img src={thanksimg} alt='images' />
+                  <img src={thanksimg} alt="images" />
                 </div>
               </div>
               <div className="btns">
