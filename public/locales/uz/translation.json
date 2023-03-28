@@ -164,8 +164,8 @@
              "17": "CSS, JavaScript-ni o'rganing. Va siz ham o'rganasiz,",
              "18":"Birinchi portfel loyihalari.",
              "19": "Kirish kursini boshlash",
-             "20":"oy",
-             "21":""
+             "20":"oy"
+           
             },
 
         "Salutation":{
@@ -188,10 +188,4 @@
             "17":"Darslar ro'yxatiga qaytish",
             "18":"Oldinga"
         }
-
-             "21":"Salomlashish",
-            "22":"Salom",
-            "23":"dan"
-            }
-
 }
