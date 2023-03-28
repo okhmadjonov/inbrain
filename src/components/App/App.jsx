@@ -19,20 +19,18 @@ import Lessonfour from "../../pages/WebDeveloper/Html/Lessonfour/Listlesson";
 
 const AppContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: auto;
   max-width: 1920px;
   position: relative;
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
   gap: 20px;
-  /* border: 1px solid black; */
 `;
 const AppHomeContainer = styled.div`
-  width: 70%;
+  width: 77%;
   height: 100%;
   margin: 0 auto;
-  /* border: 1px solid purple; */
 `;
 
 function App() {
@@ -44,7 +42,9 @@ function App() {
   return (
     <Context.Provider value={obj}>
       <AppContainer>
-        <Sidebar />
+        
+          <Sidebar />
+        
         <AppHomeContainer>
           <Routes>
             <Route path="/" element={<Home />} />
