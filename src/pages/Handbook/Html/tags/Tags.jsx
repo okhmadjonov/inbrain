@@ -6,6 +6,7 @@ import left_str from "../../../../assets/images/left_str.png";
 import right from "../../../../assets/images/right.png";
 import search_icon from "../../../../assets/images/search_icon.png";
 import "./Tags.scss";
+import { useTranslation } from "react-i18next";
 const Tags = () => {
   const title = "Каждый может научится новому ! Даже если страшно.";
   const [modal, setModal] = useState(false);
@@ -42,22 +43,23 @@ const Tags = () => {
     { title: "<a>", body: "Defines a pyperlink" },
     { title: "<abbr>", body: "Defines an abbreviation or an acronym" },
   ];
+  const { t } = useTranslation();
   return (
     <div>
       <div className="main_tags">
         <Header title={title} />
         <div className="guide">
-          <h1>Справочник по элементам HTML</h1>
+          <h1>{t("tags.1")}</h1>
           <div className="btns">
             <button>
-              <img src={left_str} alt="LeftImg" /> Назад
+              <img src={left_str} alt="LeftImg" /> {t("tags.2")}
             </button>
             <button>
-              Дальше <img src={right} alt="RightImg" />
+              {t("tags.3")} <img src={right} alt="RightImg" />
             </button>
           </div>
         </div>
-        <h1 style={{ margin: "30px 10px" }}>Теги HTML в алфавитном порядке</h1>
+        <h1 style={{ margin: "30px 10px" }}>{t("tags.4")}</h1>
         <div className="search_main">
           <input type="search" className="search" />
           <div className="icon_menu">
@@ -88,13 +90,13 @@ const Tags = () => {
           </div>
         </div>
         <div className="guide" style={{ marginTop: "40px" }}>
-          <h1>Справочник по элементам HTML</h1>
+          <h1>{t("tags.1")}</h1>
           <div className="btns">
             <button>
-              <img src={left_str} alt="LeftImg" /> Назад
+              <img src={left_str} alt="LeftImg" /> {t("tags.2")}
             </button>
             <button>
-              Дальше <img src={right} alt="LeftImg" />
+              {t("tags.3")} <img src={right} alt="LeftImg" />
             </button>
           </div>
         </div>
