@@ -143,5 +143,28 @@
              "17": "Qo'llanmani ochish uchun kursni o'rganishni boshlang",
              "18":" Sayt sahifalari LEGO konstruktori kabi elementlardan yig'ilgan. Matn bloklari, rasmlar, havolalar, tugmalar saytning barcha elementlari. Elementlar HTMLda tasvirlangan. Har qanday veb-sahifa shu tildagi kodni o'z ichiga oladi va shu tilda saqlanadi. HTML fayli .Veb-saytni ochganingizda, u avval brauzerga yuklanadigan HTML fayldir.",
              "19":""
-    }
+    },
+    "Familiarization":{
+             "1": "Joriy dars",
+             "2": "Salom, videoni tomosha qiling",
+             "3": "Salom, biz Inbrain jamoasimiz - iltimos, videoni tomosha qiling",
+             "4": "qo'shimcha o'rganishni davom ettirish",
+             "5": "Keling, tanishamiz, biz veb-ishlab chiqish kurslarini yaratgan inbrain jamoasimiz",
+             "6": "Joriy bilimlar",
+             "7":"yangi boshlanuvchilar uchun taniqli mutaxassislar.",
+             "8": "Platformada siz tegishli mavzular bo'yicha bilim va talab qilinadigan ko'nikmalarga ega bo'lishingiz mumkin. Barcha kurslar quyidagilarga qaratilgan",
+             "9": "amaliyot: biz materialning dolzarbligini nazorat qilamiz va ishga joylashish va amaliyotda yordam beramiz.",
+             "10": "Videoni tomosha qiling: veb-ishlab chiqish nima?",
+             "11": "Kim ixtiro qilgan",
+             "12": "Qaerda ishlatiladi",
+             "13": "Sizga nima kerak",
+             "14": "Kurs",
+             "15": "Noldan PROgacha veb-ishlab chiqaruvchi",
+             "16":"Siz HTML va da veb-saytlar yaratishni o'rganasiz.",
+             "17": "CSS, JavaScript-ni o'rganing. Va siz ham o'rganasiz,",
+             "18":"Birinchi portfel loyihalari.",
+             "19": "Kirish kursini boshlash",
+             "20":"oy",
+             "21":""
+            }
 }

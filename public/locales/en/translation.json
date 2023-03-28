@@ -141,5 +141,29 @@
              "17": "To unlock the guide, start learning the course",
              "18":" Site pages are assembled from elements, like a LEGO constructor. Text blocks, pictures, links, buttons are all elements of the site. Elements are described in HTML. Any web page contains code in this language and is saved in an HTML file .When you open a website, it is the HTML file that is loaded into the browser first.",
              "19":""
+        },
+        "Familiarization":{
+            "1": "Current lesson",
+             "2": "Hi, watch the video",
+             "3": "Hi, we are the Inbrain team - please watch the video to",
+             "4": "continue further learning",
+             "5": "Let's get acquainted, we are the inbrain team that created web development courses",
+             "6": "Current knowledge from",
+             "7":"recognized experts for beginners.",
+             "8": "On the platform, you can gain knowledge on relevant topics and in-demand skills. All courses are aimed at",
+             "9": "practice: we monitor the relevance of the material and help with employment and internships.",
+             "10": "Watch the video: What is web development?",
+             "11": "Who invented",
+             "12": "Where used",
+             "13": "What do you need",
+             "14": "Course",
+             "15": "Web developer from scratch to PRO",
+             "16":"You will learn how to make websites in HTML and ",
+             "17": "CSS, learn JavaScript. And you will,",
+             "18":"First portfolio projects.",
+             "19": "Start introductory course",
+             "20":"months",
+             "21":""
+        
         }
     }
