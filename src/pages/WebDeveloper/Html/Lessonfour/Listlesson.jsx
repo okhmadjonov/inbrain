@@ -8,9 +8,11 @@ import Circlepart from "./circle";
 import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
 import "./Listlesson.scss";
+import { useTranslation } from "react-i18next";
 
 const Lessonfour = () => {
-  const listtitle = "Текущий урок: Приветствие/Привет/1 из 14";
+  const {t} = useTranslation();
+  const listtitle = t('Lessonfour.1');
   return (
     <div className="lessonfourpage">
       <div className="lessonfourcontainer">
@@ -18,7 +20,7 @@ const Lessonfour = () => {
         <div className="list_main">
           <div className="circlepart">
             <div className="thislesson">
-              Текущий урок: <span className="abouthtml">Урок 4</span>
+              {t('Lessonfour.2')} <span className="abouthtml">{t('Lessonfour.3')}</span>
             </div>
             <div className="circle">
               <Circlepart />
@@ -27,21 +29,19 @@ const Lessonfour = () => {
 
           <div className="training">
             <div>
-              <div className="trainhead">Урок 4</div>
+              <div className="trainhead">{t('Lessonfour.4')}</div>
               <div className="description">
-                Всё обучение в Практикуме разбито на спринты. <br /> Спринт —
-                это двухнедельный отрезок, который <br /> построен <br />
-                определённым образом: сначала вы изучаете теорию, <br /> потом
-                практикуетесь в тренажёре, <br />
-                затем делаете и сдаёте проект.
+              {t('Lessonfour.5')} <br /> {t('Lessonfour.6')} <br /> {t('Lessonfour.7')} <br />
+              {t('Lessonfour.8')} <br /> {t('Lessonfour.9')} <br />
+              {t('Lessonfour.10')}
               </div>
               <div
                 style={{ display: "flex", gap: "80px", alignItems: "center" }}>
                 <button className="tohome">
-                  Домой <FaUser />
+                {t('Lessonfour.11')} <FaUser />
                 </button>
                 <button className="continuelearnbtn">
-                  Продолжить обучение <AiOutlineRight />
+                {t('Lessonfour.12')} <AiOutlineRight />
                 </button>
               </div>
             </div>
@@ -51,52 +51,52 @@ const Lessonfour = () => {
           </div>
 
           <div className="yourcourses">
-            <div className="your_courses">Ваши курсы:</div>
+            <div className="your_courses">{t('Lessonfour.13')}</div>
             <div className="courscard">
               <div className="yourcoursescard">
                 <img alt="images" className="itemimg" src={Hi} />
-                <p className="itemtitle">Видео курсы</p>
+                <p className="itemtitle">{t('Lessonfour.14')}</p>
               </div>
               <div className="yourcoursescard">
                 <img alt="images" className="itemimg" src={Hi} />
-                <p className="itemtitle">Теги HTML</p>
+                <p className="itemtitle">{t('Lessonfour.15')}</p>
               </div>
               <div className="yourcoursescard">
                 <img alt="images" className="itemimg" src={Hi} />
-                <p className="itemtitle">Урок 1</p>
+                <p className="itemtitle">{t('Lessonfour.16')}</p>
               </div>
               <div className="yourcoursescard">
                 <img alt="images" className="itemimg" src={Howtraining} />
-                <p className="itemtitle">Урок 2</p>
+                <p className="itemtitle">{t('Lessonfour.17')}</p>
               </div>
               <div className="yourcoursescard">
                 <img alt="images" className="itemimg" src={Howtraining} />
-                <p className="itemtitle">Урок 4</p>
+                <p className="itemtitle">{t('Lessonfour.18')}</p>
               </div>
               <div className="yourcoursescard">
                 <img alt="images" className="itemimg" src={Howtraining} />
                 <p className="itemtitle">
-                  Программа <br /> обучение
+                {t('Lessonfour.19')} <br /> {t('Lessonfour.20')}
                 </p>
               </div>
               <div className="yourcoursescard">
                 <img alt="images" className="itemimg" src={Hi} />
                 <p className="itemtitle">
-                  Какие проекты <br /> предстоит делать?
+                {t('Lessonfour.21')} <br /> {t('Lessonfour.22')}
                 </p>
               </div>
               <div className="yourcoursescard">
                 <img alt="images" className="itemimg" src={Hi} />
                 <p className="itemtitle">
-                  Про реальные <br /> проекты
+                {t('Lessonfour.23')} <br /> {t('Lessonfour.24')}
                 </p>
               </div>
               <div className="yourcoursescard">
                 <img alt="images" className="itemimg" src={Hi} />
                 <p className="itemtitle">
-                  Сколько времени <br />
-                  придётся тратить <br />
-                  на учёбу?
+                {t('Lessonfour.25')} <br />
+                {t('Lessonfour.26')} <br />
+                {t('Lessonfour.27')}
                 </p>
               </div>
             </div>

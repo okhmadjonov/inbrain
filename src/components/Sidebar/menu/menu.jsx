@@ -517,6 +517,7 @@ const Sidebar = () => {
                             color: "#FFFFFF",
                             marginLeft: "7%",
                           }}>
+                          
                           <AccordionSummary
                             expandIcon={
                               <MdExpandMore
