@@ -338,8 +338,18 @@ const Home = () => {
             <div className="sendinfo">
               <div className="soglasie">
                 {t("homepage.39")}
-                <br /> {t("homepage.40")} <a href="/">{t("homepage.41")}</a>{" "}
-                <br /> <a href="/">{t("homepage.42")}</a>
+                <br /> {t("homepage.40")}{" "}
+                <a
+                  href="/"
+                  style={{ color: "#1c84ff", textDecoration: "underline" }}>
+                  {t("homepage.41")}
+                </a>{" "}
+                <br />{" "}
+                <a
+                  href="/"
+                  style={{ color: "#1c84ff", textDecoration: "underline" }}>
+                  {t("homepage.42")}
+                </a>
               </div>
               <button className="registr_btn">
                 <big>{t("homepage.43")}</big>
