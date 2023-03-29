@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="social_menu">
-          <div className="socialhead">{t("footer.3")}:</div>
+          <div className="socialhead">{t("footer.3")}</div>
 
           <div className="socialmedia">
             <div className="telegramm">
