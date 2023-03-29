@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="menu_items">
-          <div className="itemhead">{t("footer.4")}:</div>
+          <div className="itemhead">{t("footer.4")}</div>
           <div className="about_item">
             <p>{t("footer.5")}</p>
             <p>{t("footer.6")}</p>
