@@ -167,8 +167,13 @@
             color: #1c84ff;
           }
           .startcourse {
+            display: flex;
+            align-items: center;
+
             .start_btn {
               background: #ffcc00;
+            }
+            p {
             }
           }
         }

@@ -3,7 +3,7 @@ import videolessonimg from "../../../../assets/images/videolessonimg.png";
 import taskimg from "../../../../assets/images/taskimg.png";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import thanksimg from "../../../../assets/images/thanksimg.png";
-import "./salutation.scss";
+import "./Salutation.scss";
 import Header from "../../../../components/Header/Header";
 import Footer from "../../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";

@@ -13,7 +13,7 @@ html{
 }
 body {
   max-width: 1920px;
-  height: max-content;
+  /* height: max-content; */
   margin: 0 auto;
   font-family: "Inter", sans-serif;
 }

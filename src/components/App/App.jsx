@@ -4,9 +4,8 @@ import styled from "styled-components";
 
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Home from "../../pages/Home/Home";
-import Familiarization from "../../pages/WebDeveloper/Greeting/Familiarization/Familiarization";
-import Salutation from "../../pages/WebDeveloper/Greeting/salutation/salutation";
 import Listlessons from "../../pages/WebDeveloper/Greeting/Listlessons/Listlesson";
+import Familiarization from "../../pages/WebDeveloper/Greeting/Familiarization/Familiarization";
 import User from "../../pages/Home/user/user";
 import HtmlMainPanel from "../../pages/WebDeveloper/Html/html_lessons/MainPanel";
 import MainTasksPanel from "../../pages/WebDeveloper/Html/html_tasks/MainTasksPanel";
@@ -16,6 +15,7 @@ import LessonModal from "../../pages/WebDeveloper/Html/html_lessons/lesson_1/Les
 import Context from "../Context/Context";
 import Result from "../../pages/WebDeveloper/Html/html_tasks/results/Task_Result";
 import Lessonfour from "../../pages/WebDeveloper/Html/Lessonfour/Listlesson";
+import Salutation from "../../pages/WebDeveloper/Greeting/salutation/Salutation";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -42,9 +42,8 @@ function App() {
   return (
     <Context.Provider value={obj}>
       <AppContainer>
-        
-          <Sidebar />
-        
+        <Sidebar />
+
         <AppHomeContainer>
           <Routes>
             <Route path="/" element={<Home />} />
