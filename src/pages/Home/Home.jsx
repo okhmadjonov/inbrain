@@ -1,6 +1,5 @@
 import React from "react";
 import course from "../../assets/images/verstka.png";
-
 import bow from "../../assets/images/bow.png";
 import foundation from "../../assets/images/foundation.png";
 import htmldemo from "../../assets/images/htmldemo.png";
@@ -45,7 +44,6 @@ const Home = () => {
       {...props}
     />
   );
-
   const SlickArrowLeft = ({ currentSlide, slideCount, style, ...props }) => (
     <img
       style={{
@@ -60,7 +58,6 @@ const Home = () => {
       {...props}
     />
   );
-
   const data = [
     {
       id: 1,
@@ -134,7 +131,6 @@ const Home = () => {
       },
     ],
   };
-
   const activedata = [
     {
       id: 1,
@@ -155,7 +151,6 @@ const Home = () => {
       btn: "Начать обучение",
     },
   ];
-
   const soon = [
     {
       id: 1,
@@ -176,7 +171,6 @@ const Home = () => {
       p: "Совсем скоро",
     },
   ];
-
   return (
     <div className="home">
       <div className="home__container">

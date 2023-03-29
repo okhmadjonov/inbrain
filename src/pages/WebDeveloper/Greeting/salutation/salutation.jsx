@@ -3,7 +3,7 @@ import videolessonimg from "../../../../assets/images/videolessonimg.png";
 import taskimg from "../../../../assets/images/taskimg.png";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import thanksimg from "../../../../assets/images/thanksimg.png";
-import "./Salutation.scss";
+import "./salutation.scss";
 import Header from "../../../../components/Header/Header";
 import Footer from "../../../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
@@ -17,10 +17,16 @@ const Salutation = () => {
   const { t } = useTranslation();
   const saluttitle = (
     <p>
+
+      
+      <span style={{ color: "#ffcc00" }}>{t("Salutation.1")}</span>
+      <span style={{ color: "#1c84ff" }}> {t("Familiarization.2")}</span>
+
       {t("Familiarization.1")}:{" "}
       <span style={{ color: "#ffcc00" }}>{t("Salutation.1")}</span> /{" "}
       {t("Salutation.2")} /<span style={{ color: "#1c84ff" }}> 1</span>{" "}
       {t("Salutation.3")} 14
+
     </p>
   );
 

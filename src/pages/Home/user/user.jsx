@@ -92,7 +92,7 @@ const User = () => {
                       }}
                       src={htmldemo}
                     />
-                    <p>0 {t("User.8")} 19</p>
+                    <p style={{color: "#fff", textAlign:"center"}}>0 {t("User.8")} 19</p>
                   </div>
                 </div>
                 <div className="desccourse">
@@ -153,7 +153,7 @@ const User = () => {
                       }}
                       src={cssdemo}
                     />
-                    <p>0 {t("User.8")} 24</p>
+                    <p style={{color: "#fff", textAlign:"center"}}>0 {t("User.8")} 24</p>
                   </div>
                 </div>
                 <div className="desccourse">
@@ -185,7 +185,7 @@ const User = () => {
                       }}
                       src={jsdemo}
                     />
-                    <p>0 {t("User.8")} 19</p>
+                    <p style={{color: "#fff", textAlign:"center"}}>0 {t("User.8")} 19</p>
                   </div>
                 </div>
                 <div className="descourse">
