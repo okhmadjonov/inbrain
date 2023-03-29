@@ -24,14 +24,19 @@
       gap: 5%;
       .adresses {
         display: grid;
-        gap: 50%;
+        gap: 20%;
         .adress {
+          margin-top: 10px;
           display: flex;
           align-items: center;
           gap: 2%;
+          cursor: pointer;
+          &:hover {
+            color: #1c84ff;
+          }
           .location {
-            width: 31px;
-            height: 31px;
+            font-size: 30px;
+            opacity: 0.6;
           }
           .adressoffice {
             width: 256px;
@@ -52,13 +57,13 @@
           align-items: center;
           cursor: pointer;
           gap: 2%;
+          &:hover {
+            color: #1c84ff;
+          }
 
           .phone {
-            width: 26px;
-            height: 25px;
-            &:hover {
-              color: #1c84ff;
-            }
+            font-size: 30px;
+            opacity: 0.5;
           }
           .ournumber {
             font-family: "Inter";
@@ -98,20 +103,23 @@
           gap: 7%;
           align-items: center;
           cursor: pointer;
-          .foottg {
-            width: 25px;
-            height: 21px;
+          &:hover {
+            color: #1c84ff;
           }
-          .tg {
-            font-family: "Inter";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: #000000;
-            &:hover {
-              color: #1c84ff;
-            }
+        }
+        .foottg {
+          font-size: 30px;
+          opacity: 0.5;
+        }
+        .tg {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000;
+          &:hover {
+            color: #1c84ff;
           }
         }
         .instagramm {
@@ -119,9 +127,12 @@
           gap: 7%;
           align-items: center;
           cursor: pointer;
+          &:hover {
+            color: #1c84ff;
+          }
           .footinsta {
-            width: 26px;
-            height: 26px;
+            font-size: 30px;
+            opacity: 0.6;
           }
           .insta {
             font-family: "Inter";
@@ -140,9 +151,12 @@
           gap: 7%;
           align-items: center;
           cursor: pointer;
+          &:hover {
+            color: #1c84ff;
+          }
           .foottube {
-            width: 27px;
-            height: 27px;
+            font-size: 30px;
+            opacity: 0.6;
           }
           .tube {
             font-family: "Inter";
