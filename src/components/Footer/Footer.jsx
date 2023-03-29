@@ -1,11 +1,11 @@
 import React from "react";
 import "./Footer.scss";
 import logofooter from "../../assets/images/logofooter.png";
-import footlocation from "../../assets/images/footlocation.png";
-import footphone from "../../assets/images/footphone.png";
-import foottg from "../../assets/images/foottg.png";
-import foottube from "../../assets/images/foottube.png";
-import footinsta from "../../assets/images/footinsta.png";
+// import footlocation from "../../assets/images/footlocation.png";
+// import footphone from "../../assets/images/footphone.png";
+// import foottg from "../../assets/images/foottg.png";
+// import foottube from "../../assets/images/foottube.png";
+// import footinsta from "../../assets/images/footinsta.png";
 import { useTranslation } from "react-i18next";
 import { CiLocationOn, CiInstagram } from "react-icons/ci";
 import { BsTelephone } from "react-icons/bs";
