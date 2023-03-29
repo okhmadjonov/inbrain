@@ -162,8 +162,60 @@
              "17": "CSS, learn JavaScript. And you will,",
              "18":"First portfolio projects.",
              "19": "Start introductory course",
-             "20":"months",
-             "21":""
+             "20":"months"
+           
+        },
+
+        "Salutation":{
+            "1":"Greetings",
+            "2":"Hello",
+            "3":"from",
+            "4":"Hi we are the Inbrain team",
+            "5":"Let's get acquainted, we are the inbrain team that created web development courses. Current knowledge from",
+            "6":"recognized market experts for beginners. Please watch the video to continue.",
+            "7":"All training in the Workshop is divided into sprints. Sprint is a two-week segment that is built",
+            "8":"in a certain way: first you study the theory, then you practice in the simulator,",
+            "9":"then you make and hand over the project.",
+            "10":"The project checks how you learned the skills of the current sprint, so at the end of the sprint, the project needs to be sent to",
+            "11":"check. This check is called a code review - a real developer (code reviewer) looks at your work and gives",
+            "12":"comments: what needs to be improved and what can be done better.",
+            "13":"Choose one of the answer options:",
+            "14":"Option",
+            "15":"any but not the first",
+            "16":"Thanks for the answer",
+            "17":"Return to the list of lessons",
+            "18":"Forward"
+        },
+
+        "Sidebar":{
+            "1":"User name",
+             "2":"balance",
+             "3": "sum",
+             "4":"Custom page",
+             "5": "Web developer",
+             "6":"Page",
+             "7": "Greeting",
+             "8": "Introduction",
+             "9": "What is web development?",
+             "10": "About employment",
+             "11": "How training works",
+             "12": "Training program",
+             "13": "What projects",
+             "14": "to be done?",
+             "15": "About real projects",
+             "16": "How long will it take",
+             "17": "spend on studying?",
+             "18": "It will be difficult.",
+             "19": "But you can do it",
+             "20": "Start training",
+             "21": "What is web development?",
+             "22": "Basic HTML elements",
+             "23": "HTML tags",
+             "24":"Headers",
+             "25": "Paragraph",
+             "26": "Lesson",
+             "27": "Directory",
+             "28": "Express tests"
         },
         "Lessonfour":{
             "1":"Current lesson: Greeting/Hi/1 of 14",
@@ -226,4 +278,5 @@
             "29":"have to spend",
             "30":"to study?"
         }
+
     }

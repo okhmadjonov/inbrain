@@ -8,7 +8,7 @@ import "./Lesson_1.scss";
 import LessonModal from "./LessonModal";
 import Context from "../../../../../components/Context/Context";
 import { useTranslation } from "react-i18next";
-import Header from "../../../../../components/Header/Header";
+// import Header from "../../../../../components/Header/Header";
 const Lesson_1 = (props) => {
   const { t } = useTranslation();
 

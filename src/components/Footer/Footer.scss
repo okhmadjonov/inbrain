@@ -5,6 +5,10 @@
   position: relative;
   p {
     font-weight: 400;
+    cursor: pointer;
+    &:hover {
+      color: #1c84ff;
+    }
   }
   .footpart {
     display: flex;
@@ -37,15 +41,24 @@
             font-size: 14px;
             line-height: 19px;
             color: #000000;
+            cursor: pointer;
+            &:hover {
+              color: #1c84ff;
+            }
           }
         }
         .footcontact {
           display: flex;
           align-items: center;
+          cursor: pointer;
           gap: 2%;
+
           .phone {
             width: 26px;
             height: 25px;
+            &:hover {
+              color: #1c84ff;
+            }
           }
           .ournumber {
             font-family: "Inter";
@@ -54,6 +67,10 @@
             font-size: 16px;
             line-height: 19px;
             color: #000000;
+            cursor: pointer;
+            &:hover {
+              color: #1c84ff;
+            }
           }
         }
       }
@@ -68,6 +85,10 @@
         font-size: 20px;
         line-height: 24px;
         color: #000000;
+        cursor: pointer;
+        &:hover {
+          color: #1c84ff;
+        }
       }
       .socialmedia {
         display: grid;
@@ -76,6 +97,7 @@
           display: flex;
           gap: 7%;
           align-items: center;
+          cursor: pointer;
           .foottg {
             width: 25px;
             height: 21px;
@@ -87,12 +109,16 @@
             font-size: 16px;
             line-height: 19px;
             color: #000000;
+            &:hover {
+              color: #1c84ff;
+            }
           }
         }
         .instagramm {
           display: flex;
           gap: 7%;
           align-items: center;
+          cursor: pointer;
           .footinsta {
             width: 26px;
             height: 26px;
@@ -104,12 +130,16 @@
             font-size: 16px;
             line-height: 19px;
             color: #000000;
+            &:hover {
+              color: #1c84ff;
+            }
           }
         }
         .youtube {
           display: flex;
           gap: 7%;
           align-items: center;
+          cursor: pointer;
           .foottube {
             width: 27px;
             height: 27px;
@@ -121,6 +151,9 @@
             font-size: 16px;
             line-height: 19px;
             color: #000000;
+            &:hover {
+              color: #1c84ff;
+            }
           }
         }
       }
@@ -139,6 +172,10 @@
         font-size: 20px;
         line-height: 24px;
         color: #000000;
+        cursor: pointer;
+        &:hover {
+          color: #1c84ff;
+        }
       }
       .about_item {
         display: grid;
@@ -150,6 +187,7 @@
       display: grid;
       gap: 37%;
       margin-top: -8px;
+
       .addithead {
         font-family: "Inter";
         font-style: normal;
@@ -157,6 +195,10 @@
         font-size: 20px;
         line-height: 24px;
         color: #000000;
+        cursor: pointer;
+        &:hover {
+          color: #1c84ff;
+        }
       }
       .addit_menu {
         display: grid;
