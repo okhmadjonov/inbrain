@@ -4,7 +4,8 @@ const lesson_3 = () => {
   return (
     <div className="lesson_3">
       <div className="lesson_3__container">
-        <h1>Lesson JS</h1>
+        <h1>Lesson js js</h1>
+
       </div>
     </div>
   );
