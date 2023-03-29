@@ -21,7 +21,6 @@ const Salutation = () => {
       <span style={{ color: "#ffcc00" }}>{t("Salutation.1")}</span> /{" "}
       {t("Salutation.2")} /<span style={{ color: "#1c84ff" }}> 1</span>{" "}
       {t("Salutation.3")} 14
-      <span style={{ color: "#1c84ff" }}> {t("Familiarization.2")}</span>
     </p>
   );
 
