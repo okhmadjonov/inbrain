@@ -32,6 +32,8 @@ const Header = (props) => {
         style={{
           display: isShown ? "none" : "flex",
         }}>
+
+          
         <Form.Control
           className="input"
           placeholder="Поиск..."
