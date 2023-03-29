@@ -13,6 +13,7 @@ import Typography from "@mui/material/Typography";
 import { IconContext } from "react-icons/lib";
 import "./menu.scss";
 import Burger from "./Burger";
+import { useTranslation } from "react-i18next";
 
 const SidebarContainer = styled.div`
   width: auto;
@@ -55,7 +56,6 @@ const Navopen_f = styled.div`
   margin-left: 40px;
   margin-top: -1px;
   position: fixed;
-
 `;
 
 const Navopen_s = styled.div`
@@ -115,6 +115,7 @@ const SidebarWrap = styled.div`
 `;
 
 const Sidebar = () => {
+  const { t } = useTranslation();
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
   const Homeicon = () => {
@@ -412,676 +413,694 @@ const Sidebar = () => {
   };
 
   return (
-   
-      <SidebarContainer >
-          <IconContext.Provider value={{ color: "#fff" }}>
-            <Nav>
-              <div>
-                {Homeicon()}
-                {Familiarizationicon()}
-                {Salutationicon()}
-                {Listlessonsicon()}
-                {Userpageicon()}
-                {Lessononeicon()}
-                {Tagsicon()}
-                {Taskoneicon()}
-                {Resulticon()}
-                {Modalicon()}
-                {Lessonfouricon()}
-              </div>
-              <NavIcon to="#" onClick={showSidebar}>
-                {Homemenuicon()}
-                {Familiarmenuicon()}
-                {Salutationmenuicon()}
-                {Listlessonsmenuicon()}
-                {Userpagemenuicon()}
-                {Lessononemenuicon()}
-                {Tagsmenuicon()}
-                {Taskonemenuicon()}
-                {Resultmenuicon()}
-                {Modalmenuicon()}
-                {Lessonfourmenuicon()}
-              </NavIcon>
-            </Nav>
-            <SidebarNav sidebar={sidebar}>
-              <SidebarWrap>
-                
-                  <Navclose to="#">
-                  <AiIcons.AiOutlineClose
-                    style={{
-                      color: "#ffcc00",
-                      fontSize: "20px",
-                      fontWeight: "700",
-                    }}
-                    onClick={showSidebar}
-                  />
-                  </Navclose>
-                  <div className="scrollmenu">
-                    <div className="scroll" >
-                        <Accordion 
-                    style={{
-                      marginTop: "40px",
-                      background: "none",
-                      color: "#FFFFFF",
-                      marginLeft: "7%",
-                      border: "none",
-                    }}>
-                    <AccordionSummary
-                      expandIcon={<MdExpandMore style={{ fontSize: "2.5rem" }} />}
-                      aria-controls="panel1a-content"
-                      id="panel1a-header">
-                      <Typography style={{ marginTop: "-20px" }}>
-                        <div
-                          style={{
-                            display: "flex",
-                            textAlign: "center",
-                            alignItems: "center",
-                          }}>
-                          <div className="avatar">
-                            <img
-                              style={{
-                                borderRadius: "30px",
-                                width: "40px",
-                                height: "40px",
-                              }}
-                              src={petrov}
-                              alt="Petrov"
-                            />
-                          </div>
-
-                          <div className="ml-2">
-                            <p
-                              className="m-0 p-0"
-                              style={{ fontSize: "18px", color: "#fff" }}>
-                              User name
-                            </p>
-                            <span style={{ fontSize: "11px", color: "#ffcc00" }}>
-                              balance: 99 000 сум
-                            </span>
-                          </div>
+    <SidebarContainer>
+      <IconContext.Provider value={{ color: "#fff" }}>
+        <Nav>
+          <div>
+            {Homeicon()}
+            {Familiarizationicon()}
+            {Salutationicon()}
+            {Listlessonsicon()}
+            {Userpageicon()}
+            {Lessononeicon()}
+            {Tagsicon()}
+            {Taskoneicon()}
+            {Resulticon()}
+            {Modalicon()}
+            {Lessonfouricon()}
+          </div>
+          <NavIcon to="#" onClick={showSidebar}>
+            {Homemenuicon()}
+            {Familiarmenuicon()}
+            {Salutationmenuicon()}
+            {Listlessonsmenuicon()}
+            {Userpagemenuicon()}
+            {Lessononemenuicon()}
+            {Tagsmenuicon()}
+            {Taskonemenuicon()}
+            {Resultmenuicon()}
+            {Modalmenuicon()}
+            {Lessonfourmenuicon()}
+          </NavIcon>
+        </Nav>
+        <SidebarNav sidebar={sidebar}>
+          <SidebarWrap>
+            <Navclose to="#">
+              <AiIcons.AiOutlineClose
+                style={{
+                  color: "#ffcc00",
+                  fontSize: "20px",
+                  fontWeight: "700",
+                }}
+                onClick={showSidebar}
+              />
+            </Navclose>
+            <div className="scrollmenu">
+              <div className="scroll">
+                <Accordion
+                  style={{
+                    marginTop: "40px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "7%",
+                    border: "none",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={<MdExpandMore style={{ fontSize: "2.5rem" }} />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography style={{ marginTop: "-20px" }}>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                        }}>
+                        <div className="avatar">
+                          <img
+                            style={{
+                              borderRadius: "30px",
+                              width: "40px",
+                              height: "40px",
+                            }}
+                            src={petrov}
+                            alt="Petrov"
+                          />
                         </div>
-                      </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <Typography>
-                        <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
-                          Userpage
+
+                        <div className="ml-2">
+                          <p
+                            className="m-0 p-0"
+                            style={{ fontSize: "18px", color: "#fff" }}>
+                            {t("Sidebar.1")}
+                          </p>
+                          <span style={{ fontSize: "11px", color: "#ffcc00" }}>
+                            {t("Sidebar.2")}: 99 000 {t("Sidebar.3")}
+                          </span>
+                        </div>
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
+                        {t("Sidebar.4")}
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "10px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "7%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{ fontSize: "2.5rem", color: "#1C84FF" }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          color: "#1C84FF",
+                          fontSize: "18px",
+                          fontFamily: "Inter",
+                        }}>
+                        {t("Sidebar.5")}
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <Link style={{ color: "#FFFFFF" }}>
+                        {" "}
+                        {t("Sidebar.6")}
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "5px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "10%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{ fontSize: "2rem", marginRight: "5px" }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography>
+                      <Link
+                        to={"/Familiarization"}
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          fontSize: "18px",
+                          fontFamily: "Inter",
+                          color: "#FFFFFF",
+                        }}>
+                        {t("Sidebar.7")}
+                      </Link>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography style={{ display: "grid", gap: "20px" }}>
+                      <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        <Link to={"/Salutation"} style={{ color: "#FFFFFF" }}>
+                          {t("Sidebar.8")}
                         </Link>
-                      </Typography>
-                    </AccordionDetails>
-                        </Accordion>
-                        <Accordion 
-                          style={{
-                            marginTop: "10px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "7%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{ fontSize: "2.5rem", color: "#1C84FF" }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography>
-                              <div
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  color: "#1C84FF",
-                                  fontSize: "18px",
-                                  fontFamily: "Inter",
-                                }}>
-                                Веб разработчик
-                              </div>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography>
-                              <Link style={{ color: "#FFFFFF" }}>Lorem</Link>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                        <Accordion 
-                          style={{
-                            marginTop: "5px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "10%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{ fontSize: "2rem", marginRight: "5px" }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography>
-                              <Link
-                                to={"/Familiarization"}
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  fontSize: "18px",
-                                  fontFamily: "Inter",
-                                  color: "#FFFFFF",
-                                }}>
-                                Приветствие
-                              </Link>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography style={{ display: "grid", gap: "20px" }}>
-                              <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                <Link to={"/Salutation"} style={{ color: "#FFFFFF" }}>
-                                  Привет
-                                </Link>
-                              </li>
-                              <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                <Link style={{ color: "#FFFFFF" }}>
-                                  Что такое веб-разработка?
-                                </Link>
-                              </li>
-                              <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                <Link style={{ color: "#FFFFFF" }}>
-                                  Про трудоустройство
-                                </Link>
-                              </li>
-                              <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                <Link to={"Listlessons"} style={{ color: "#FFFFFF" }}>
-                                  Как устроено обучение
-                                </Link>
-                              </li>
-                              <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                <Link style={{ color: "#FFFFFF" }}>Программа обучения</Link>
-                              </li>
-                              <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                <Link style={{ color: "#FFFFFF" }}>
-                                  Какие проекты <br /> предстоит делать?
-                                </Link>
-                              </li>
-                              <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                <Link style={{ color: "#FFFFFF" }}>
-                                  Про реальные проекты
-                                </Link>
-                              </li>
-                              <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                <Link style={{ color: "#FFFFFF" }}>
-                                  Сколько времени придётся <br /> тратить на учёбу?
-                                </Link>
-                              </li>
-                              <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                <Link style={{ color: "#FFFFFF" }}>
-                                  Будет сложно. <br /> Но у Вас получится
-                                </Link>
-                              </li>
-                              <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                <Link style={{ color: "#FFFFFF" }}>Начать обучение</Link>
-                              </li>
-                              <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                <Link style={{ color: "#FFFFFF" }}>
-                                  Что такое веб-разработка?
-                                </Link>
-                              </li>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                        <Accordion 
-                          style={{
-                            marginTop: "5px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "10%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{ fontSize: "2rem", marginRight: "5px" }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography>
-                              <div
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  color: '#FFFFFF'
-                                }}>
-                                HTML
-                              </div>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography
-                              style={{ display: "grid", gap: "20px", cursor: "pointer" }}>
-                              <Link
-                                to="/Webdev/lesson_1"
-                                style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                Базовые элементы HTML
-                              </Link>
-                              <Link
-                                to="/Webdev/Tags"
-                                style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                Теги HTML
-                              </Link>
-                              <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                Заголовки
-                              </Link>
-                              <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                Абзац
-                              </Link>
-                              <Link
-                                to="/Lesson4/11"
-                                style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                Урок 4
-                              </Link>
-                              <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                Урок 5
-                              </Link>
-                              <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                Урок 6
-                              </Link>
-                              <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                Урок 7
-                              </Link>
-                              <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                Урок 8
-                              </Link>
-                              <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                Урок 9
-                              </Link>
-                              <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                Урок 10
-                              </Link>
-                              <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
-                                Урок 11
-                              </Link>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                        <Accordion 
-                          style={{
-                            marginTop: "5px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "10%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{
-                                  fontSize: "2rem",
-                                  marginRight: "5px",
-                                  color: "#5E5858",
-                                }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography style={{ cursor: "pointer" }}>
-                              <div
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  color: "#5E5858",
-                                }}>
-                                CSS
-                              </div>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography>
-                              <Link style={{ color: "#FFFFFF" }}>Lorem</Link>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                        <Accordion 
-                          style={{
-                            marginTop: "5px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "10%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{
-                                  fontSize: "2rem",
-                                  marginRight: "5px",
-                                  color: "#5E5858",
-                                }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography>
-                              <div
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  color: "#5E5858",
-                                }}>
-                                Javascript
-                              </div>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography>
-                              <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
-                                Userpage
-                              </Link>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                        <Accordion 
-                          style={{
-                            marginTop: "10px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "7%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{ fontSize: "2.5rem", color: "#1C84FF" }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography>
-                              <div
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  fontSize: "20px",
-                                  color: "#1C84FF",
-                                  fontFamily: "Inter",
-                                }}>
-                                Справочник
-                              </div>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography>
-                              <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
-                                Userpage
-                              </Link>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                        <Accordion 
-                          style={{
-                            marginTop: "5px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "10%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{ fontSize: "2rem", marginRight: "5px" }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography>
-                              <div
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  color: "#FFFFFF",
-                                }}>
-                                HTML
-                              </div>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography style={{ display: "grid", gap: "20px" }}>
-                              <li style={{ color: "#FFFFFF", fontSize: "12px" }}>lorem</li>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                        <Accordion 
-                          style={{
-                            marginTop: "5px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "10%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{
-                                  fontSize: "2rem",
-                                  marginRight: "5px",
-                                  color: "#5E5858",
-                                }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography>
-                              <div
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  color: "#5E5858",
-                                }}>
-                                CSS
-                              </div>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography>
-                              <Link style={{ color: "#FFFFFF" }}>Lorem</Link>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                        <Accordion
-                          style={{
-                            marginTop: "5px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "10%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{
-                                  fontSize: "2rem",
-                                  marginRight: "5px",
-                                  color: "#5E5858",
-                                }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography>
-                              <div
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  color: "#5E5858",
-                                }}>
-                                Javascript
-                              </div>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography>
-                              <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
-                                Userpage
-                              </Link>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                        <Accordion 
-                          style={{
-                            marginTop: "10px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "7%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{ fontSize: "2.5rem", color: "#1C84FF" }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography>
-                              <div
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  fontSize: "20px",
-                                  color: "#1C84FF",
-                                  fontFamily: "Inter",
-                                }}>
-                                Экспресс тесты
-                              </div>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography>
-                              <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
-                                Userpage
-                              </Link>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                        <Accordion 
-                          style={{
-                            marginTop: "5px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "10%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{ fontSize: "2rem", marginRight: "5px" }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography>
-                              <div
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  color: "#FFFFFF",
-                                }}>
-                                HTML
-                              </div>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography>
-                              <Link style={{ color: "#FFFFFF" }}>Lorem</Link>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                        <Accordion 
-                          style={{
-                            marginTop: "5px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "10%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{
-                                  fontSize: "2rem",
-                                  marginRight: "5px",
-                                  color: "#5E5858",
-                                }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography>
-                              <div
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  color: "#5E5858",
-                                }}>
-                                CSS
-                              </div>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography>
-                              <Link style={{ color: "#FFFFFF" }}>Lorem</Link>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                        <Accordion 
-                          style={{
-                            marginTop: "5px",
-                            background: "none",
-                            color: "#FFFFFF",
-                            marginLeft: "10%",
-                          }}>
-                          <AccordionSummary
-                            expandIcon={
-                              <MdExpandMore
-                                style={{
-                                  fontSize: "2rem",
-                                  marginRight: "5px",
-                                  color: "#5E5858",
-                                }}
-                              />
-                            }
-                            aria-controls="panel1a-content"
-                            id="panel1a-header">
-                            <Typography>
-                              <div
-                                style={{
-                                  display: "flex",
-                                  textAlign: "center",
-                                  alignItems: "center",
-                                  color: "#5E5858",
-                                }}>
-                                Javascript
-                              </div>
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <Typography>
-                              <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
-                                Userpage
-                              </Link>
-                            </Typography>
-                          </AccordionDetails>
-                        </Accordion>
-                    </div> 
-                  </div>
- 
-              </SidebarWrap>
-            </SidebarNav>
-          </IconContext.Provider>
-      </SidebarContainer>
-    
+                      </li>
+                      <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        <Link style={{ color: "#FFFFFF" }}>
+                          {t("Sidebar.9")}
+                        </Link>
+                      </li>
+                      <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        <Link style={{ color: "#FFFFFF" }}>
+                          {t("Sidebar.10")}
+                        </Link>
+                      </li>
+                      <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        <Link to={"Listlessons"} style={{ color: "#FFFFFF" }}>
+                          {t("Sidebar.11")}
+                        </Link>
+                      </li>
+                      <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        <Link style={{ color: "#FFFFFF" }}>
+                          {t("Sidebar.12")}
+                        </Link>
+                      </li>
+                      <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        <Link style={{ color: "#FFFFFF" }}>
+                          {t("Sidebar.13")}
+                          <br /> {t("Sidebar.14")}
+                        </Link>
+                      </li>
+                      <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        <Link style={{ color: "#FFFFFF" }}>
+                          {t("Sidebar.15")}
+                        </Link>
+                      </li>
+                      <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        <Link style={{ color: "#FFFFFF" }}>
+                          {t("Sidebar.16")}
+                          <br /> {t("Sidebar.17")}
+                        </Link>
+                      </li>
+                      <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        <Link style={{ color: "#FFFFFF" }}>
+                          {t("Sidebar.18")} <br /> {t("Sidebar.19")}
+                        </Link>
+                      </li>
+                      <li style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        <Link style={{ color: "#FFFFFF" }}>
+                          {t("Sidebar.20")}
+                        </Link>
+                      </li>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "5px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "10%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{ fontSize: "2rem", marginRight: "5px" }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          color: "#FFFFFF",
+                        }}>
+                        HTML
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography
+                      style={{
+                        display: "grid",
+                        gap: "20px",
+                        cursor: "pointer",
+                      }}>
+                      <Link
+                        to="/Webdev/lesson_1"
+                        style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.22")}
+                      </Link>
+                      <Link
+                        to="/Webdev/Tags"
+                        style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.23")}
+                      </Link>
+                      <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.24")}
+                      </Link>
+                      <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.25")}
+                      </Link>
+                      <Link
+                        to="/Lesson4/11"
+                        style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.26")} 4
+                      </Link>
+                      <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.26")} 5
+                      </Link>
+                      <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.26")} 6
+                      </Link>
+                      <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.26")} 7
+                      </Link>
+                      <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.26")} 8
+                      </Link>
+                      <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.26")} 9
+                      </Link>
+                      <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.26")} 10
+                      </Link>
+                      <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.26")} 11
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "5px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "10%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{
+                          fontSize: "2rem",
+                          marginRight: "5px",
+                          color: "#5E5858",
+                        }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography style={{ cursor: "pointer" }}>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          color: "#5E5858",
+                        }}>
+                        CSS
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <Link style={{ color: "#FFFFFF" }}>
+                        {" "}
+                        {t("Sidebar.6")}
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "5px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "10%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{
+                          fontSize: "2rem",
+                          marginRight: "5px",
+                          color: "#5E5858",
+                        }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          color: "#5E5858",
+                        }}>
+                        Javascript
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
+                        {t("Sidebar.4")}
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "10px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "7%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{ fontSize: "2.5rem", color: "#1C84FF" }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          fontSize: "20px",
+                          color: "#1C84FF",
+                          fontFamily: "Inter",
+                        }}>
+                        {t("Sidebar.27")}
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
+                        {t("Sidebar.4")}
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "5px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "10%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{ fontSize: "2rem", marginRight: "5px" }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          color: "#FFFFFF",
+                        }}>
+                        HTML
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography style={{ display: "grid", gap: "20px" }}>
+                      <Link style={{ color: "#FFFFFF", fontSize: "12px" }}>
+                        {t("Sidebar.6")}
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "5px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "10%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{
+                          fontSize: "2rem",
+                          marginRight: "5px",
+                          color: "#5E5858",
+                        }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          color: "#5E5858",
+                        }}>
+                        CSS
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <Link style={{ color: "#FFFFFF" }}>
+                        {" "}
+                        {t("Sidebar.6")}
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "5px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "10%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{
+                          fontSize: "2rem",
+                          marginRight: "5px",
+                          color: "#5E5858",
+                        }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          color: "#5E5858",
+                        }}>
+                        Javascript
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
+                        {t("Sidebar.4")}
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "10px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "7%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{ fontSize: "2.5rem", color: "#1C84FF" }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          fontSize: "20px",
+                          color: "#1C84FF",
+                          fontFamily: "Inter",
+                        }}>
+                        {t("Sidebar.28")}
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
+                        {t("Sidebar.4")}
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "5px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "10%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{ fontSize: "2rem", marginRight: "5px" }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          color: "#FFFFFF",
+                        }}>
+                        HTML
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <Link style={{ color: "#FFFFFF" }}>
+                        {" "}
+                        {t("Sidebar.6")}
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "5px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "10%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{
+                          fontSize: "2rem",
+                          marginRight: "5px",
+                          color: "#5E5858",
+                        }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          color: "#5E5858",
+                        }}>
+                        CSS
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <Link style={{ color: "#FFFFFF" }}>
+                        {" "}
+                        {t("Sidebar.6")}
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion
+                  style={{
+                    marginTop: "5px",
+                    background: "none",
+                    color: "#FFFFFF",
+                    marginLeft: "10%",
+                  }}>
+                  <AccordionSummary
+                    expandIcon={
+                      <MdExpandMore
+                        style={{
+                          fontSize: "2rem",
+                          marginRight: "5px",
+                          color: "#5E5858",
+                        }}
+                      />
+                    }
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography>
+                      <div
+                        style={{
+                          display: "flex",
+                          textAlign: "center",
+                          alignItems: "center",
+                          color: "#5E5858",
+                        }}>
+                        Javascript
+                      </div>
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography>
+                      <Link to={"/Userpage"} style={{ color: "#FFFFFF" }}>
+                        {t("Sidebar.4")}
+                      </Link>
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+              </div>
+            </div>
+          </SidebarWrap>
+        </SidebarNav>
+      </IconContext.Provider>
+    </SidebarContainer>
   );
 };
 export default Sidebar;
