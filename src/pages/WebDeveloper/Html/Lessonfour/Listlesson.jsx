@@ -4,7 +4,6 @@ import Hi from "../../../../assets/images/Hi.png";
 import Howtraining from "../../../../assets/images/Howtraining.png";
 import { AiOutlineRight } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
-import Circlepart from "./circle";
 import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
 import "./Listlesson.scss";

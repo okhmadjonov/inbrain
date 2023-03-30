@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import numberlesson from '../../../../assets/images/numberlesson.png';
 import Hi from '../../../../assets/images/Hi.png';
 import aboutwebdev from '../../../../assets/images/aboutwebdev.png';
@@ -10,7 +10,6 @@ import petprojects from '../../../../assets/images/petprojects.png';
 import realprojects from '../../../../assets/images/realprojects.png';
 import timeforlearn from '../../../../assets/images/timeforlearn.png';
 import {AiOutlineRight} from 'react-icons/ai'
-import Circlepart from "./circle";
 import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
 import './Listlesson.scss';
@@ -48,8 +47,6 @@ const listtitle = 'Текущий урок: Приветствие'
     }
 
 
-//   useEffect(() => {
-//   }, []);
 
 
 
