@@ -34,8 +34,6 @@ const Header = (props) => {
         }}>
 
 
-//comment
-
         <Form.Control
           className="input"
           placeholder="Поиск..."

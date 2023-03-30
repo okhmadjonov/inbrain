@@ -15,6 +15,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { width } from "@mui/system";
+import starIcon from '../../../assets/images/userstar.png'
 
 const style = {
   position: 'absolute',
@@ -44,6 +45,7 @@ const User = () => {
                             
                             <div className="aboutuser">
                                 <div className="infouser">
+                                    <img className="star" src={starIcon} alt="#"/>
                                     <div className="userimg">
                                         <img className="user" src={user}/>
                                     </div>
