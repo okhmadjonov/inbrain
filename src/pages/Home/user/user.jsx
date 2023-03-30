@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import user from "../../../assets/images/user.png";
+import starIcon from "../../../assets/images/userstar.png";
 import htmldemo from "../../../assets/images/htmldemo.png";
 import cssdemo from "../../../assets/images/cssdemo.png";
 import jsdemo from "../../../assets/images/jsdemo.png";
@@ -16,6 +17,7 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { width } from "@mui/system";
 import { useTranslation } from "react-i18next";
+
 
 const style = {
   position: "absolute",
@@ -44,19 +46,20 @@ const User = () => {
             <div className="Cardstudent">
               <div className="aboutuser">
                 <div className="infouser">
+                  <img className="star" src={starIcon} alt="#" />
                   <div className="userimg">
                     <img className="user" src={user} />
                   </div>
                   <div className="name">
-                    <p className="name_user">{t("User.2")}</p>
+                    <p className="name_user">Арифжанов Ойбек</p>
                     <p className="age_user">
-                      {t("User.3")}:<span>18 {t("User.4")}</span>
+                      Возраст:<span>18 лет</span>
                     </p>
                     <p className="passedcourse">
-                      {t("User.5")}: <span>{t("User.6")}</span>{" "}
+                      Прошел обучение: <span>Знакомство</span>{" "}
                     </p>
                     <p className="nextcourse">
-                      {t("User.7")}: <span>HTML 5 -</span>
+                      Следующий курс: <span>HTML 5 -</span>
                     </p>
                   </div>
                 </div>
@@ -64,7 +67,8 @@ const User = () => {
                   <BiChevronRight className="iconright" />
                 </div>
                 <div
-                  style={{ display: "grid", gap: "30px", marginTop: "40px" }}>
+                  style={{ display: "grid", gap: "30px", marginTop: "40px" }}
+                >
                   <div className="likerectangle">
                     <div className="likediv">
                       <img className="like" src={like} />
@@ -92,7 +96,9 @@ const User = () => {
                       }}
                       src={htmldemo}
                     />
-                    <p style={{color: "#fff", textAlign:"center"}}>0 {t("User.8")} 19</p>
+                    <p style={{ color: "#fff", textAlign: "center" }}>
+                      0 {t("User.8")} 19
+                    </p>
                   </div>
                 </div>
                 <div className="desccourse">
@@ -114,7 +120,8 @@ const User = () => {
                   <Modal
                     open={open}
                     aria-labelledby="modal-modal-title"
-                    aria-describedby="modal-modal-description">
+                    aria-describedby="modal-modal-description"
+                  >
                     <Box sx={style}>
                       <button
                         onClick={handleClose}
@@ -122,7 +129,8 @@ const User = () => {
                           background: "none",
                           border: "none",
                           marginLeft: "960px",
-                        }}>
+                        }}
+                      >
                         <AiFillCloseCircle
                           style={{ color: " #1C84FF", fontSize: "2rem" }}
                         />
@@ -130,12 +138,14 @@ const User = () => {
                       <Typography
                         id="modal-modal-title"
                         variant="h6"
-                        component="h2">
+                        component="h2"
+                      >
                         {t("User.17")}: HTML
                       </Typography>
                       <Typography
                         id="modal-modal-description"
-                        sx={{ mt: 2, width: 900 }}>
+                        sx={{ mt: 2, width: 900 }}
+                      >
                         {t("User.17")}
                       </Typography>
                     </Box>
@@ -153,7 +163,9 @@ const User = () => {
                       }}
                       src={cssdemo}
                     />
-                    <p style={{color: "#fff", textAlign:"center"}}>0 {t("User.8")} 24</p>
+                    <p style={{ color: "#fff", textAlign: "center" }}>
+                      0 {t("User.8")} 24
+                    </p>
                   </div>
                 </div>
                 <div className="desccourse">
@@ -185,7 +197,9 @@ const User = () => {
                       }}
                       src={jsdemo}
                     />
-                    <p style={{color: "#fff", textAlign:"center"}}>0 {t("User.8")} 19</p>
+                    <p style={{ color: "#fff", textAlign: "center" }}>
+                      0 {t("User.8")} 19
+                    </p>
                   </div>
                 </div>
                 <div className="descourse">
