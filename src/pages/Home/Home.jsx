@@ -1,6 +1,5 @@
 import React from "react";
 import course from "../../assets/images/verstka.png";
-
 import bow from "../../assets/images/bow.png";
 import foundation from "../../assets/images/foundation.png";
 import htmldemo from "../../assets/images/htmldemo.png";
@@ -45,7 +44,6 @@ const Home = () => {
       {...props}
     />
   );
-
   const SlickArrowLeft = ({ currentSlide, slideCount, style, ...props }) => (
     <img
       style={{
@@ -60,7 +58,6 @@ const Home = () => {
       {...props}
     />
   );
-
   const data = [
     {
       id: 1,
@@ -104,7 +101,7 @@ const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,  
+    slidesToScroll: 1,
     nextArrow: <SlickArrowRight />,
     prevArrow: <SlickArrowLeft />,
     responsive: [
@@ -134,7 +131,6 @@ const Home = () => {
       },
     ],
   };
-
   const activedata = [
     {
       id: 1,
@@ -155,7 +151,6 @@ const Home = () => {
       btn: "Начать обучение",
     },
   ];
-
   const soon = [
     {
       id: 1,
@@ -176,7 +171,6 @@ const Home = () => {
       p: "Совсем скоро",
     },
   ];
-
   return (
     <div className="home">
       <div className="home__container">
@@ -281,11 +275,10 @@ const Home = () => {
                 <div className="item">
                   <div>
                     <img className="itemdemo" src={item.img} alt="Item demo" />
-                    <br/>
                     <div className="itemhead">{item.title}</div>
                   </div>
 
-                  <button className="startlearnitem">{item.btn}</button>
+                  <button className="startlearnitem">{t("homepage.18")}</button>
                 </div>
               </>
             ))}
@@ -345,8 +338,18 @@ const Home = () => {
             <div className="sendinfo">
               <div className="soglasie">
                 {t("homepage.39")}
-                <br /> {t("homepage.40")} <a href="/">{t("homepage.41")}</a>{" "}
-                <br /> <a href="/">{t("homepage.42")}</a>
+                <br /> {t("homepage.40")}{" "}
+                <a
+                  href="/"
+                  style={{ color: "#1c84ff", textDecoration: "underline" }}>
+                  {t("homepage.41")}
+                </a>{" "}
+                <br />{" "}
+                <a
+                  href="/"
+                  style={{ color: "#1c84ff", textDecoration: "underline" }}>
+                  {t("homepage.42")}
+                </a>
               </div>
               <button className="registr_btn">
                 <big>{t("homepage.43")}</big>

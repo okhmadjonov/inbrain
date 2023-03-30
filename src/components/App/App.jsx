@@ -4,9 +4,8 @@ import styled from "styled-components";
 
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Home from "../../pages/Home/Home";
-import Familiarization from "../../pages/WebDeveloper/Greeting/Familiarization/Familiarization";
-import Salutation from "../../pages/WebDeveloper/Greeting/salutation/salutation";
 import Listlessons from "../../pages/WebDeveloper/Greeting/Listlessons/Listlesson";
+import Familiarization from "../../pages/WebDeveloper/Greeting/Familiarization/Familiarization";
 import User from "../../pages/Home/user/user";
 import HtmlMainPanel from "../../pages/WebDeveloper/Html/html_lessons/MainPanel";
 import MainTasksPanel from "../../pages/WebDeveloper/Html/html_tasks/MainTasksPanel";
@@ -16,23 +15,22 @@ import LessonModal from "../../pages/WebDeveloper/Html/html_lessons/lesson_1/Les
 import Context from "../Context/Context";
 import Result from "../../pages/WebDeveloper/Html/html_tasks/results/Task_Result";
 import Lessonfour from "../../pages/WebDeveloper/Html/Lessonfour/Listlesson";
+import Salutation from "../../pages/WebDeveloper/Greeting/salutation/salutation";
 
 const AppContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: auto;
   max-width: 1920px;
   position: relative;
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
   gap: 20px;
-  /* border: 1px solid black; */
 `;
 const AppHomeContainer = styled.div`
-  width: 70%;
+  width: 77%;
   height: 100%;
   margin: 0 auto;
-  /* border: 1px solid purple; */
 `;
 
 function App() {
@@ -45,6 +43,7 @@ function App() {
     <Context.Provider value={obj}>
       <AppContainer>
         <Sidebar />
+
         <AppHomeContainer>
           <Routes>
             <Route path="/" element={<Home />} />

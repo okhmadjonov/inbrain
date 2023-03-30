@@ -6,12 +6,16 @@ import "./familiarization.scss";
 import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Familiarization = () => {
+  const { t } = useTranslation();
   const titlehead = (
     <p>
-      Текущий урок:{" "}
-      <span style={{ color: "#1c84ff" }}>Привет посмотри видео</span>
+      {t("Familiarization.1")}:{" "}
+      <span style={{ color: "#ffcc00" }}>{t("Salutation.1")}</span> /{" "}
+      {t("Salutation.2")}/<span style={{ color: "#1c84ff" }}> 1</span>{" "}
+      {t("Salutation.3")} 14
     </p>
   );
 
@@ -24,44 +28,41 @@ const Familiarization = () => {
           </div>
           <div className="aboutlesson">
             <div className="introduction">
-              Привет мы команда Inbrain - посмотри пожалуйста видео чтобы <br />{" "}
-              продолжить дальше обучение : )
+              {t("Familiarization.3")}
+              <br /> {t("Familiarization.4")} : )
             </div>
             <div className="aboutfoundation">
-              Давай знакомится мы команда inbrain которая создала курсы по веб
-              разработке <span className="course">HTML CSS JS</span>. Актуальные
-              знания от <br /> признанных экспертов для новичков.
+              {t("Familiarization.5")}{" "}
+              <span className="course">HTML CSS JS</span>.
+              {t("Familiarization.6")} <br /> {t("Familiarization.7")}
             </div>
             <div className="comforts">
-              На платформе можно получить знания по актуальным темам и
-              востребованные навыки. Все курсы нацелены на <br /> практику: мы
-              следим за актуальностью материала и помогаем с трудоустройством и
-              стажировкой.
+              {t("Familiarization.8")} <br /> {t("Familiarization.9")}
             </div>
           </div>
           <div className="videopart">
-            <div className="watchvideo">
-              Посмотрите видео: Что такое веб разработка ?
-            </div>
+            <div className="watchvideo">{t("Familiarization.10")}</div>
             <div className="videolessons">
               <img className="bigimg" src={bightml} alt="BigImg" />
               <div className="lessons">
                 <div className="firstlesson">
                   <img className="littlimg" src={littlehtml} alt="BigImg2" />
                   <p className="firsttxt">
-                    Кто придумал <br /> HTML ?
+                    {t("Familiarization.11")} <br /> HTML ?
                   </p>
                 </div>
                 <div className="secondlesson">
                   <img className="littlimg" src={littlehtml} alt="BigImg3" />
                   <p className="secondtxt">
-                    Где используют <br /> HTML ?
+                    {t("Familiarization.12")}
+                    <br /> HTML ?
                   </p>
                 </div>
                 <div className="thirdlesson">
                   <img className="littlimg" src={littlehtml} alt="BigImg4" />
                   <p className="thirdtxt">
-                    Для чего нужен <br /> HTML ?
+                    {t("Familiarization.13")}
+                    <br /> HTML ?
                   </p>
                 </div>
               </div>
@@ -74,17 +75,17 @@ const Familiarization = () => {
               </div>
             </div>
             <div className="aboutcourse">
-              <p className="kurs">Курс</p>
-              <p className="topro">Веб-разработчик с нуля до PRO</p>
+              <p className="kurs">{t("Familiarization.14")}</p>
+              <p className="topro">{t("Familiarization.15")}</p>
               <p className="learnjs">
-                Вы научитесь верстать сайты на HTML и <br /> CSS, изучите
-                JavaScript. И сделаете <br /> первые проекты для портфолио.
+                {t("Familiarization.16")} <br />
+                {t("Familiarization.17")} <br /> {t("Familiarization.18")}
               </p>
               <div className="startcourse">
                 <Link to={"/Salutation"} className="start_btn">
-                  Начать вводный курс
+                  {t("Familiarization.19")}
                 </Link>
-                <p className="durationcourse">10 месяцев</p>
+                <p className="durationcourse">10 {t("Familiarization.20")}</p>
               </div>
             </div>
           </div>
