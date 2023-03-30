@@ -56,7 +56,6 @@ const listtitle = t('Listlesson.1')
 
     return(
             <div className="listpage">
-
                 <div className="listcontainer"> 
                     <Header title={listtitle} />
                     <div className="list_main" >
@@ -66,7 +65,6 @@ const listtitle = t('Listlesson.1')
                                  <Circlepart/> 
                             </div>
                         </div>
-
                          <div className="training">
                             <div>
                                 <div className="trainhead">{t('Listlesson.4')}</div>
@@ -81,11 +79,9 @@ const listtitle = t('Listlesson.1')
                                 <img alt="images" className="numberlesson" src={numberlesson} />
                             </div>
                         </div>
-
-
                         <div className="yourcourses">
                             <div className="your_courses">{t('Listlesson.12')}</div>
-                            <div className="courscard">
+                                <div className="courscard">
                                 
                                     <div className={`yourcoursescard ${numberS === 1 ? 'dp' : 1 < numberS ? 'dp' : null }`} onClick={() => ClickedFunction(1)} id='1'>
                                         <img alt="images" className="itemimg" src={Hi} />
@@ -123,16 +119,11 @@ const listtitle = t('Listlesson.1')
                                         <img alt="images" className="itemimg" src={timeforlearn} />
                                         <p className="itemtitle" >{t('Listlesson.28')} <br/>{t('Listlesson.29')} <br/>{t('Listlesson.30')}</p>
                                     </div>
-
-                                
-
-                            </div>
-
+                                </div>
                         </div> 
                     </div>
                     <div className="footlist">
                         <Footer/>
-
                     </div>
                 </div> 
             </div>
