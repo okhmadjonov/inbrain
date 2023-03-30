@@ -36,7 +36,7 @@ const Footer = () => {
                 <BsTelephone />
               </div>
               <p className="ournumber">
-                +998 71 203 33 38 <br /> +998 71 203 33 38
+                +998 71 203 33 38 <br />
               </p>
             </div>
           </div>

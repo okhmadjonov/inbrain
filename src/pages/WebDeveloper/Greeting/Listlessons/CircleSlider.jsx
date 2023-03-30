@@ -98,11 +98,9 @@ const Circle = ({ setCount }) => {
     { step: 9 },
     { step: 10 },
     { step: 11 },
-
   ];
 
   const totalSteps = steps.length;
-
   const width = `${(100 / (totalSteps - 1)) * (activeStep - 0)}%`;
 
   return (
@@ -124,7 +122,6 @@ const Circle = ({ setCount }) => {
             ))}
           </StepContainer>
         </MainContainerLeft>
-
       </MainContainer>
     </CircleContainer>
   );
