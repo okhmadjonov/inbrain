@@ -15,42 +15,44 @@ const Header = (props) => {
     i18next.changeLanguage(lang);
   };
   const [isShown, setIsShown] = useState(true);
-  const [isClick, setIsClick] = useState(false);
+  const [isClick, setIsClick] = useState(true);
   const handleClick = (event) => {
     setIsShown((current) => !current);
   };
 
   const SeachBarFunc = () => {
-    setIsClick(!isClick)
-  }
+    setIsClick(!isClick);
+  };
   // style={{  display: isShown ? "none" : "flex", }}
   const title = props.title;
   return (
-
     <div className="header">
       <Link to="/" className="logo">
         <img src={logo} alt="Logo" />
       </Link>
 
       <div className="father">
-      <div className="wrap">
-      <p
-        style={{ display: isShown ? "block" : "header_title_smoke" }}
-        className={`${isClick ? "learn1" : "learn" }`}>
-        {title}
-      </p>
-      </div>
+        <div className="wrap">
+          <p
+            style={{ display: isShown ? "block" : "header_title_smoke" }}
+            className={`${isClick ? "learn1" : "learn"}`}>
+            {title}
+          </p>
+        </div>
 
-      <div className={`${isClick ? "search_wrap" : "search_wrap1" }`}>
-        <input type="text"  className={`${isClick ? "seach_input_block1" : "seach_input_block" }`}  placeholder="Search..."/>
-      </div>
+        <div className={`${isClick ? "search_wrap" : "search_wrap1"}`}>
+          <input
+            type="text"
+            className={`${
+              isClick ? "seach_input_block1" : "seach_input_block"
+            }`}
+            placeholder="Search..."
+          />
+        </div>
         <button className="search_button_icon" onClick={() => SeachBarFunc()}>
-          <SeachIcon className="seact_icon"   />
+          <SeachIcon className="seact_icon" />
         </button>
       </div>
-        
-
-
 
       <div className="user__language">
         {props.user ? (
