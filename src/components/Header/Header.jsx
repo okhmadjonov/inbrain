@@ -24,7 +24,7 @@ const Header = (props) => {
       </Link>
       <p
         style={{ display: isShown ? "block" : "none", marginTop: "55px" }}
-        className="learn">
+        className="title">
         {title}
       </p>
       <InputGroup
@@ -32,8 +32,6 @@ const Header = (props) => {
         style={{
           display: isShown ? "none" : "flex",
         }}>
-
-          
         <Form.Control
           className="input"
           placeholder="Поиск..."
