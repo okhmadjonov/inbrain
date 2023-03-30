@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import i18next from "i18next";
+import user from "../../assets/images/user.png";
 
 const Header = (props) => {
   const handleLanguage = (lang) => {
@@ -32,8 +33,6 @@ const Header = (props) => {
         style={{
           display: isShown ? "none" : "flex",
         }}>
-
-
         <Form.Control
           className="input"
           placeholder="Поиск..."
@@ -54,16 +53,39 @@ const Header = (props) => {
         className="search">
         <BiSearchAlt className="search_icon" />
       </div>
-      <div className="languages">
-        <button className="languagebtn" onClick={() => handleLanguage("ru")}>
-          RU
-        </button>
-        <button className="languagebtn" onClick={() => handleLanguage("uz")}>
-          UZ
-        </button>
-        <button className="languagebtn" onClick={() => handleLanguage("en")}>
-          EN
-        </button>
+      <div className="user__language">
+        {props.user ? (
+          <div className="participants">
+            <div className="circles">
+              <div className="circle1"></div>
+              <div className="circle3">
+                <img src={user} alt="User logo" />
+              </div>
+              <div className="circle2"></div>
+            </div>
+            <div className="number">
+              <p>+214</p>
+            </div>
+          </div>
+        ) : (
+          <div className="languages">
+            <button
+              className="languagebtn"
+              onClick={() => handleLanguage("ru")}>
+              RU
+            </button>
+            <button
+              className="languagebtn"
+              onClick={() => handleLanguage("uz")}>
+              UZ
+            </button>
+            <button
+              className="languagebtn"
+              onClick={() => handleLanguage("en")}>
+              EN
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
