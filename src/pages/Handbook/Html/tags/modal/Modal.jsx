@@ -5,8 +5,8 @@ import "./Modal.scss";
 
 export default function Modal({ modal, titles, toggleModal }) {
   // const [modal, setModal] = useState(false);
-  const {t} = useTranslation()
- const item = '<!--...--!>'
+  const { t } = useTranslation();
+  const item = "<!--...--!>";
   if (modal) {
     document.body.classList.add("active-modal");
   } else {
@@ -21,13 +21,11 @@ export default function Modal({ modal, titles, toggleModal }) {
           </div>
           <div className="modal-content">
             <h1>
-              {t('modal.2')} <span>{item}</span>
+              {t("modal.2")} <span>{item}</span>
             </h1>
-            <br/>
-            <br/>
-            <p>
-              {t('modal.1')}
-            </p>
+            <br />
+            <br />
+            <p>{t("modal.1")}</p>
             <img
               onClick={toggleModal}
               className="close-modal"

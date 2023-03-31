@@ -5,12 +5,11 @@ import Modal from "../tags/modal/Modal";
 import left_str from "../../../../assets/images/left_str.png";
 import right from "../../../../assets/images/right.png";
 import search_icon from "../../../../assets/images/search_icon.png";
-import { Link } from "react-router-dom";
 import "./Tags.scss";
 import { useTranslation } from "react-i18next";
 const Tags = () => {
-  const { t } = useTranslation()
-  const title = t('tags.0')
+  const { t } = useTranslation();
+  const title = t("tags.0");
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -50,39 +49,25 @@ const Tags = () => {
       <div className="main_tags">
         <Header title={title} />
         <div className="guide">
-          <h1>{t('tags.1')}</h1>
+          <h1>{t("tags.1")}</h1>
           <div className="btns">
-
             <button>
               <img src={left_str} alt="LeftImg" /> {t("tags.2")}
             </button>
             <button>
               {t("tags.3")} <img src={right} alt="RightImg" />
             </button>
-
-            <Link to="/">
-              <button>
-                 <img src={left_str} alt="LeftImg" /> Назад
-              </button>
-            </Link>
-
-            <Link to="/">
-               <button>
-                  Дальше <img src={right} alt="RightImg" />
-               </button>
-            </Link>
-            
-
           </div>
         </div>
         <h1 style={{ margin: "30px 10px" }}>{t("tags.4")}</h1>
         <div className="search_main">
           <input type="search" className="search" />
           <div className="icon_menu">
-            <img src={search_icon} width='36px' className="search_icon" alt="Search" />
+            <img src={search_icon} className="search_icon" alt="Search" />
           </div>
         </div>
-        <div className="desc" style={{marginTop: "60px"}}>
+        <div className="desc">
+          <h3>Description</h3>
           <div className="table_main">
             <div className="table_left">
               <ul style={{ listStyle: "none" }}>
@@ -104,31 +89,15 @@ const Tags = () => {
             </div>
           </div>
         </div>
-
         <div className="guide" style={{ marginTop: "40px" }}>
-          <h1>{t('tags.1')}</h1>
+          <h1>{t("tags.1")}</h1>
           <div className="btns">
             <button>
               <img src={left_str} alt="LeftImg" /> {t("tags.2")}
             </button>
             <button>
-            {t('tags.3')} <img src={right} alt="LeftImg" />
+              {t("tags.3")} <img src={right} alt="LeftImg" />
             </button>
-
-        <div className="guide" style={{ marginTop: "70px" }}>
-          <h1>Справочник по элементам HTML</h1>
-          <div className="btns">
-          <Link to="/">
-              <button>
-                 <img src={left_str} alt="LeftImg" /> Назад
-              </button>
-            </Link>
-            <Link to="/">
-               <button>
-                  Дальше <img src={right} alt="RightImg" />
-               </button>
-            </Link>
-
           </div>
         </div>
         <Modal
@@ -138,9 +107,10 @@ const Tags = () => {
           titles={titles}
         />
         <Footer />
-        //coment
       </div>
     </div>
+    // </div>
+    // </div>
   );
 };
 
