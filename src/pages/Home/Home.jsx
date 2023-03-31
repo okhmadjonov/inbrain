@@ -37,7 +37,7 @@ const Home = () => {
         width: "60px",
         height: "60px",
         marginTop: "60px",
-        marginRight: "-22px",
+        marginRight: '20px',
       }}
       src={rightgroup}
       alt="nextArrow"
@@ -52,6 +52,7 @@ const Home = () => {
         height: "60px",
         marginTop: "60px",
         zIndex: "999",
+        marginLeft: '20px',
       }}
       src={leftgroup}
       alt="prevArrow"
