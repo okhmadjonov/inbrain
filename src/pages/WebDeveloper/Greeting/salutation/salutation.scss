@@ -151,9 +151,11 @@
           color: #000000;
         }
         .btns {
-          padding-top: 10%;
+          height: 200px;
           display: flex;
+          align-items: center;
           justify-content: space-between;
+          border: 1px solid black;
           .returntolist {
             width: 321px;
             height: 52px;
