@@ -17,8 +17,10 @@ const Salutation = () => {
   const { t } = useTranslation();
   const saluttitle = (
     <p>
-      {t("Salutation.1")} {t("Sidebar.7")} / {t("Salutation.2")} /
-      <span style={{ color: "#1c84ff" }}> 1</span> {t("Salutation.3")} 14
+      {t("Salutation.1")}{" "}
+      <span style={{ color: "#ffcc00" }}> {t("Sidebar.7")}</span> /{" "}
+      {t("Salutation.2")} /<span style={{ color: "#1c84ff" }}> 1</span>{" "}
+      {t("Salutation.3")} 14
     </p>
   );
 
@@ -77,7 +79,7 @@ const Salutation = () => {
                       </label>
                     </div>
                   </div>
-                  <div>
+                  <div className="task__img__block">
                     <img className="taskimg" src={taskimg} alt="images" />
                   </div>
                 </div>
