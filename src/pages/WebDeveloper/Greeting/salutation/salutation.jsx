@@ -6,6 +6,7 @@ import thanksimg from "../../../../assets/images/thanksimg.png";
 import "./salutation.scss";
 import Header from "../../../../components/Header/Header";
 import Footer from "../../../../components/Footer/Footer";
+import ReactPlayer from "react-player";
 import { useTranslation } from "react-i18next";
 
 const Salutation = () => {
@@ -37,7 +38,14 @@ const Salutation = () => {
               {t("Salutation.6")}
             </p>
             <div className="video__lesson__img">
-              <img className="image" src={videolessonimg} alt="images" />
+            <ReactPlayer
+              style={{marginLeft: '40px'}}
+                width="95%"
+                height="710px"
+                onDisablePIP={false}
+                onProgress
+                controls
+                url="https://www.youtube.com/watch?v=kkThgsC1tnk&list=PL0lO_mIqDDFXUJfMPcm1ezfcYSOHNNCZ4"/>
             </div>
             <div className="sprint">
               {t("Salutation.7")}
