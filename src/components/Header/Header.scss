@@ -1,3 +1,5 @@
+@import '../../assets/mixins/mixins.scss';
+
 .header {
   width: 100%;
   height: 80px;
@@ -15,23 +17,37 @@
     line-height: 27px;
     color: #000;
   }
-  #search__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // margin-top: 16px;
-  }
+
   .logo {
     width: 25%;
     height: 100%;
     display: flex;
     align-items: center;
   }
+
+  .wrap {
+    overflow: hidden;
+    width: 100%;
+  }
   .learn {
-    width: 50%;
-    height: 100%;
+    // width: 50%;
+    // height: 100%;
+    width: max-content;
     display: flex;
     align-items: center;
+    transform: translateX(-700px);
+    transition: 1s;
+    opacity: 0;
+  }
+
+  .learn1 {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    transform: translateX(50px);
+    transition: 1s;
+    opacity: 1;
+
   }
 
   .Searchbar {
@@ -44,6 +60,10 @@
     background: #f8f8ff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+    margin-right: 30px;
+    // width: 90%;
+    // width: 0%;
+    overflow: hidden;
     .input {
       width: 400px;
       height: 60px;
@@ -173,3 +193,98 @@
 }
 
 //there is for comments
+
+.seachbar-main {
+  display: none;
+}
+
+.seach_input_block {
+  // margin-right: 100px;
+  border: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  padding: 17px 24px;
+  background: #f8f8ff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  // margin-right: 25px;
+  width: 100%;
+  opacity: 1;
+  transition: 1.3s;
+  outline: none !important;
+}
+
+.seach_input_block1 {
+  font-family: "Inter";
+  font-weight: 400;
+  border: none;
+
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  padding: 17px 24px;
+  background: #f8f8ff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  width: 100%;
+  transform: translateX(500px);
+  opacity: 0;
+  transition: 1.3s;
+}
+
+.search_button_icon {
+  position: absolute;
+  right: 55px;
+  z-index: 21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: #000000;
+  border-radius: 110.164px;
+  border: 1px solid black;
+  padding: 6px 15px;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.3s;
+    background-color: #1c84ff;
+    border: 1px solid #1c84ff;
+  }
+
+  &:active {
+    transition: 0.3s;
+    background-color: #ffcc00;
+    border: 1px solid #ffcc00;
+  }
+}
+
+.search_wrap {
+  margin-right: 20px;
+  width: 0%;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.search_wrap1 {
+  height: 100%;
+  margin-right: 20px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 2px 0 2px;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  // border: 1px solid black;
+}
+
+.father {
+  height: 100%;
+  position: relative;
+  width: 988px;
+  display: flex;
+  align-items: center;
+}

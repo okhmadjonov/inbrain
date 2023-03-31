@@ -8,51 +8,52 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import i18next from "i18next";
 import user from "../../assets/images/user.png";
+import { ReactComponent as SeachIcon } from "../../assets/images/modal/seach.svg";
 
 const Header = (props) => {
   const handleLanguage = (lang) => {
     i18next.changeLanguage(lang);
   };
   const [isShown, setIsShown] = useState(true);
+  const [isClick, setIsClick] = useState(true);
   const handleClick = (event) => {
     setIsShown((current) => !current);
   };
+
+  const SeachBarFunc = () => {
+    setIsClick(!isClick);
+  };
+  // style={{  display: isShown ? "none" : "flex", }}
   const title = props.title;
   return (
     <div className="header">
       <Link to="/" className="logo">
         <img src={logo} alt="Logo" />
       </Link>
-      <p
-        style={{ display: isShown ? "block" : "none", marginTop: "55px" }}
-        className="learn">
-        {title}
-      </p>
-      <InputGroup
-        className="Searchbar"
-        style={{
-          display: isShown ? "none" : "flex",
-        }}>
-        <Form.Control
-          className="input"
-          placeholder="Поиск..."
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
-          style={{ outline: "none" }}
-        />
-        <Button onClick={handleClick} className="Search" id="button-addon2">
-          <BiSearchAlt />
-        </Button>
-      </InputGroup>
-      <div
-        id="search__btn"
-        style={{
-          display: isShown ? "block" : "none",
-        }}
-        onClick={handleClick}
-        className="search">
-        <BiSearchAlt className="search_icon" />
+
+      <div className="father">
+        <div className="wrap">
+          <p
+            style={{ display: isShown ? "block" : "header_title_smoke", fontSize: '16px' }}
+            className={`${isClick ? "learn1" : "learn"}`}>
+            {title}
+          </p>
+        </div>
+
+        <div className={`${isClick ? "search_wrap" : "search_wrap1"}`}>
+          <input
+            type="text"
+            className={`${
+              isClick ? "seach_input_block1" : "seach_input_block"
+            }`}
+            placeholder="Search..."
+          />
+        </div>
+        <button className="search_button_icon" onClick={() => SeachBarFunc()}>
+          <SeachIcon className="seact_icon" />
+        </button>
       </div>
+
       <div className="user__language">
         {props.user ? (
           <div className="participants">
