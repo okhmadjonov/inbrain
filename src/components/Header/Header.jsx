@@ -34,7 +34,7 @@ const Header = (props) => {
       <div className="father">
         <div className="wrap">
           <p
-            style={{ display: isShown ? "block" : "header_title_smoke" }}
+            style={{ display: isShown ? "block" : "header_title_smoke", fontSize: '16px' }}
             className={`${isClick ? "learn1" : "learn"}`}>
             {title}
           </p>

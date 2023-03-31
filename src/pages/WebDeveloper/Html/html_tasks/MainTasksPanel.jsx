@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
 import Html_Task_1 from "./task_1/Html_Task_1";
-
+import './MainTasksPanel.scss';
 const MainTasksPanel = () => {
   const { t } = useTranslation();
   const title = (
@@ -20,7 +20,9 @@ const MainTasksPanel = () => {
           <Header title={title} />
         </div>
         <Html_Task_1 />
-        <Footer />
+        <div className="foot">
+          <Footer />
+        </div>
       </div>
     </div>
   );
