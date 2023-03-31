@@ -13,13 +13,11 @@
       .weareinbrain {
         width: 509px;
         height: 41px;
-
         font-family: "Inter";
         font-style: normal;
         font-weight: 700;
-        font-size: 32px;
+        font-size: 34px;
         line-height: 41px;
-
         color: #000000;
       }
       .aboutlessons {
@@ -28,7 +26,7 @@
         font-family: "Inter";
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 22px;
         line-height: 27px;
         color: #000000;
       }
@@ -50,7 +48,6 @@
         font-weight: 500;
         font-size: 17.5px;
         line-height: 27px;
-
         color: #000000;
       }
       .testpart {
@@ -58,78 +55,90 @@
         width: 100%;
         .block {
           display: flex;
-          justify-content: space-between;
-          .testhead {
-            font-family: "Inter";
-            font-style: normal;
-            font-weight: 700;
-            font-size: 30px;
-            line-height: 41px;
+          justify-content: space-around;
 
-            color: #000000;
-          }
-          .variants {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
+          .test {
+            width: 50%;
+
+            display: grid;
             align-items: center;
-            font-family: "Inter";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 22px;
-            color: #000000;
-            cursor: pointer;
+            .testhead {
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 30px;
+              line-height: 41px;
+              color: #000000;
+            }
+            .variants {
+              display: flex;
+              gap: 10px;
+              margin-top: 20px;
+              align-items: center;
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 22px;
+              color: #000000;
+              cursor: pointer;
 
-            .custom + label {
-              cursor: pointer;
-            }
-            .custom + label:before {
-              content: "";
-              display: inline-block;
-              font-size: 18px;
-            }
-            .custom:checked + label:before {
-              color: #1c84ff;
-            }
+              .custom + label {
+                cursor: pointer;
+              }
+              .custom + label:before {
+                content: "";
+                display: inline-block;
+                font-size: 18px;
+              }
+              .custom:checked + label:before {
+                color: #1c84ff;
+              }
 
-            .custom2 + label {
-              cursor: pointer;
-            }
-            .custom2 + label:before {
-              content: "";
-              display: inline-block;
-              font-size: 18px;
-            }
-            .custom2:checked + label::before {
-              color: #1c84ff;
-            }
-            .custom3 + label {
-              cursor: pointer;
-            }
-            .custom3 + label:before {
-              content: "";
-              display: inline-block;
-              font-size: 18px;
-            }
-            .custom3:checked + label::before {
-              color: #1c84ff;
-            }
-            .custom4 + label {
-              cursor: pointer;
-            }
-            .custom4 + label:before {
-              content: "";
-              display: inline-block;
-              font-size: 18px;
-            }
-            .custom4:checked + label::before {
-              color: #1c84ff;
+              .custom2 + label {
+                cursor: pointer;
+              }
+              .custom2 + label:before {
+                content: "";
+                display: inline-block;
+                font-size: 18px;
+              }
+              .custom2:checked + label::before {
+                color: #1c84ff;
+              }
+              .custom3 + label {
+                cursor: pointer;
+              }
+              .custom3 + label:before {
+                content: "";
+                display: inline-block;
+                font-size: 18px;
+              }
+              .custom3:checked + label::before {
+                color: #1c84ff;
+              }
+              .custom4 + label {
+                cursor: pointer;
+              }
+              .custom4 + label:before {
+                content: "";
+                display: inline-block;
+                font-size: 18px;
+              }
+              .custom4:checked + label::before {
+                color: #1c84ff;
+              }
             }
           }
-          .taskimg {
-            width: 356px;
-            height: 320.68px;
+          .task__img__block {
+            width: 50%;
+            display: flex;
+
+            .taskimg {
+              width: 80%;
+              height: 100%;
+              margin-left: 20%;
+            }
           }
         }
         .thanks {
@@ -142,9 +151,11 @@
           color: #000000;
         }
         .btns {
-          padding-top: 10%;
+          height: 200px;
           display: flex;
+          align-items: center;
           justify-content: space-between;
+
           .returntolist {
             width: 321px;
             height: 52px;
@@ -178,158 +189,6 @@
             justify-content: center;
             align-items: center;
           }
-        }
-      }
-    }
-    .footer {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 100px;
-      width: 100%;
-      height: 250px;
-      .footadress {
-        display: grid;
-        gap: 10%;
-        .adresses {
-          display: grid;
-          gap: 5%;
-          .adress {
-            display: flex;
-            align-items: center;
-            gap: 2%;
-            .location {
-              width: 31px;
-              height: 31px;
-            }
-            .adressoffice {
-              width: 256px;
-              font-family: "Inter";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 14px;
-              line-height: 19px;
-
-              color: #000000;
-            }
-          }
-          .footcontact {
-            display: flex;
-            align-items: center;
-            gap: 2%;
-            .phone {
-              width: 26px;
-              height: 25px;
-            }
-            .ournumber {
-              font-family: "Inter";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 19px;
-
-              color: #000000;
-            }
-          }
-        }
-      }
-      .social_menu {
-        display: grid;
-        gap: 20%;
-        .socialhead {
-          font-family: "Inter";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 24px;
-          color: #000000;
-        }
-        .socialmedia {
-          display: grid;
-          gap: 5%;
-          .telegramm {
-            display: flex;
-            gap: 7%;
-            align-items: center;
-            .foottg {
-              width: 25px;
-              height: 21px;
-            }
-            .tg {
-              font-family: "Inter";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 19px;
-              color: #000000;
-            }
-          }
-          .instagramm {
-            display: flex;
-            gap: 7%;
-            align-items: center;
-            .footinsta {
-              width: 26px;
-              height: 26px;
-            }
-            .insta {
-              font-family: "Inter";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 19px;
-              color: #000000;
-            }
-          }
-          .youtube {
-            display: flex;
-            gap: 7%;
-            align-items: center;
-            .foottube {
-              width: 27px;
-              height: 27px;
-            }
-            .tube {
-              font-family: "Inter";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 19px;
-              color: #000000;
-            }
-          }
-        }
-      }
-      .menu_items {
-        display: grid;
-        gap: 20%;
-        .itemhead {
-          font-family: "Inter";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 24px;
-
-          color: #000000;
-        }
-        .about_item {
-          display: grid;
-          gap: 5%;
-        }
-      }
-      .additionally {
-        display: grid;
-        gap: 20%;
-        .addithead {
-          font-family: "Inter";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 24px;
-          color: #000000;
-        }
-        .addit_menu {
-          display: grid;
-          gap: 5%;
         }
       }
     }
