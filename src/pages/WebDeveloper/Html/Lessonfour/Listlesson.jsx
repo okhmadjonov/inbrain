@@ -141,7 +141,7 @@ const Lessonfour = () => {
           </div>
 
           <div className="training">
-            <div>
+            <div style={{width: '50%'}}>
               <div className="trainhead">{t("Lessonfour.4")}</div>
               <div className="description">
                 {t("Lessonfour.5")} <br /> {t("Lessonfour.6")} <br />{" "}
@@ -159,7 +159,7 @@ const Lessonfour = () => {
                 </button>
               </div>
             </div>
-            <div>
+            <div style={{width: '50%'}}>
               <img alt="images" className="numberlesson" src={numberlesson} />
             </div>
           </div>

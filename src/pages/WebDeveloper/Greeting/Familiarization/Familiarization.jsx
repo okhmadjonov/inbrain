@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import bightml from "../../../../assets/images/bightml.png";
 import littlehtml from "../../../../assets/images/littlehtml.png";
 import foundation from "../../../../assets/images/foundation.png";
@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Familiarization = () => {
+  const [user, setUser] = useState(true);
   const { t } = useTranslation();
   const titlehead = (
     <p>
@@ -23,7 +24,7 @@ const Familiarization = () => {
     <div className="familiarpage">
       <div className="familiarcontainer">
         <div>
-          <Header title={titlehead} />
+          <Header title={titlehead} user={user} />
         </div>
         <div className="aboutlesson">
           <div className="introduction">
