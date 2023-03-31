@@ -5,6 +5,7 @@ import Modal from "../tags/modal/Modal";
 import left_str from "../../../../assets/images/left_str.png";
 import right from "../../../../assets/images/right.png";
 import search_icon from "../../../../assets/images/search_icon.png";
+import { Link } from "react-router-dom";
 import "./Tags.scss";
 const Tags = () => {
   const title = "Каждый может научится новому ! Даже если страшно.";
@@ -49,23 +50,28 @@ const Tags = () => {
         <div className="guide">
           <h1>Справочник по элементам HTML</h1>
           <div className="btns">
-            <button>
-              <img src={left_str} alt="LeftImg" /> Назад
-            </button>
-            <button>
-              Дальше <img src={right} alt="RightImg" />
-            </button>
+            <Link to="/">
+              <button>
+                 <img src={left_str} alt="LeftImg" /> Назад
+              </button>
+            </Link>
+
+            <Link to="/">
+               <button>
+                  Дальше <img src={right} alt="RightImg" />
+               </button>
+            </Link>
+            
           </div>
         </div>
         <h1 style={{ margin: "30px 10px" }}>Теги HTML в алфавитном порядке</h1>
         <div className="search_main">
           <input type="search" className="search" />
           <div className="icon_menu">
-            <img src={search_icon} className="search_icon" alt="Search" />
+            <img src={search_icon} width='36px' className="search_icon" alt="Search" />
           </div>
         </div>
-        <div className="desc">
-          <h3>Description</h3>
+        <div className="desc" style={{marginTop: "60px"}}>
           <div className="table_main">
             <div className="table_left">
               <ul style={{ listStyle: "none" }}>
@@ -87,15 +93,19 @@ const Tags = () => {
             </div>
           </div>
         </div>
-        <div className="guide" style={{ marginTop: "40px" }}>
+        <div className="guide" style={{ marginTop: "70px" }}>
           <h1>Справочник по элементам HTML</h1>
           <div className="btns">
-            <button>
-              <img src={left_str} alt="LeftImg" /> Назад
-            </button>
-            <button>
-              Дальше <img src={right} alt="LeftImg" />
-            </button>
+          <Link to="/">
+              <button>
+                 <img src={left_str} alt="LeftImg" /> Назад
+              </button>
+            </Link>
+            <Link to="/">
+               <button>
+                  Дальше <img src={right} alt="RightImg" />
+               </button>
+            </Link>
           </div>
         </div>
         <Modal
