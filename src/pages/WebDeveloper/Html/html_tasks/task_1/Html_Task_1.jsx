@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Html_Task_1.scss";
 import question from "../../../../../assets/images/question.png";
 import ref from "../../../../../assets/images/ref.png";
-
+import { MdRefresh } from "react-icons/md";
 import { FaTimes, FaArrowRight } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
@@ -50,7 +50,8 @@ const Html_Task_1 = () => {
                 </div>
                 <div className="header__right">
                   <div className="ref">
-                    <img src={ref} alt="Refresh" />
+                    <MdRefresh />
+                    {/* <img src={ref} alt="Refresh" /> */}
                   </div>
                   <div className="screen__size">
                     <p>
@@ -152,7 +153,8 @@ const Html_Task_1 = () => {
                   <div className="body__right-bottom">
                     <div className="right__bottom-container">
                       <div className="bottom__ref">
-                        <img src={ref} alt="Bottom ref " />
+                        <MdRefresh style={{ transform: "rotate(-90deg)" }} />
+                        {/* <img src={ref} alt="Bottom ref " /> */}
                       </div>
                       <div className="start__again">
                         <p>{t("TaskFirst.18")}</p>

@@ -28,7 +28,7 @@ const AppContainer = styled.div`
   gap: 20px;
 `;
 const AppHomeContainer = styled.div`
-  width: 77%;
+  width: 72%;
   height: 100%;
   margin: 0 auto;
 `;

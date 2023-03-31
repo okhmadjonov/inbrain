@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HiArrowDownTray } from "react-icons/hi2";
 import { MdOutlineNavigateNext } from "react-icons/md";
-
+import { MdRefresh } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./Task_Result.scss";
 import question from "../../../../../assets/images/question.png";
@@ -53,7 +53,8 @@ const Task_Result = () => {
                 </div>
                 <div className="header__right">
                   <div className="ref">
-                    <img src={ref} alt="Refresh" />
+                    <MdRefresh />
+                    {/* <img src={ref} alt="Refresh" /> */}
                   </div>
                   <div className="screen__size">
                     <p>
@@ -137,7 +138,8 @@ const Task_Result = () => {
                   <div className="body__right-bottom">
                     <div className="right__bottom-container">
                       <div className="bottom__ref">
-                        <img src={ref} alt="Bottom ref " />
+                        <MdRefresh style={{ transform: "rotate(-90deg)" }} />
+                        {/* <img src={ref} alt="Bottom ref " /> */}
                         <p> {t("TaskFirst.18")}</p>
                       </div>
                     </div>
