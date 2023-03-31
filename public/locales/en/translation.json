@@ -26,8 +26,10 @@
           "4":"HTML tags in alphabetical order"
         },
         "modal":{
-            "1":"Sayt sahifalari LEGO konstruktori kabi elementlardan yig'ilgan. Matn bloklari, rasmlar, havolalar, tugmalar - bularning barchasi saytning elementlari. Elementlar HTMLda tasvirlangan. Har qanday veb-sahifa ushbu tildagi kodni o'z ichiga oladi va HTML faylida saqlanadi. Veb-saytni ochganingizda, birinchi navbatda brauzerga yuklanadigan HTML fayli."
-          },
+            "1":"Sayt sahifalari LEGO konstruktori kabi elementlardan yig'ilgan. Matn bloklari, rasmlar, havolalar, tugmalar - bularning barchasi saytning elementlari. Elementlar HTMLda tasvirlangan. Har qanday veb-sahifa ushbu tildagi kodni o'z ichiga oladi va HTML faylida saqlanadi. Veb-saytni ochganingizda, birinchi navbatda brauzerga yuklanadigan HTML fayli.",
+            "2":"Current tag"
+        },
+
       "homepage":{
         "1": "What do we teach?",
          "2": "If you want to gain knowledge and change",
