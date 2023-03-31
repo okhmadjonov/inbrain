@@ -8,8 +8,8 @@ import search_icon from "../../../../assets/images/search_icon.png";
 import "./Tags.scss";
 import { useTranslation } from "react-i18next";
 const Tags = () => {
-  const { t } = useTranslation()
-  const title = t('tags.0')
+  const { t } = useTranslation();
+  const title = t("tags.0");
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -49,7 +49,7 @@ const Tags = () => {
       <div className="main_tags">
         <Header title={title} />
         <div className="guide">
-          <h1>{t('tags.1')}</h1>
+          <h1>{t("tags.1")}</h1>
           <div className="btns">
             <button>
               <img src={left_str} alt="LeftImg" /> {t("tags.2")}
@@ -90,13 +90,13 @@ const Tags = () => {
           </div>
         </div>
         <div className="guide" style={{ marginTop: "40px" }}>
-          <h1>{t('tags.1')}</h1>
+          <h1>{t("tags.1")}</h1>
           <div className="btns">
             <button>
               <img src={left_str} alt="LeftImg" /> {t("tags.2")}
             </button>
             <button>
-            {t('tags.3')} <img src={right} alt="LeftImg" />
+              {t("tags.3")} <img src={right} alt="LeftImg" />
             </button>
           </div>
         </div>
@@ -107,9 +107,10 @@ const Tags = () => {
           titles={titles}
         />
         <Footer />
-        //coment
       </div>
     </div>
+    // </div>
+    // </div>
   );
 };
 
