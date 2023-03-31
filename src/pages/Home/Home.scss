@@ -596,11 +596,8 @@
 
       .comment_part {
         width: 100%;
-        // background: red;
-
-        .review_card {
+        .review_card{
           width: 100%;
-          margin-left: 15px;
           .head_card {
             display: flex;
             gap: 5%;
@@ -639,7 +636,7 @@
               width: 260.4px;
               height: 310.56px;
               color: #ffffff;
-              font-size: 14px;
+              font-size: 10px;
               letter-spacing: 0.02em;
               font-weight: 400;
               line-height: 22px;

@@ -37,7 +37,7 @@ const Home = () => {
         width: "60px",
         height: "60px",
         marginTop: "60px",
-        marginRight: "-12px",
+        marginRight: '20px',
       }}
       src={rightgroup}
       alt="nextArrow"
