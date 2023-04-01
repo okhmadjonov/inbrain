@@ -38,14 +38,15 @@ const Salutation = () => {
               {t("Salutation.6")}
             </p>
             <div className="video__lesson__img">
-            <ReactPlayer
-              style={{marginLeft: '40px'}}
+              <ReactPlayer
+                style={{ marginLeft: "40px" }}
                 width="95%"
                 height="710px"
-                onDisablePIP={false}
-                onProgress
+                // onDisablePIP={false}
+                // onProgress
                 controls
-                url="https://www.youtube.com/watch?v=kkThgsC1tnk&list=PL0lO_mIqDDFXUJfMPcm1ezfcYSOHNNCZ4"/>
+                url="https://www.youtube.com/watch?v=kkThgsC1tnk&list=PL0lO_mIqDDFXUJfMPcm1ezfcYSOHNNCZ4"
+              />
             </div>
             <div className="sprint">
               {t("Salutation.7")}

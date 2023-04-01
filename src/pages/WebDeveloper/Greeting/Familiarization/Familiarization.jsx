@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import foundation from "../../../../assets/images/foundation.png";
 import "./familiarization.scss";
 import Footer from "../../../../components/Footer/Footer";
@@ -9,40 +9,36 @@ import ReactPlayer from "react-player";
 
 const Videos = [
   {
-      url: "https://www.youtube.com/watch?v=_e61WuTXc4E&list=PLpRkv-CMsu3X4nVukPFCaZUxqioeuGBZh",
-      title: " Введение в HTML"
+    url: "https://www.youtube.com/watch?v=_e61WuTXc4E&list=PLpRkv-CMsu3X4nVukPFCaZUxqioeuGBZh",
+    title: " Введение в HTML",
   },
   {
-      url: "https://www.youtube.com/watch?v=YzYkebeN7mg&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO&index=2",
-      title: "Файл <index.html>"
+    url: "https://www.youtube.com/watch?v=YzYkebeN7mg&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO&index=2",
+    title: "Файл <index.html>",
   },
   {
-      url: "https://www.youtube.com/watch?v=3V4qHup5BB8&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO&index=3",
-      title: "Как создаются сайты"
+    url: "https://www.youtube.com/watch?v=3V4qHup5BB8&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO&index=3",
+    title: "Как создаются сайты",
   },
 
   {
-      url: "https://www.youtube.com/watch?v=6RoXrWu2EuM&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO&index=4",
-      title: "Lorem lorem lorem"
+    url: "https://www.youtube.com/watch?v=6RoXrWu2EuM&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO&index=4",
+    title: "Lorem lorem lorem",
   },
   {
-      url: "https://www.youtube.com/watch?v=ow3LCjZTbsY&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO&index=5",
-      title: "Lorem lorem lorem"
-  }
-
-
-
-]
-
+    url: "https://www.youtube.com/watch?v=ow3LCjZTbsY&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO&index=5",
+    title: "Lorem lorem lorem",
+  },
+];
 
 const Familiarization = () => {
   const [user, setUser] = useState(true);
   const { t } = useTranslation();
   const titlehead = (
     <p>
-      {t("Familiarization.1")}:{" "}
-      <span style={{ color: "#ffcc00" }}>{t("Salutation.1")}</span> /{" "}
-      {t("Salutation.2")}/<span style={{ color: "#1c84ff" }}> 1</span>{" "}
+      {t("Salutation.1")}{" "}
+      <span style={{ color: "#ffcc00" }}> {t("Sidebar.7")}</span> /{" "}
+      {t("Salutation.2")} /<span style={{ color: "#1c84ff" }}> 1</span>{" "}
       {t("Salutation.3")} 14
     </p>
   );
@@ -68,38 +64,60 @@ const Familiarization = () => {
         </div>
         <div className="videopart">
           <div className="watchvideo">{t("Familiarization.10")}</div>
-          <div data-aos="fade-right" style={{height: "600px", width: '100%', display: 'flex', marginTop: '50px'}}>
-
-
-        <div className="videoRegistrOne" style={{width: '70%'}} >
-            <ReactPlayer
-                style={{width: '773px', height: '410px', borderRadius: '140px'}}
-                onDisablePIP={false}
-                onProgress
-                controls
-                url="https://www.youtube.com/watch?v=_R5a-Kc0pRc&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO"/>
-        </div>
-          <div className="scrol " data-aos="fade-up" style={{width: '30%', height: '370px', display: 'grid', gap: '60px',  overflow: 'hidden', overflowY: 'scroll',}} >
-        {Videos.map((item, index) => (
-            <div style={{display: 'flex',  alignItems: 'center',  }}>
-                <div>
-                    <ReactPlayer
-                        onDisablePIP={false}
-                        width="70%"
-                        height="80px"
-                        controls
-                        url={item.url}/>
-                </div>
-                <div style={{width: '30%'}} >
-                  <p>{item.title}</p>
-                </div>
+          <div
+            data-aos="fade-right"
+            style={{
+              height: "800px",
+              width: "100%",
+              display: "flex",
+              marginTop: "50px",
+            }}>
+            <div className="videoRegistrOne" style={{ width: "50%" }}>
+              <ReactPlayer
+                style={{
+                  height: "100%",
+                  borderRadius: "140px",
+                }}
+                height="420px"
+                // controls
+                url="https://www.youtube.com/watch?v=_R5a-Kc0pRc&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO"
+              />
             </div>
-        ))}
-        </div>
-
-        </div>
-
- 
+            <div
+              className="scrol "
+              data-aos="fade-up"
+              style={{
+                width: "30%",
+                height: "450px",
+                display: "grid",
+                gap: "60px",
+                overflow: "hidden",
+                overflowY: "scroll",
+              }}>
+              {Videos.map((item, index) => (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    // overflow: "hidden",
+                  }}>
+                  <div>
+                    <ReactPlayer
+                      onDisablePIP={false}
+                      width="80%"
+                      height="100px"
+                      borderRadius="5px"
+                      controls
+                      url={item.url}
+                    />
+                  </div>
+                  <div style={{ width: "30%" }}>
+                    <p>{item.title}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
         <div className="webdev_f">
           <div className="foundation">
