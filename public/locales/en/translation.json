@@ -2,8 +2,6 @@
     "headerTitle":{
         "1":"Everyone can learn something new ! Even if it's scary."
     },
-
-
     "footer":{
         "1":"Muhammad Yusuf Street,",
         "2": "Tashkent, 100077",
@@ -29,7 +27,6 @@
             "1":"Sayt sahifalari LEGO konstruktori kabi elementlardan yig'ilgan. Matn bloklari, rasmlar, havolalar, tugmalar - bularning barchasi saytning elementlari. Elementlar HTMLda tasvirlangan. Har qanday veb-sahifa ushbu tildagi kodni o'z ichiga oladi va HTML faylida saqlanadi. Veb-saytni ochganingizda, birinchi navbatda brauzerga yuklanadigan HTML fayli.",
             "2":"Current tag"
         },
-
       "homepage":{
         "1": "What do we teach?",
          "2": "If you want to gain knowledge and change",
@@ -82,8 +79,6 @@
          "49":"I've been wandering through the inbrain courses for a long time, because there is a very valuable opportunity to try the free part in order to understand whether you want to do it or not. The critical thinking course is the first course that I completely completed. I very happy with my decision to take this course.The way of presenting the material is very effective in my opinion.",
          "50": "Very soon"
       },
-
-
     "LessonFirst":{
         "1":"Current lesson:",
         "2":"Basic elements. HTML",

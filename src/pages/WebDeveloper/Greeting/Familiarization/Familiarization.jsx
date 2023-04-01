@@ -1,14 +1,42 @@
-import React from "react";
-import bightml from "../../../../assets/images/bightml.png";
-import littlehtml from "../../../../assets/images/littlehtml.png";
+import React, {useState} from "react";
 import foundation from "../../../../assets/images/foundation.png";
 import "./familiarization.scss";
 import Footer from "../../../../components/Footer/Footer";
 import Header from "../../../../components/Header/Header";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import ReactPlayer from "react-player";
+
+const Videos = [
+  {
+      url: "https://www.youtube.com/watch?v=_e61WuTXc4E&list=PLpRkv-CMsu3X4nVukPFCaZUxqioeuGBZh",
+      title: " Введение в HTML"
+  },
+  {
+      url: "https://www.youtube.com/watch?v=YzYkebeN7mg&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO&index=2",
+      title: "Файл <index.html>"
+  },
+  {
+      url: "https://www.youtube.com/watch?v=3V4qHup5BB8&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO&index=3",
+      title: "Как создаются сайты"
+  },
+
+  {
+      url: "https://www.youtube.com/watch?v=6RoXrWu2EuM&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO&index=4",
+      title: "Lorem lorem lorem"
+  },
+  {
+      url: "https://www.youtube.com/watch?v=ow3LCjZTbsY&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO&index=5",
+      title: "Lorem lorem lorem"
+  }
+
+
+
+]
+
 
 const Familiarization = () => {
+  const [user, setUser] = useState(true);
   const { t } = useTranslation();
   const titlehead = (
     <p>
@@ -23,7 +51,7 @@ const Familiarization = () => {
     <div className="familiarpage">
       <div className="familiarcontainer">
         <div>
-          <Header title={titlehead} />
+          <Header title={titlehead} user={user} />
         </div>
         <div className="aboutlesson">
           <div className="introduction">
@@ -40,31 +68,38 @@ const Familiarization = () => {
         </div>
         <div className="videopart">
           <div className="watchvideo">{t("Familiarization.10")}</div>
-          <div className="videolessons">
-            <img className="bigimg" src={bightml} alt="BigImg" />
-            <div className="lessons">
-              <div className="firstlesson">
-                <img className="littlimg" src={littlehtml} alt="BigImg2" />
-                <p className="firsttxt">
-                  {t("Familiarization.11")} <br /> HTML ?
-                </p>
-              </div>
-              <div className="secondlesson">
-                <img className="littlimg" src={littlehtml} alt="BigImg3" />
-                <p className="secondtxt">
-                  {t("Familiarization.12")}
-                  <br /> HTML ?
-                </p>
-              </div>
-              <div className="thirdlesson">
-                <img className="littlimg" src={littlehtml} alt="BigImg4" />
-                <p className="thirdtxt">
-                  {t("Familiarization.13")}
-                  <br /> HTML ?
-                </p>
-              </div>
+          <div data-aos="fade-right" style={{height: "600px", width: '100%', display: 'flex', marginTop: '50px'}}>
+
+
+        <div className="videoRegistrOne" style={{width: '70%'}} >
+            <ReactPlayer
+                style={{width: '773px', height: '410px', borderRadius: '140px'}}
+                onDisablePIP={false}
+                onProgress
+                controls
+                url="https://www.youtube.com/watch?v=_R5a-Kc0pRc&list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO"/>
+        </div>
+          <div className="scrol " data-aos="fade-up" style={{width: '30%', height: '370px', display: 'grid', gap: '60px',  overflow: 'hidden', overflowY: 'scroll',}} >
+        {Videos.map((item, index) => (
+            <div style={{display: 'flex',  alignItems: 'center',  }}>
+                <div>
+                    <ReactPlayer
+                        onDisablePIP={false}
+                        width="70%"
+                        height="80px"
+                        controls
+                        url={item.url}/>
+                </div>
+                <div style={{width: '30%'}} >
+                  <p>{item.title}</p>
+                </div>
             </div>
-          </div>
+        ))}
+        </div>
+
+        </div>
+
+ 
         </div>
         <div className="webdev_f">
           <div className="foundation">

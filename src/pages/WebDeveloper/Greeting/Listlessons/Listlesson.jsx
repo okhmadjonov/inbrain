@@ -74,7 +74,7 @@ const listtitle = t('Listlesson.1');
                             </div>
                         </div>
                          <div className="training">
-                            <div>
+                            <div style={{width: '50%'}}>
                                 <div className="trainhead">{t('Listlesson.4')}</div>
                                 <div className="description">
                                     {t("Listlesson.5")} <br /> {t("Listlesson.6")} <br />{" "}
@@ -84,7 +84,7 @@ const listtitle = t('Listlesson.1');
                                 </div>
                                 <button className="continuelearnbtn">{t('Listlesson.11')} <AiOutlineRight/></button>
                             </div>
-                            <div>
+                            <div style={{width: '50%'}}>
                                 <img alt="images" className="numberlesson" src={numberlesson} />
                             </div>
                         </div>
