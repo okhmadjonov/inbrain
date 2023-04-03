@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
 import logo from "../../assets/images/logo.png";
-import { BiSearchAlt } from "react-icons/bi";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
 import i18next from "i18next";
 import user from "../../assets/images/user.png";
 import { ReactComponent as SeachIcon } from "../../assets/images/modal/seach.svg";
@@ -23,7 +19,7 @@ const Header = (props) => {
   const SeachBarFunc = () => {
     setIsClick(!isClick);
   };
-  // style={{  display: isShown ? "none" : "flex", }}
+
   const title = props.title;
   return (
     <div className="header">
@@ -32,13 +28,7 @@ const Header = (props) => {
       </Link>
 
       <div className="father">
-        <div className="wrap">
-          <p
-            style={{ display: isShown ? "block" : "header_title_smoke", fontSize: '16px' }}
-            className={`${isClick ? "learn1" : "learn"}`}>
-            {title}
-          </p>
-        </div>
+        <p className={`${isClick ? "learn1" : "learn"}`}>{title}</p>
 
         <div className={`${isClick ? "search_wrap" : "search_wrap1"}`}>
           <input
@@ -49,7 +39,11 @@ const Header = (props) => {
             placeholder="Search..."
           />
         </div>
-        <button className="search_button_icon" onClick={() => SeachBarFunc()}>
+        <button
+          className={`${
+            isClick ? "search_button_icon" : "search_button_icon1"
+          }`}
+          onClick={() => SeachBarFunc()}>
           <SeachIcon className="seact_icon" />
         </button>
       </div>
