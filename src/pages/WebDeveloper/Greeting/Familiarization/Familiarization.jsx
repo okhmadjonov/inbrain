@@ -71,6 +71,7 @@ const Familiarization = () => {
               width: "100%",
               display: "flex",
               marginTop: "50px",
+              justifyContent: "space-between",
             }}>
             <div className="videoRegistrOne" style={{ width: "50%" }}>
               <ReactPlayer
